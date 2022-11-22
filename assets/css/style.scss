@@ -1,0 +1,14 @@
+// * Config & base
+@import '../scss/config/variables';
+@import '../scss/base/base';
+
+// * Layouts
+@import '../scss/layouts/layouts';
+@import '../scss/layouts/mixins';
+
+// * Components
+@import '../scss/components/navbar';
+@import '../scss/components/footer';
+
+// * Pages
+@import '../scss/pages/home';

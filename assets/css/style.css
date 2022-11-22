@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.dv-skroll {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.dv-skroll section {
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fffee1;
+}
+.dv-skroll section:nth-child(2) {
+  background: #e2fcff;
+}
+.dv-skroll section:nth-child(3) {
+  background: #d0eaff;
+}
+.dv-skroll section:nth-child(4) {
+  background: #fce8f4;
+}
+.dv-skroll section .content {
+  max-width: 800px;
+  padding: 40px;
+  text-align: center;
+}
+.dv-skroll section .content h2 {
+  font-size: 4em;
+  color: #111;
+  margin-bottom: 0.5em;
+}
+.dv-skroll section .content p {
+  font-size: 1.3em;
+  line-height: 1.4em;
+  color: #111;
+}
+@media screen and (max-width: 991px) {
+  .dv-skroll {
+    position: absolute;
+    flex-direction: column;
+    height: auto;
+    transform: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */
