@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,6 @@
 
 .dv-skroll {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
   display: flex;
@@ -20,16 +20,19 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #fffee1;
+  background: #FFFFFF;
 }
 .dv-skroll section:nth-child(2) {
   background: #e2fcff;
+  min-width: auto;
 }
 .dv-skroll section:nth-child(3) {
   background: #d0eaff;
+  min-width: 100%;
 }
 .dv-skroll section:nth-child(4) {
   background: #fce8f4;
+  min-width: 100%;
 }
 .dv-skroll section .content {
   max-width: 800px;

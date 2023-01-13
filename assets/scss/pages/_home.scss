@@ -1,0 +1,54 @@
+.dv-skroll {
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+
+   section {
+      min-width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: $light-color;
+
+      &:nth-child(2) {
+         background: #e2fcff;
+         min-width: auto;
+      }
+      &:nth-child(3) {
+         background: #d0eaff;
+         min-width: 100%;
+      }
+      &:nth-child(4) {
+         background: #fce8f4;
+         min-width: 100%;
+      }
+
+      .content {
+         max-width: 800px;
+         padding: 40px;
+         text-align: center;
+
+         h2 {
+            font-size: 4em;
+            color: #111;
+            margin-bottom: .5em;
+         }
+
+         p {
+            font-size: 1.3em;
+            line-height: 1.4em;
+            color: #111;
+         }
+      }
+   }
+
+   @media screen and (max-width: 991px) {
+      position: absolute;
+      flex-direction: column;
+      height: auto;
+      transform: none !important;
+   }
+}
