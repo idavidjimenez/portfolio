@@ -13,6 +13,7 @@
 
       &.start {
          @include cover('../img/team/david.landscape.jpg');
+         position: relative;
          
          .bar {
             display: flex;
@@ -28,11 +29,28 @@
                }
             }
             .scroll {
-               font-size: 33px;
+               font-size: $h2-size;
 
                @media screen and (max-width: 991px) {
                   display: none;
                }
+            }
+         }
+
+         .quote {
+            top: 70px;
+            position: absolute;
+            top: 35%;
+            left: 60%;
+
+            img {
+               margin-bottom: 40px;
+            }
+
+            p {
+               font-size: $h2-size;
+               font-weight: 400;
+               color: $light-color;
             }
          }
       }
@@ -50,14 +68,28 @@
       }
    }
 
-   .content {
-      //max-width: 800px;
-   }
-
    @media screen and (max-width: 991px) {
       position: absolute;
       flex-direction: column;
       height: auto;
       transform: none !important;
+
+      section {
+         &.start {
+            @include cover('../img/team/david.jpg');
+            
+            .bar {
+               .scroll {
+                  display: none;
+               }
+            }
+
+            .quote {
+               position: relative;
+               top: 0;
+               left: 0;
+            }
+         }
+      }
    }
 }
