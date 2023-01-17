@@ -17,37 +17,45 @@
   min-width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   background: #FFFFFF;
 }
-.dv-skroll section:nth-child(2) {
-  background: #e2fcff;
-  min-width: auto;
+.dv-skroll section.start {
+  background-image: url("../img/team/david.landscape.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.dv-skroll section:nth-child(3) {
+.dv-skroll section.start .bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+.dv-skroll section.start .bar .icon span {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 96px;
+}
+.dv-skroll section.start .bar .scroll {
+  font-size: 33px;
+}
+@media screen and (max-width: 991px) {
+  .dv-skroll section.start .bar .scroll {
+    display: none;
+  }
+}
+.dv-skroll section.intro {
+  background: #e2fcff;
+  min-width: 100%;
+}
+.dv-skroll section.projects {
   background: #d0eaff;
   min-width: 100%;
 }
-.dv-skroll section:nth-child(4) {
+.dv-skroll section.work {
   background: #fce8f4;
   min-width: 100%;
-}
-.dv-skroll section .content {
-  max-width: 800px;
-  padding: 40px;
-  text-align: center;
-}
-.dv-skroll section .content h2 {
-  font-size: 4em;
-  color: #111;
-  margin-bottom: 0.5em;
-}
-.dv-skroll section .content p {
-  font-size: 1.3em;
-  line-height: 1.4em;
-  color: #111;
 }
 @media screen and (max-width: 991px) {
   .dv-skroll {
