@@ -11,7 +11,7 @@
       height: 100vh;
       background: $light-color;
 
-      &.start {
+      &.start-v2 {
          @include cover('../img/team/david.landscape.jpg');
          position: relative;
          
@@ -53,6 +53,26 @@
                color: $light-color;
             }
          }
+
+         @media screen and (max-width: 1080px) {
+            .bar {
+               .scroll {
+                  display: none;
+               }
+            }
+         }
+
+         @media screen and (max-width: 768px) {
+            .quote {
+               position: relative;
+               top: 0;
+               left: 0;
+            }
+         }
+
+         @media screen and (max-width: 420px) {
+            @include cover('../img/team/david.jpg');
+         }
       }
       &.intro {
          min-width: 100%;
@@ -67,28 +87,10 @@
       }
    }
 
-   @media screen and (max-width: 991px) {
+   @media screen and (max-width: 1080px) {
       position: absolute;
       flex-direction: column;
       height: auto;
       transform: none !important;
-
-      section {
-         &.start {
-            @include cover('../img/team/david.jpg');
-            
-            .bar {
-               .scroll {
-                  display: none;
-               }
-            }
-
-            .quote {
-               position: relative;
-               top: 0;
-               left: 0;
-            }
-         }
-      }
    }
 }
