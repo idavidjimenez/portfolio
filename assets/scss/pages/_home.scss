@@ -11,6 +11,26 @@
       height: 100vh;
       background: $light-color;
 
+      &.start-v1 {
+         .bar {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $text-color;
+
+            &__icon {
+               span {
+                  font-family: $title-font;
+                  font-weight: 900;
+                  font-size: 96px;
+               }
+            }
+         }
+
+         .elements {}
+      }
+
       &.start-v2 {
          @include cover('../img/team/david.landscape.jpg');
          position: relative;
@@ -21,24 +41,24 @@
             justify-content: space-between;
             color: $light-color;
 
-            .icon {
+            &__icon {
                span {
                   font-family: $title-font;
                   font-weight: 900;
                   font-size: 96px;
                }
             }
-            .scroll {
+
+            &__scroll {
                font-size: $h2-size;
 
-               @media screen and (max-width: 991px) {
+               @media screen and (max-width: 1080px) {
                   display: none;
                }
             }
          }
 
          .quote {
-            top: 70px;
             position: absolute;
             top: 35%;
             left: 60%;
@@ -52,25 +72,15 @@
                font-weight: 400;
                color: $light-color;
             }
-         }
 
-         @media screen and (max-width: 1080px) {
-            .bar {
-               .scroll {
-                  display: none;
-               }
-            }
-         }
-
-         @media screen and (max-width: 768px) {
-            .quote {
+            @media screen and (max-width: 576px) {
                position: relative;
-               top: 0;
+               top: 30%;
                left: 0;
             }
          }
 
-         @media screen and (max-width: 420px) {
+         @media screen and (max-width: 430px) {
             @include cover('../img/team/david.jpg');
          }
       }

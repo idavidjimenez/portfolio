@@ -341,6 +341,18 @@ button {
   height: 100vh;
   background: #FFFFFF;
 }
+.dv-skroll section.start-v1 .bar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+}
+.dv-skroll section.start-v1 .bar__icon span {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 96px;
+}
 .dv-skroll section.start-v2 {
   background-image: url("../img/team/david.landscape.jpg");
   background-size: cover;
@@ -354,21 +366,20 @@ button {
   justify-content: space-between;
   color: #FFFFFF;
 }
-.dv-skroll section.start-v2 .bar .icon span {
+.dv-skroll section.start-v2 .bar__icon span {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 96px;
 }
-.dv-skroll section.start-v2 .bar .scroll {
+.dv-skroll section.start-v2 .bar__scroll {
   font-size: 2.25rem;
 }
-@media screen and (max-width: 991px) {
-  .dv-skroll section.start-v2 .bar .scroll {
+@media screen and (max-width: 1080px) {
+  .dv-skroll section.start-v2 .bar__scroll {
     display: none;
   }
 }
 .dv-skroll section.start-v2 .quote {
-  top: 70px;
   position: absolute;
   top: 35%;
   left: 60%;
@@ -381,19 +392,14 @@ button {
   font-weight: 400;
   color: #FFFFFF;
 }
-@media screen and (max-width: 1080px) {
-  .dv-skroll section.start-v2 .bar .scroll {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .dv-skroll section.start-v2 .quote {
     position: relative;
-    top: 0;
+    top: 30%;
     left: 0;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .dv-skroll section.start-v2 {
     background-image: url("../img/team/david.jpg");
     background-size: cover;
