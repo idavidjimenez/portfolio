@@ -26,9 +26,99 @@
                   font-size: 96px;
                }
             }
+
+            @media screen and (max-width: 768px) {
+               position: relative;
+               
+               &__icon {
+                  span {
+                     font-size: 76px;
+                  }
+               }
+            }
          }
 
-         .elements {}
+         .elements {
+            position: relative;
+            padding-top: 40px;
+            height: 100vh;
+
+            &__text {
+               p {
+                  font-size: $h1-size;
+                  position: absolute;
+                  width: 50%;
+                  bottom: 10px;
+               }
+            }
+
+            &__image {
+               text-align: right;
+
+               img {
+                  width: 80%;
+               }
+            }
+
+            @media screen and (max-width: 1400px) {
+               &__text {
+                  p {
+                     width: 60%;
+                  }
+               }
+            }
+            
+            @media screen and (max-width: 1200px) {
+               &__text {
+                  p {
+                     font-size: $h1-size-alt;
+                  }
+               }
+            }
+
+            @media screen and (max-width: 768px) {
+               height: auto;
+               padding-top: 0;
+
+               &__text {
+                  p {
+                     width: auto;
+                     position: relative;
+                  }
+               }
+
+               &__image {
+                  text-align: center;
+                  margin-bottom: 30px;
+
+                  img {
+                     width: 100%;
+                  }
+               }
+            }
+
+            @media screen and (max-width: 600px) {
+               height: calc(100vh - 102px);
+
+               &__text {
+                  p {
+                     position: absolute;
+                     font-size: $h2-size;
+                     bottom: 0px;
+                  }
+               }
+            }
+
+            @media screen and (max-width: 414px) {
+               padding-top: 0;
+
+               &__text {
+                  p {
+                     font-size: $h2-size-alt;
+                  }
+               }
+            }
+         }
       }
 
       &.start-v2 {
