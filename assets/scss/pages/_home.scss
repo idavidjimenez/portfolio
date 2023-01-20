@@ -5,13 +5,13 @@
    display: flex;
 
    section {
-      min-width: 100%;
-      height: auto;
       display: flex;
-      height: 100vh;
       background: $light-color;
 
       &.start-v1 {
+         height: 100vh;
+         min-width: 100%;
+
          .bar {
             position: fixed;
             display: flex;
@@ -27,9 +27,11 @@
                }
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 1080px) {
                position: relative;
-               
+            }
+
+            @media screen and (max-width: 768px) {
                &__icon {
                   span {
                      font-size: 76px;
@@ -59,57 +61,69 @@
                   width: 80%;
                }
             }
+         }
 
-            @media screen and (max-width: 1400px) {
+         @media screen and (max-width: 1400px) {
+            .elements {
                &__text {
                   p {
                      width: 60%;
                   }
                }
             }
-            
-            @media screen and (max-width: 1200px) {
+         }
+         
+         @media screen and (max-width: 1200px) {
+            .elements {
                &__text {
                   p {
                      font-size: $h1-size-alt;
                   }
                }
             }
+         }
 
-            @media screen and (max-width: 768px) {
-               height: auto;
+         @media screen and (max-width: 1080px) {
+            height: auto;
+
+            .elements {
                padding-top: 0;
+               height: auto;
+            }
+         }
 
+         @media screen and (max-width: 768px) {
+            .elements {
                &__text {
                   p {
                      width: auto;
                      position: relative;
                   }
                }
-
+   
                &__image {
                   text-align: center;
                   margin-bottom: 30px;
-
+   
                   img {
                      width: 100%;
                   }
                }
             }
+         }
 
-            @media screen and (max-width: 600px) {
-               height: calc(100vh - 102px);
-
+         @media screen and (max-width: 600px) {
+            .elements {
                &__text {
                   p {
-                     position: absolute;
                      font-size: $h2-size;
-                     bottom: 0px;
                   }
                }
             }
+         }
 
-            @media screen and (max-width: 414px) {
+         @media screen and (max-width: 414px) {
+            .elements {
                padding-top: 0;
 
                &__text {
@@ -120,10 +134,10 @@
             }
          }
       }
-
       &.start-v2 {
          @include cover('../img/team/david.landscape.jpg');
          position: relative;
+         min-width: 100%;
          
          .bar {
             display: flex;
@@ -174,13 +188,16 @@
             @include cover('../img/team/david.jpg');
          }
       }
+
       &.intro {
          min-width: 100%;
       }
+
       &.projects {
          background: #d0eaff;
          min-width: 100%;
       }
+      
       &.work {
          background: #fce8f4;
          min-width: 100%;
@@ -190,7 +207,6 @@
    @media screen and (max-width: 1080px) {
       position: absolute;
       flex-direction: column;
-      height: auto;
       transform: none !important;
    }
 }
