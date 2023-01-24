@@ -575,8 +575,8 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   }
 }
 .dv-skroll section.projects {
-  background: #d0eaff;
   min-width: 100%;
+  height: 100vh;
 }
 .dv-skroll section.work {
   background: #fce8f4;
