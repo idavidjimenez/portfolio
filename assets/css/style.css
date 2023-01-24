@@ -7,6 +7,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 button {
   background: none;
   border: none;
@@ -14,10 +19,6 @@ button {
 
 header {
   width: 0;
-}
-header a {
-  text-decoration: none;
-  color: #000000;
 }
 @media screen and (max-width: 1080px) {
   header {
@@ -365,14 +366,23 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   font-weight: 900;
   font-size: 96px;
 }
+@media screen and (max-width: 1080px) {
+  .dv-skroll section.start-v1 .bar {
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dv-skroll section.start-v1 .bar__icon span {
+    font-size: 76px;
+  }
+}
 .dv-skroll section.start-v1 .elements {
   position: relative;
   padding-top: 40px;
   height: 100vh;
 }
-.dv-skroll section.start-v1 .elements__text h1 {
+.dv-skroll section.start-v1 .elements__text p {
   font-size: 3.625rem;
-  font-weight: 400;
   position: absolute;
   width: 50%;
   bottom: 10px;
@@ -382,6 +392,51 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
 }
 .dv-skroll section.start-v1 .elements__image img {
   width: 80%;
+}
+@media screen and (max-width: 1400px) {
+  .dv-skroll section.start-v1 .elements__text p {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .dv-skroll section.start-v1 .elements__text p {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .dv-skroll section.start-v1 {
+    height: auto;
+  }
+  .dv-skroll section.start-v1 .elements {
+    padding-top: 0;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dv-skroll section.start-v1 .elements__text p {
+    width: auto;
+    position: relative;
+  }
+  .dv-skroll section.start-v1 .elements__image {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .dv-skroll section.start-v1 .elements__image img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .dv-skroll section.start-v1 .elements__text p {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .dv-skroll section.start-v1 .elements {
+    padding-top: 0;
+  }
+  .dv-skroll section.start-v1 .elements__text p {
+    font-size: 1.875rem;
+  }
 }
 .dv-skroll section.start-v2 {
   background-image: url("../img/team/david.landscape.jpg");
@@ -405,6 +460,11 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
 .dv-skroll section.start-v2 .bar__scroll {
   font-size: 2.25rem;
 }
+@media screen and (max-width: 1080px) {
+  .dv-skroll section.start-v2 .bar__scroll {
+    display: none;
+  }
+}
 .dv-skroll section.start-v2 .quote {
   position: absolute;
   top: 35%;
@@ -418,6 +478,21 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   font-weight: 400;
   color: #FFFFFF;
 }
+@media screen and (max-width: 576px) {
+  .dv-skroll section.start-v2 .quote {
+    position: relative;
+    top: 30%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 430px) {
+  .dv-skroll section.start-v2 {
+    background-image: url("../img/team/david.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
 .dv-skroll section.intro {
   min-width: 100%;
 }
@@ -429,74 +504,10 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   background: #fce8f4;
   min-width: 100%;
 }
-
-@media screen and (max-width: 1400px) {
-  .dv-skroll section.start-v1 .elements__text h1 {
-    width: 60%;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .dv-skroll section.start-v1 .elements__text h1 {
-    font-size: 3rem;
-  }
-}
 @media screen and (max-width: 1080px) {
-  .dv-skroll section {
+  .dv-skroll {
     position: absolute;
     flex-direction: column;
     transform: none !important;
-  }
-  .dv-skroll section.start-v1 {
-    height: auto;
-  }
-  .dv-skroll section.start-v1 .elements {
-    padding-top: 0;
-    height: auto;
-  }
-  .dv-skroll section.start-v1 .elements .bar {
-    position: relative;
-  }
-  .dv-skroll section.start-v2 .bar__scroll {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
-  .dv-skroll section.start-v1 .bar__icon span {
-    font-size: 76px;
-  }
-  .dv-skroll section.start-v1 .elements__text h1 {
-    width: auto;
-    position: relative;
-  }
-  .dv-skroll section.start-v1 .elements__image {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .dv-skroll section.start-v1 .elements__image img {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .dv-skroll section.start-v1 .elements__text h1 {
-    font-size: 2.25rem;
-  }
-  .dv-skroll section.start-v2 .quote {
-    position: relative;
-    top: 30%;
-    left: 0;
-  }
-}
-@media screen and (max-width: 414px) {
-  .dv-skroll section.start-v1 .elements {
-    padding-top: 0;
-  }
-  .dv-skroll section.start-v1 .elements__text h1 {
-    font-size: 1.875rem;
-  }
-  .dv-skroll section.start-v2 {
-    background-image: url("../img/team/david.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
   }
 }/*# sourceMappingURL=style.css.map */
