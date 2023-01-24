@@ -534,6 +534,12 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
 .dv-skroll section.intro .text p {
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1080px) {
+  .dv-skroll section.intro {
+    border-right: 0;
+    border-bottom: 0.5px solid #000;
+  }
+}
 @media screen and (max-width: 991px) {
   .dv-skroll section.intro .text {
     margin-top: 50px;
@@ -541,6 +547,9 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   }
 }
 @media screen and (max-width: 577px) {
+  .dv-skroll section.intro {
+    padding: 20px 3%;
+  }
   .dv-skroll section.intro .subtitle {
     margin-bottom: 25px;
   }
@@ -555,6 +564,9 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
        object-fit: cover;
     -o-object-position: top;
        object-position: top;
+  }
+  .dv-skroll section.intro .text h2 {
+    font-size: 1.875rem;
   }
 }
 .dv-skroll section.projects {

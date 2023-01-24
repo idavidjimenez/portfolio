@@ -221,6 +221,11 @@
             }
          }
 
+         @media screen and (max-width: 1080px) {
+            border-right: 0;
+            border-bottom: $border;
+         }
+
          @media screen and (max-width: 991px) {
             .text {
                margin-top: 50px;
@@ -229,6 +234,8 @@
          }
 
          @media screen and (max-width: 577px) {
+            padding: 20px 3%;
+
             .subtitle {
                margin-bottom: 25px;
             }
@@ -242,6 +249,12 @@
                   height: 400px;
                   object-fit: cover;
                   object-position: top;
+               }
+            }
+
+            .text {
+               h2 {
+                  font-size: $h2-size-alt;
                }
             }
          }
