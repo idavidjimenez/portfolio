@@ -17,10 +17,24 @@ button {
   border: none;
 }
 
+.button {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  text-decoration: underline !important;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.button:hover {
+  color: #EB984E;
+}
+
 header {
   width: 0;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1079px) {
   header {
     width: auto;
   }
@@ -35,7 +49,7 @@ header .ap-menu .ap-menu-navbar {
   text-align: center;
   border-right: 0.5px solid #000;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1079px) {
   header .ap-menu .ap-menu-navbar {
     position: relative;
     height: auto;
@@ -366,7 +380,7 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   font-weight: 900;
   font-size: 96px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1079px) {
   .dv-skroll section.start-v1 .bar {
     position: relative;
   }
@@ -403,16 +417,17 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
     font-size: 3rem;
   }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1079px) {
   .dv-skroll section.start-v1 {
     height: auto;
+    margin-bottom: 90px;
   }
   .dv-skroll section.start-v1 .elements {
     padding-top: 0;
     height: auto;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .dv-skroll section.start-v1 .elements__text p {
     width: auto;
     position: relative;
@@ -460,7 +475,7 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
 .dv-skroll section.start-v2 .bar__scroll {
   font-size: 2.25rem;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1079px) {
   .dv-skroll section.start-v2 .bar__scroll {
     display: none;
   }
@@ -494,7 +509,53 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   }
 }
 .dv-skroll section.intro {
-  min-width: 100%;
+  min-width: 50%;
+  padding: 40px 3%;
+  border-right: 0.5px solid #000;
+  position: relative;
+}
+.dv-skroll section.intro .image {
+  text-align: right;
+}
+.dv-skroll section.intro .image img {
+  width: 240px;
+}
+.dv-skroll section.intro .text {
+  position: absolute;
+  max-width: 455px;
+  bottom: 40px;
+}
+.dv-skroll section.intro .text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.25rem;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+.dv-skroll section.intro .text p {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 991px) {
+  .dv-skroll section.intro .text {
+    margin-top: 50px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 577px) {
+  .dv-skroll section.intro .subtitle {
+    margin-bottom: 25px;
+  }
+  .dv-skroll section.intro .image {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  .dv-skroll section.intro .image img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
 }
 .dv-skroll section.projects {
   background: #d0eaff;
@@ -504,7 +565,7 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   background: #fce8f4;
   min-width: 100%;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1079px) {
   .dv-skroll {
     position: absolute;
     flex-direction: column;

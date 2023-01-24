@@ -1,7 +1,7 @@
 header {
    width: 0;
 
-   @media screen and (max-width: 1080px) {
+   @media screen and (max-width: 1079px) {
       width: auto;
    }
    
@@ -15,9 +15,9 @@ header {
          align-items: center;
          text-align: center;
          // background-color: #FFF;
-         border-right: .5px solid #000;
+         border-right: $border;
    
-         @media screen and (max-width: 1080px) {
+         @media screen and (max-width: 1079px) {
             position: relative;
             height: auto;
             border: 0;
@@ -148,7 +148,7 @@ header {
             overflow: auto;
             -webkit-overflow-scrolling: touch;
             background: $light-color;
-            border-right: .5px solid #000;
+            border-right: $border;
             transform: translate3d(-100%, 0px, 0px);
             -webkit-transform: translate3d(-100%, 0px, 0px);
             -moz-transform: translate3d(-100%, 0px, 0px);

@@ -27,7 +27,7 @@
                }
             }
 
-            @media screen and (max-width: 1080px) {
+            @media screen and (max-width: 1079px) {
                position: relative;
             }
 
@@ -83,8 +83,9 @@
             }
          }
 
-         @media screen and (max-width: 1080px) {
+         @media screen and (max-width: 1079px) {
             height: auto;
+            margin-bottom: 90px;
 
             .elements {
                padding-top: 0;
@@ -92,7 +93,7 @@
             }
          }
 
-         @media screen and (max-width: 768px) {
+         @media screen and (max-width: 991px) {
             .elements {
                &__text {
                   p {
@@ -156,7 +157,7 @@
             &__scroll {
                font-size: $h2-size;
 
-               @media screen and (max-width: 1080px) {
+               @media screen and (max-width: 1079px) {
                   display: none;
                }
             }
@@ -190,7 +191,60 @@
       }
 
       &.intro {
-         min-width: 100%;
+         min-width: 50%;
+         padding: 40px 3%;
+         border-right: $border;
+         position: relative;
+         
+         .image {
+            text-align: right;
+            
+            img {
+               width: 240px;
+            }
+         }
+
+         .text {
+            position: absolute;
+            max-width: 455px;
+            bottom: 40px;
+
+            h2 {
+               font-family: $title-font;
+               font-size: $h2-size;
+               font-weight: normal;
+               margin-bottom: 25px;
+            }
+
+            p {
+               margin-bottom: 50px;
+            }
+         }
+
+         @media screen and (max-width: 991px) {
+            .text {
+               margin-top: 50px;
+               position: relative;
+            }
+         }
+
+         @media screen and (max-width: 577px) {
+            .subtitle {
+               margin-bottom: 25px;
+            }
+
+            .image {
+               text-align: left;
+               margin-bottom: 25px;
+               
+               img {
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: top;
+               }
+            }
+         }
       }
 
       &.projects {
@@ -204,7 +258,7 @@
       }
    }
 
-   @media screen and (max-width: 1080px) {
+   @media screen and (max-width: 1079px) {
       position: absolute;
       flex-direction: column;
       transform: none !important;
