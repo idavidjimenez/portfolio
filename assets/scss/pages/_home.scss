@@ -201,6 +201,9 @@
             
             img {
                width: 240px;
+               height: 340px;
+               object-fit: cover;
+               object-position: top;
             }
          }
 

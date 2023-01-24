@@ -519,6 +519,11 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
 }
 .dv-skroll section.intro .image img {
   width: 240px;
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 .dv-skroll section.intro .text {
   position: absolute;
