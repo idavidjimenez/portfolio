@@ -447,6 +447,9 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   .dv-skroll section.start-v1 .elements__text p {
     font-size: 2.25rem;
   }
+  .dv-skroll section.start-v1 .elements__image {
+    margin-bottom: 70px;
+  }
 }
 @media screen and (max-width: 414px) {
   .dv-skroll section.start-v1 .elements {
