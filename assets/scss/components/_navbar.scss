@@ -229,7 +229,7 @@ header {
                   }
    
                   &-right {
-                     padding: 0 160px 0 12px;
+                     padding: 0 110px 0 12px;
    
                      @media screen and (max-width: 768px) {
                         padding: 0 75px;
@@ -243,7 +243,7 @@ header {
                         &-item {
                            position: relative;
                            display: block;
-                           padding: 10px 0;
+                           padding: 20px 0;
    
                            a {
                               display: inline-block;

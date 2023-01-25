@@ -247,7 +247,7 @@ header .ap-menu-box .ap-menu-content .ap-menu-body .ap-menu-grid-left .ap-menu-s
   color: #EB984E;
 }
 header .ap-menu-box .ap-menu-content .ap-menu-body .ap-menu-grid-right {
-  padding: 0 160px 0 12px;
+  padding: 0 110px 0 12px;
 }
 @media screen and (max-width: 768px) {
   header .ap-menu-box .ap-menu-content .ap-menu-body .ap-menu-grid-right {
@@ -262,7 +262,7 @@ header .ap-menu-box .ap-menu-content .ap-menu-body .ap-menu-grid-right {
 header .ap-menu-box .ap-menu-content .ap-menu-body .ap-menu-grid-right .ap-menu-nav-item {
   position: relative;
   display: block;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 header .ap-menu-box .ap-menu-content .ap-menu-body .ap-menu-grid-right .ap-menu-nav-item a {
   display: inline-block;
