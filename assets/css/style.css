@@ -441,6 +441,9 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   }
 }
 @media screen and (max-width: 600px) {
+  .dv-skroll section.start-v1 .elements__text {
+    text-align: center;
+  }
   .dv-skroll section.start-v1 .elements__text p {
     font-size: 2.25rem;
   }
@@ -622,8 +625,53 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   }
 }
 .dv-skroll section.work {
-  background: #fce8f4;
-  min-width: 100%;
+  background: #EB984E;
+  min-width: 50%;
+  padding: 40px 3%;
+  color: #FFFFFF;
+  display: block;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.dv-skroll section.work .text {
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dv-skroll section.work .text p {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+}
+.dv-skroll section.work .link {
+  bottom: 20px;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dv-skroll section.work .link a {
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .dv-skroll section.work .text p {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .dv-skroll section.work .text {
+    width: 90%;
+  }
+  .dv-skroll section.work .text p {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .dv-skroll section.work .text p {
+    font-size: 1.875rem;
+  }
 }
 @media screen and (max-width: 1079px) {
   .dv-skroll {
