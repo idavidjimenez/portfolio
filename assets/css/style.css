@@ -288,7 +288,7 @@ header .ap-menu-box .ap-menu-content .ap-menu-body .ap-menu-grid-right .ap-menu-
 }
 @media screen and (max-width: 414px) {
   header .ap-menu-box .ap-menu-content .ap-menu-body .ap-menu-grid-right .ap-menu-nav-item a {
-    font-size: 2.25rem;
+    font-size: 3rem;
   }
 }
 header .ap-menu-box .ap-menu-content .ap-menu-footer {
