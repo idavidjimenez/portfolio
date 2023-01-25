@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -510,7 +510,7 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
 }
 .dv-skroll section.intro {
   min-width: 50%;
-  padding: 40px 3%;
+  padding: 40px 2.2%;
   border-right: 0.5px solid #000;
   position: relative;
 }
@@ -539,7 +539,7 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
 .dv-skroll section.intro .text p {
   margin-bottom: 50px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1079px) {
   .dv-skroll section.intro {
     border-right: 0;
     border-bottom: 0.5px solid #000;
@@ -553,7 +553,7 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
 }
 @media screen and (max-width: 577px) {
   .dv-skroll section.intro {
-    padding: 20px 3%;
+    padding: 20px 0;
   }
   .dv-skroll section.intro .subtitle {
     margin-bottom: 25px;
@@ -575,8 +575,51 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   }
 }
 .dv-skroll section.projects {
-  min-width: 100%;
   height: 100vh;
+  min-width: 100%;
+  padding: 40px 3%;
+}
+.dv-skroll section.projects .project__image {
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dv-skroll section.projects .project__text h2 {
+  font-weight: 500;
+  font-size: 1.313rem;
+}
+@media screen and (max-width: 1079px) {
+  .dv-skroll section.projects {
+    min-width: 100%;
+    padding: 45px 6.5%;
+    height: auto;
+  }
+  .dv-skroll section.projects .project__image {
+    height: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .dv-skroll section.projects {
+    padding: 90px 10.6%;
+  }
+  .dv-skroll section.projects .project {
+    margin-bottom: 50px;
+  }
+  .dv-skroll section.projects .project:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dv-skroll section.projects {
+    padding: 90px 5%;
+  }
+}
+@media screen and (max-width: 577px) {
+  .dv-skroll section.projects {
+    padding: 75px 3%;
+  }
 }
 .dv-skroll section.work {
   background: #fce8f4;
