@@ -203,7 +203,11 @@
 	<!-- * Script JS -->
 	<script type="text/javascript" src="assets/js/script.js"></script>
 	<script type="text/javascript">
-	   var s = skrollr.init();
+		var ancho = window.innerWidth;
+
+		if(ancho >= 1079) {
+			var s = skrollr.init();
+		}
 	</script>
 </body>
 </html>
