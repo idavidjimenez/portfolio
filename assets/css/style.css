@@ -30,6 +30,11 @@ button {
 .button:hover {
   color: #EB984E;
 }
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 1rem;
+  }
+}
 
 header {
   width: 0;
@@ -43,10 +48,11 @@ header .ap-menu .ap-menu-navbar {
   z-index: 205;
   position: absolute;
   height: 100vh;
-  width: 42px;
+  width: 50px;
   display: flex;
   align-items: center;
   text-align: center;
+  background-color: #FFF;
   border-right: 0.5px solid #000;
 }
 @media screen and (max-width: 1079px) {
@@ -60,9 +66,20 @@ header .ap-menu .ap-menu-navbar {
     float: right;
   }
 }
+@media screen and (max-width: 810px) {
+  header .ap-menu .ap-menu-navbar {
+    right: 47px;
+  }
+}
 @media screen and (max-width: 768px) {
   header .ap-menu .ap-menu-navbar {
-    top: 55px;
+    top: 70px;
+    right: 80px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .ap-menu .ap-menu-navbar {
+    right: 12px;
   }
 }
 header .ap-menu .ap-menu-navbar.open {
@@ -72,6 +89,7 @@ header .ap-menu-toggle {
   position: relative;
   display: flex;
   align-items: center;
+  padding-left: 10px;
 }
 header .ap-menu-toggle .ap-menu-btn {
   position: fixed;
@@ -459,7 +477,7 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
     font-size: 1.875rem;
   }
 }
-.dv-skroll section.start-v2 {
+.dv-skroll section.start {
   background-image: url("../img/team/david.landscape.jpg");
   background-size: cover;
   background-position: center center;
@@ -467,47 +485,53 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   position: relative;
   min-width: 100%;
 }
-.dv-skroll section.start-v2 .bar {
+.dv-skroll section.start .bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #FFFFFF;
 }
-.dv-skroll section.start-v2 .bar__icon span {
+.dv-skroll section.start .bar__icon span {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 96px;
 }
-.dv-skroll section.start-v2 .bar__scroll {
+.dv-skroll section.start .bar__scroll {
   font-size: 2.25rem;
 }
-@media screen and (max-width: 1079px) {
-  .dv-skroll section.start-v2 .bar__scroll {
-    display: none;
-  }
-}
-.dv-skroll section.start-v2 .quote {
+.dv-skroll section.start .quote {
   position: absolute;
   top: 35%;
   left: 60%;
 }
-.dv-skroll section.start-v2 .quote img {
+.dv-skroll section.start .quote img {
   margin-bottom: 40px;
 }
-.dv-skroll section.start-v2 .quote p {
+.dv-skroll section.start .quote h1 {
   font-size: 2.25rem;
   font-weight: 400;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1079px) {
+  .dv-skroll section.start {
+    height: 100vh;
+  }
+  .dv-skroll section.start .bar__scroll {
+    display: none;
+  }
+}
 @media screen and (max-width: 576px) {
-  .dv-skroll section.start-v2 .quote {
+  .dv-skroll section.start .quote {
     position: relative;
-    top: 30%;
-    left: 0;
+    top: 50%;
+    left: 12px;
+  }
+  .dv-skroll section.start .quote h1 {
+    color: #000000;
   }
 }
 @media screen and (max-width: 430px) {
-  .dv-skroll section.start-v2 {
+  .dv-skroll section.start {
     background-image: url("../img/team/david.jpg");
     background-size: cover;
     background-position: center center;

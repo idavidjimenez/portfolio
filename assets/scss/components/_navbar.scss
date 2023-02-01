@@ -10,11 +10,11 @@ header {
          z-index: 205;
          position: absolute;
          height: 100vh;
-         width: 42px;
+         width: 50px;
          display: flex;
          align-items: center;
          text-align: center;
-         // background-color: #FFF;
+         background-color: #FFF;
          border-right: $border;
    
          @media screen and (max-width: 1079px) {
@@ -27,8 +27,17 @@ header {
             float: right;
          }
 
+         @media screen and (max-width: 810px) {
+            right: 47px;
+         }
+
          @media screen and (max-width: 768px) {
-            top: 55px;
+            top: 70px;
+            right: 80px;
+         }
+
+         @media screen and (max-width: 576px) {
+            right: 12px;
          }
    
          &.open {
@@ -40,6 +49,7 @@ header {
          position: relative;
          display: flex;
          align-items: center;
+         padding-left: 10px;
          
          // * HAMBURGER
          .ap-menu-btn {
