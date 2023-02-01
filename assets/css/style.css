@@ -516,6 +516,9 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   .dv-skroll section.start {
     height: 100vh;
   }
+  .dv-skroll section.start .bar {
+    color: #000000;
+  }
   .dv-skroll section.start .bar__scroll {
     display: none;
   }

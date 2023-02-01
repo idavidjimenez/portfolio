@@ -185,6 +185,8 @@
             height: 100vh;
 
             .bar {
+               color: $text-color;
+               
                &__scroll {
                   display: none;
                }
