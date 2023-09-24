@@ -1,34 +1,65 @@
 // * =============== GOOGLE FONTS =============== * //
 // * Title
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@900&display=swap');
 // * Text
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-// * Colors
-$primary:    #EB984E;
-$primary-alt:#EAB07D;
-$secondary:  #F0F0F0;
-$text-color: #000000;
-$dark-color: #202020;
-$light-color:#FFFFFF;
+// * ---- COLORS ---- * //
+// * GENERAL
+$white: #FFF;
+$black: #000;
 
-$border: .5px solid #000;
+// * FONTS
+$title-color: #222222;
+$text-color: #222222;
 
-// * Text sizes
-$title-size:   9.313rem; // * 149px
-$h1-size:      3.625rem; // * 58px
-$h2-size:      2.25rem;  // * 36px
-$h3-size:      1.313rem; // * 21px
-$normal-size:  1.125rem; // * 18px
-$small-size:   .875rem;  // * 14px
+// * BRAN
+$brand: #EB984E;
+$brand-hover: #E78733;
+$brand-light: #ECDACB;
+$brand-disabled:#E2BE9F;
 
-// * Text sizes responsive
-$h1-size-alt:      3rem;     // * 48px
-$h2-size-alt:      1.875rem; // * 30px
-$h3-size-alt:      1rem;     // * 18px
-$normal-size-alt:  .875rem;  // * 14px
-$small-size-alt:   .75rem;   // * 12px
+// * BACKGROUND
+$bg-color: #F8F8F8;
+$bg-hover: rgba(157, 129, 220, 0.2);
+
+// * OTHER
+$alert-color: #ED4C78;
+
+// * BORDER
+$border-dashboard: #F0EFF6;
+$border-input: #A29DAC;
+
+// * TEXT SIZES
+// * Titles
+$title:  9.313rem; // * 149px
+$h1:     3.625rem; // * 58px
+$h2:     2.25rem;  // * 36px
+$h3:     1.313rem; // * 21px
+
+// * Texts
+$text: 1.125rem; // * 18px
+$small: .875rem; // * 14px
+$extra-small: 11px; // * 11px
+
+// * TEXT SIZE RESPONSIVE
+// * Titles
+$h1-resp: 3rem;     // * 48px
+$h2-resp: 1.875rem; // * 30px
+$h3-resp: 1rem;     // * 18px
+
+// * Texts
+$text-resp: .875rem; // * 14px
+$small-resp: .75rem;  // * 12px
+$extra-small-resp: 9px; // * 9px
+
+// * Other sizes
+$radius: 12px;
+$radius-big: 24px;
+$radius-small: 8px;
+$border: .5px solid $black;
 
 // * Fonts
-$title-font: 'Playfair Display', serif;
+$logo-font: 'Playfair Display', serif;
+$title-font: 'Poppins', sans-serif;
 $body-font: 'Poppins', sans-serif;

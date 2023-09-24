@@ -1,4 +1,4 @@
-.dv-skroll {
+.dv-skroll.home {
    position: fixed;
    top: 0;
    left: 0;
@@ -6,162 +6,36 @@
 
    section {
       display: flex;
-      background: $light-color;
 
-      &.start-v1 {
-         height: 100vh;
-         min-width: 100%;
-
-         .bar {
-            position: fixed;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            color: $text-color;
-
-            &__icon {
-               span {
-                  font-family: $title-font;
-                  font-weight: 900;
-                  font-size: 96px;
-               }
-            }
-
-            @media screen and (max-width: 1079px) {
-               position: relative;
-            }
-
-            @media screen and (max-width: 768px) {
-               &__icon {
-                  span {
-                     font-size: 76px;
-                  }
-               }
-            }
-         }
-
-         .elements {
-            position: relative;
-            padding-top: 40px;
-            height: 100vh;
-
-            &__text {
-               p {
-                  font-size: $h1-size;
-                  position: absolute;
-                  width: 50%;
-                  bottom: 10px;
-               }
-            }
-
-            &__image {
-               text-align: right;
-
-               img {
-                  width: 80%;
-               }
-            }
-         }
-
-         @media screen and (max-width: 1400px) {
-            .elements {
-               &__text {
-                  p {
-                     width: 60%;
-                  }
-               }
-            }
-         }
-         
-         @media screen and (max-width: 1200px) {
-            .elements {
-               &__text {
-                  p {
-                     font-size: $h1-size-alt;
-                  }
-               }
-            }
-         }
-
-         @media screen and (max-width: 1079px) {
-            height: auto;
-            margin-bottom: 90px;
-
-            .elements {
-               padding-top: 0;
-               height: auto;
-            }
-         }
-
-         @media screen and (max-width: 991px) {
-            .elements {
-               &__text {
-                  p {
-                     width: auto;
-                     position: relative;
-                  }
-               }
-   
-               &__image {
-                  text-align: center;
-                  margin-bottom: 30px;
-   
-                  img {
-                     width: 100%;
-                  }
-               }
-            }
-         }
-
-         @media screen and (max-width: 600px) {
-            .elements {
-               &__text {
-                  text-align: center;
-
-                  p {
-                     font-size: $h2-size;
-                  }
-               }
-
-               &__image {
-                  margin-bottom: 70px;
-               }
-            }
-         }
-
-         @media screen and (max-width: 414px) {
-            .elements {
-               padding-top: 0;
-
-               &__text {
-                  p {
-                     font-size: $h2-size-alt;
-                  }
-               }
-            }
-         }
-      }
       &.start {
-         @include cover('../img/team/david.landscape.jpg');
          position: relative;
-         min-width: 100%;
+         min-width: 100%; // * Ancho de la sección
+         height: 100vh;
+         background-color: $white;
+
+         .content {
+            @include cover('../img/team/david.landscape.jpg');
+            height: 90%;
+            margin: auto;
+            border-radius: $radius;
+         }
          
          .bar {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            color: $light-color;
+            color: $white;
 
             &__icon {
                span {
-                  font-family: $title-font;
+                  font-family: $logo-font;
                   font-weight: 900;
                   font-size: 96px;
                }
             }
 
             &__scroll {
-               font-size: $h2-size;
+               font-size: $h2;
             }
          }
 
@@ -175,9 +49,9 @@
             }
 
             h1 {
-               font-size: $h2-size;
+               font-size: $h2;
                font-weight: 400;
-               color: $light-color;
+               color: $white;
             }
          }
 
@@ -193,7 +67,7 @@
             }
          }
 
-         @media screen and (max-width: 576px) {
+         @media screen and (max-width: 768px) {
             .quote {
                position: relative;
                top: 50%;
@@ -205,16 +79,25 @@
             }
          }
 
-         @media screen and (max-width: 430px) {
-            @include cover('../img/team/david.jpg');
+         @media screen and (max-width: 576px) {
+            .content {
+               @include cover('../img/team/david.jpg');
+               height: 100%;
+               border-radius: 0;
+            }
          }
       }
 
       &.intro {
-         min-width: 50%;
+         min-width: 50%; // * Ancho de la sección
          padding: 40px 2.2%;
-         border-right: $border;
          position: relative;
+         background-color: $bg-color;
+
+         @media screen and (min-width: 1079px) {
+            border-top-left-radius: $radius-big;
+            border-bottom-left-radius: $radius-big;
+         }
          
          .image {
             text-align: right;
@@ -222,6 +105,7 @@
             img {
                width: 240px;
                height: 340px;
+               border-radius: $radius;
                object-fit: cover;
                object-position: top;
             }
@@ -234,8 +118,8 @@
 
             h2 {
                font-family: $title-font;
-               font-size: $h2-size;
-               font-weight: normal;
+               font-size: $h2;
+               font-weight: 500;
                margin-bottom: 25px;
             }
 
@@ -277,7 +161,7 @@
 
             .text {
                h2 {
-                  font-size: $h2-size-alt;
+                  font-size: $h2-resp;
                }
             }
          }
@@ -285,13 +169,15 @@
 
       &.projects {
          height: 100vh;
-         min-width: 100%;
+         min-width: 120%;
          padding: 40px 3%;
+         background-color: $bg-color;
 
          .project {
             &__image {
                width: 100%;
                height: 80vh;
+               border-radius: $radius;
                margin-bottom: 15px;
                object-fit: cover;
             }
@@ -299,7 +185,7 @@
             &__text {
                h2 {
                   font-weight: 500;
-                  font-size: $h3-size;
+                  font-size: $h3;
                }
             }
          }
@@ -338,14 +224,24 @@
       }
       
       &.work {
-         background: $primary;
+         background: $bg-color;
          min-width: 50%;
-         padding: 40px 3%;
-         color: $light-color;
          display: block;
          height: 100vh;
          text-align: center;
          position: relative;
+
+         .content {
+            background-color: $brand;
+            height: 100vh;
+            padding: 40px 3%;
+            color: $white;
+            
+            @media screen and (min-width: 1079px) {
+               border-top-left-radius: $radius-big;
+               border-bottom-left-radius: $radius-big;
+            }
+         }
 
          .text {
             width: 65%;
@@ -368,14 +264,14 @@
             transform: translate(-50%,-50%);
 
             a {
-               color: $light-color;
+               color: $white;
             }
          }
 
          @media screen and (max-width: 768px) {
             .text {
                p {
-                  font-size: $h2-size;
+                  font-size: $h2;
                }
             }
          }
@@ -383,17 +279,13 @@
          @media screen and (max-width: 576px) {
             .text {
                width: 90%;
-
-               p {
-                  font-size: $h2-size;
-               }
             }
          }
 
          @media screen and (max-width: 414px) {
             .text {
                p {
-                  font-size: $h2-size-alt;
+                  font-size: $h2-resp;
                }
             }
          }

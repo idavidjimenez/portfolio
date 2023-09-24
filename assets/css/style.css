@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #222222;
 }
 
 button {
@@ -18,8 +18,7 @@ button {
 }
 
 .button {
-  font-family: "Playfair Display", serif;
-  font-style: italic;
+  font-family: 9.313rem;
   text-decoration: underline !important;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -28,7 +27,7 @@ button {
   -o-transition: all 0.2s ease-in-out;
 }
 .button:hover {
-  color: #EB984E;
+  color: #E78733;
 }
 @media screen and (max-width: 768px) {
   .button {
@@ -53,7 +52,6 @@ header .ap-menu .ap-menu-navbar {
   align-items: center;
   text-align: center;
   background-color: #FFF;
-  border-right: 0.5px solid #000;
 }
 @media screen and (max-width: 1079px) {
   header .ap-menu .ap-menu-navbar {
@@ -111,7 +109,7 @@ header .ap-menu-toggle .ap-menu-btn {
 header .ap-menu-toggle .ap-menu-btn .ap-menu-burger {
   width: 30px;
   height: 2px;
-  background: #000000;
+  background: #222222;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
@@ -121,7 +119,7 @@ header .ap-menu-toggle .ap-menu-btn .ap-menu-burger::before, header .ap-menu-tog
   width: 30px;
   height: 2px;
   left: 0;
-  background: #000000;
+  background: #222222;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -186,8 +184,7 @@ header .ap-menu-box .ap-menu-content {
   position: fixed;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  background: #FFFFFF;
-  border-right: 0.5px solid #000;
+  background: #FFF;
   transform: translate3d(-100%, 0px, 0px);
   -webkit-transform: translate3d(-100%, 0px, 0px);
   -moz-transform: translate3d(-100%, 0px, 0px);
@@ -198,6 +195,12 @@ header .ap-menu-box .ap-menu-content {
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
+}
+@media screen and (min-width: 1079px) {
+  header .ap-menu-box .ap-menu-content {
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
 }
 header .ap-menu-box .ap-menu-content .ap-menu-container {
   padding: 0 98px;
@@ -211,7 +214,7 @@ header .ap-menu-box .ap-menu-content .ap-menu-container .title {
   padding: 0 0 30px 0;
   color: rgba(0, 0, 0, 0.3);
   font-size: 16px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
   font-style: italic;
   line-height: 100%;
 }
@@ -372,230 +375,150 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
   -o-transition: all 0.5s ease-in-out;
 }
 
-.dv-skroll {
+.dv-skroll.home {
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
 }
-.dv-skroll section {
+.dv-skroll.home section {
   display: flex;
-  background: #FFFFFF;
 }
-.dv-skroll section.start-v1 {
-  height: 100vh;
-  min-width: 100%;
-}
-.dv-skroll section.start-v1 .bar {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #000000;
-}
-.dv-skroll section.start-v1 .bar__icon span {
-  font-family: "Playfair Display", serif;
-  font-weight: 900;
-  font-size: 96px;
-}
-@media screen and (max-width: 1079px) {
-  .dv-skroll section.start-v1 .bar {
-    position: relative;
-  }
-}
-@media screen and (max-width: 768px) {
-  .dv-skroll section.start-v1 .bar__icon span {
-    font-size: 76px;
-  }
-}
-.dv-skroll section.start-v1 .elements {
+.dv-skroll.home section.start {
   position: relative;
-  padding-top: 40px;
+  min-width: 100%;
   height: 100vh;
+  background-color: #FFF;
 }
-.dv-skroll section.start-v1 .elements__text p {
-  font-size: 3.625rem;
-  position: absolute;
-  width: 50%;
-  bottom: 10px;
-}
-.dv-skroll section.start-v1 .elements__image {
-  text-align: right;
-}
-.dv-skroll section.start-v1 .elements__image img {
-  width: 80%;
-}
-@media screen and (max-width: 1400px) {
-  .dv-skroll section.start-v1 .elements__text p {
-    width: 60%;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .dv-skroll section.start-v1 .elements__text p {
-    font-size: 3rem;
-  }
-}
-@media screen and (max-width: 1079px) {
-  .dv-skroll section.start-v1 {
-    height: auto;
-    margin-bottom: 90px;
-  }
-  .dv-skroll section.start-v1 .elements {
-    padding-top: 0;
-    height: auto;
-  }
-}
-@media screen and (max-width: 991px) {
-  .dv-skroll section.start-v1 .elements__text p {
-    width: auto;
-    position: relative;
-  }
-  .dv-skroll section.start-v1 .elements__image {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .dv-skroll section.start-v1 .elements__image img {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .dv-skroll section.start-v1 .elements__text {
-    text-align: center;
-  }
-  .dv-skroll section.start-v1 .elements__text p {
-    font-size: 2.25rem;
-  }
-  .dv-skroll section.start-v1 .elements__image {
-    margin-bottom: 70px;
-  }
-}
-@media screen and (max-width: 414px) {
-  .dv-skroll section.start-v1 .elements {
-    padding-top: 0;
-  }
-  .dv-skroll section.start-v1 .elements__text p {
-    font-size: 1.875rem;
-  }
-}
-.dv-skroll section.start {
+.dv-skroll.home section.start .content {
   background-image: url("../img/team/david.landscape.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  position: relative;
-  min-width: 100%;
+  height: 90%;
+  margin: auto;
+  border-radius: 12px;
 }
-.dv-skroll section.start .bar {
+.dv-skroll.home section.start .bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #FFFFFF;
+  color: #FFF;
 }
-.dv-skroll section.start .bar__icon span {
+.dv-skroll.home section.start .bar__icon span {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 96px;
 }
-.dv-skroll section.start .bar__scroll {
+.dv-skroll.home section.start .bar__scroll {
   font-size: 2.25rem;
 }
-.dv-skroll section.start .quote {
+.dv-skroll.home section.start .quote {
   position: absolute;
   top: 25%;
   left: 60%;
 }
-.dv-skroll section.start .quote img {
+.dv-skroll.home section.start .quote img {
   margin-bottom: 40px;
 }
-.dv-skroll section.start .quote h1 {
+.dv-skroll.home section.start .quote h1 {
   font-size: 2.25rem;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #FFF;
 }
 @media screen and (max-width: 1079px) {
-  .dv-skroll section.start {
+  .dv-skroll.home section.start {
     height: 100vh;
   }
-  .dv-skroll section.start .bar {
-    color: #000000;
+  .dv-skroll.home section.start .bar {
+    color: #222222;
   }
-  .dv-skroll section.start .bar__scroll {
+  .dv-skroll.home section.start .bar__scroll {
     display: none;
   }
 }
-@media screen and (max-width: 576px) {
-  .dv-skroll section.start .quote {
+@media screen and (max-width: 768px) {
+  .dv-skroll.home section.start .quote {
     position: relative;
     top: 50%;
     left: 12px;
   }
-  .dv-skroll section.start .quote h1 {
-    color: #000000;
+  .dv-skroll.home section.start .quote h1 {
+    color: #222222;
   }
 }
-@media screen and (max-width: 430px) {
-  .dv-skroll section.start {
+@media screen and (max-width: 576px) {
+  .dv-skroll.home section.start .content {
     background-image: url("../img/team/david.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 0;
   }
 }
-.dv-skroll section.intro {
+.dv-skroll.home section.intro {
   min-width: 50%;
   padding: 40px 2.2%;
-  border-right: 0.5px solid #000;
   position: relative;
+  background-color: #F8F8F8;
 }
-.dv-skroll section.intro .image {
+@media screen and (min-width: 1079px) {
+  .dv-skroll.home section.intro {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+  }
+}
+.dv-skroll.home section.intro .image {
   text-align: right;
 }
-.dv-skroll section.intro .image img {
+.dv-skroll.home section.intro .image img {
   width: 240px;
   height: 340px;
+  border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
 }
-.dv-skroll section.intro .text {
+.dv-skroll.home section.intro .text {
   position: absolute;
   max-width: 455px;
   bottom: 40px;
 }
-.dv-skroll section.intro .text h2 {
-  font-family: "Playfair Display", serif;
+.dv-skroll.home section.intro .text h2 {
+  font-family: "Poppins", sans-serif;
   font-size: 2.25rem;
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: 25px;
 }
-.dv-skroll section.intro .text p {
+.dv-skroll.home section.intro .text p {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 1079px) {
-  .dv-skroll section.intro {
+  .dv-skroll.home section.intro {
     border-right: 0;
     border-bottom: 0.5px solid #000;
   }
 }
 @media screen and (max-width: 991px) {
-  .dv-skroll section.intro .text {
+  .dv-skroll.home section.intro .text {
     margin-top: 50px;
     position: relative;
   }
 }
 @media screen and (max-width: 577px) {
-  .dv-skroll section.intro {
+  .dv-skroll.home section.intro {
     padding: 20px 0;
   }
-  .dv-skroll section.intro .subtitle {
+  .dv-skroll.home section.intro .subtitle {
     margin-bottom: 25px;
   }
-  .dv-skroll section.intro .image {
+  .dv-skroll.home section.intro .image {
     text-align: left;
     margin-bottom: 25px;
   }
-  .dv-skroll section.intro .image img {
+  .dv-skroll.home section.intro .image img {
     width: 100%;
     height: 400px;
     -o-object-fit: cover;
@@ -603,108 +526,117 @@ header .ap-menu-box .ap-menu-active.ap-menu-content {
     -o-object-position: top;
        object-position: top;
   }
-  .dv-skroll section.intro .text h2 {
+  .dv-skroll.home section.intro .text h2 {
     font-size: 1.875rem;
   }
 }
-.dv-skroll section.projects {
+.dv-skroll.home section.projects {
   height: 100vh;
-  min-width: 100%;
+  min-width: 120%;
   padding: 40px 3%;
+  background-color: #F8F8F8;
 }
-.dv-skroll section.projects .project__image {
+.dv-skroll.home section.projects .project__image {
   width: 100%;
   height: 80vh;
+  border-radius: 12px;
   margin-bottom: 15px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.dv-skroll section.projects .project__text h2 {
+.dv-skroll.home section.projects .project__text h2 {
   font-weight: 500;
   font-size: 1.313rem;
 }
 @media screen and (max-width: 1079px) {
-  .dv-skroll section.projects {
+  .dv-skroll.home section.projects {
     min-width: 100%;
     padding: 45px 6.5%;
     height: auto;
   }
-  .dv-skroll section.projects .project__image {
+  .dv-skroll.home section.projects .project__image {
     height: auto;
   }
 }
 @media screen and (max-width: 991px) {
-  .dv-skroll section.projects {
+  .dv-skroll.home section.projects {
     padding: 90px 10.6%;
   }
-  .dv-skroll section.projects .project {
+  .dv-skroll.home section.projects .project {
     margin-bottom: 50px;
   }
-  .dv-skroll section.projects .project:nth-last-child(1) {
+  .dv-skroll.home section.projects .project:nth-last-child(1) {
     margin-bottom: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  .dv-skroll section.projects {
+  .dv-skroll.home section.projects {
     padding: 90px 5%;
   }
 }
 @media screen and (max-width: 577px) {
-  .dv-skroll section.projects {
+  .dv-skroll.home section.projects {
     padding: 75px 3%;
   }
 }
-.dv-skroll section.work {
-  background: #EB984E;
+.dv-skroll.home section.work {
+  background: #F8F8F8;
   min-width: 50%;
-  padding: 40px 3%;
-  color: #FFFFFF;
   display: block;
   height: 100vh;
   text-align: center;
   position: relative;
 }
-.dv-skroll section.work .text {
+.dv-skroll.home section.work .content {
+  background-color: #EB984E;
+  height: 100vh;
+  padding: 40px 3%;
+  color: #FFF;
+}
+@media screen and (min-width: 1079px) {
+  .dv-skroll.home section.work .content {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+  }
+}
+.dv-skroll.home section.work .text {
   width: 65%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.dv-skroll section.work .text p {
-  font-family: "Playfair Display", serif;
+.dv-skroll.home section.work .text p {
+  font-family: "Poppins", sans-serif;
   font-size: 40px;
 }
-.dv-skroll section.work .link {
+.dv-skroll.home section.work .link {
   bottom: 20px;
   position: absolute;
   text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.dv-skroll section.work .link a {
-  color: #FFFFFF;
+.dv-skroll.home section.work .link a {
+  color: #FFF;
 }
 @media screen and (max-width: 768px) {
-  .dv-skroll section.work .text p {
+  .dv-skroll.home section.work .text p {
     font-size: 2.25rem;
   }
 }
 @media screen and (max-width: 576px) {
-  .dv-skroll section.work .text {
+  .dv-skroll.home section.work .text {
     width: 90%;
-  }
-  .dv-skroll section.work .text p {
-    font-size: 2.25rem;
   }
 }
 @media screen and (max-width: 414px) {
-  .dv-skroll section.work .text p {
+  .dv-skroll.home section.work .text p {
     font-size: 1.875rem;
   }
 }
 @media screen and (max-width: 1079px) {
-  .dv-skroll {
+  .dv-skroll.home {
     position: absolute;
     flex-direction: column;
     transform: none !important;

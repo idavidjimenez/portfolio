@@ -14,8 +14,7 @@ header {
          display: flex;
          align-items: center;
          text-align: center;
-         background-color: #FFF;
-         border-right: $border;
+         background-color: $white;
    
          @media screen and (max-width: 1079px) {
             position: relative;
@@ -157,8 +156,7 @@ header {
             position: fixed;
             overflow: auto;
             -webkit-overflow-scrolling: touch;
-            background: $light-color;
-            border-right: $border;
+            background: $white;
             transform: translate3d(-100%, 0px, 0px);
             -webkit-transform: translate3d(-100%, 0px, 0px);
             -moz-transform: translate3d(-100%, 0px, 0px);
@@ -169,6 +167,11 @@ header {
             -moz-transition: all .5s ease-in-out;
             -ms-transition: all .5s ease-in-out;
             -o-transition: all .5s ease-in-out;
+
+            @media screen and (min-width: 1079px) {
+               border-top-right-radius: $radius-big;
+               border-bottom-right-radius: $radius-big;
+            }
    
             .ap-menu-container {
                padding: 0 98px;
@@ -222,7 +225,7 @@ header {
                            position: relative;
                            display: block;
                            padding: 12px 0;
-                           font-size: $normal-size;
+                           font-size: $text;
                            line-height: 120%;
                            letter-spacing: .00464286em;
                            transition: all .2s ease-in-out;
@@ -232,7 +235,7 @@ header {
                            -o-transition: all .2s ease-in-out;
    
                            &:hover {
-                              color: $primary;
+                              color: $brand;
                            }
                         }
                      }
@@ -258,7 +261,7 @@ header {
                            a {
                               display: inline-block;
                               position: relative;
-                              font-size: $h1-size;
+                              font-size: $h1;
                               font-weight: 400;
                               letter-spacing: -.05em;
                               line-height: 100%;
@@ -266,7 +269,7 @@ header {
                               &::after {
                                  display: block;
                                  content: '';
-                                 border-bottom: solid 3px $primary;  
+                                 border-bottom: solid 3px $brand;  
                                  transform: scaleX(0);  
                                  transition: transform 250ms ease-in-out;
                               }
@@ -280,7 +283,7 @@ header {
                               }
    
                               @media screen and (max-width: 414px) {
-                                 font-size: $h1-size-alt;
+                                 font-size: $h1-resp;
                               }
                            }
                         }
@@ -309,7 +312,7 @@ header {
                      position: relative;
                      display: inline-block;
                      padding: 0 0 5px 0;
-                     font-size: $normal-size;
+                     font-size: $text;
                      line-height: 20px;
                      letter-spacing: .00464286em;
    
@@ -330,7 +333,7 @@ header {
                      }
    
                      &:hover:before {
-                        background: $primary;
+                        background: $brand;
                      }
                   }
                }

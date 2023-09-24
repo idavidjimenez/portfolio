@@ -1,7 +1,5 @@
 .button {
-   font-family: $title-font;
-   font-style: italic;
-   
+   font-family: $title;
    text-decoration: underline !important;
    transition: all .2s ease-in-out;
    -webkit-transition: all .2s ease-in-out;
@@ -10,10 +8,10 @@
    -o-transition: all .2s ease-in-out;
 
    &:hover {
-      color: $primary;
+      color: $brand-hover;
    }
 
    @media screen and (max-width: 768px) {
-      font-size: $h3-size-alt;
+      font-size: $h3-resp;
    }
 }
