@@ -14,3 +14,20 @@ button {
    background: none;
    border: none;
 }
+
+.dv-skroll.home {
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+
+   section {
+      display: flex;
+   }
+
+   @media screen and (max-width: $desktop) {
+      position: absolute;
+      flex-direction: column;
+      transform: none !important;
+   }
+}

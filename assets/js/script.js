@@ -1,8 +1,8 @@
 // * BUTTON NAV ANIMATION
-const menuBtn = document.querySelector('.ap-menu-btn');
-const menuNavbar = document.querySelector('.ap-menu-navbar');
-const menuBackdrop = document.querySelector('.ap-menu-backdrop');
-const menuContent  = document.querySelector('.ap-menu-content');
+const menuBtn = document.querySelector('.dj-menu-btn');
+const menuNavbar = document.querySelector('.dj-menu-navbar');
+const menuBackdrop = document.querySelector('.dj-menu-backdrop');
+const menuContent  = document.querySelector('.dj-menu-content');
 
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
@@ -10,16 +10,16 @@ menuBtn.addEventListener('click', () => {
    if(!menuOpen) {
 
       menuBtn.classList.add('open');
-      menuBackdrop.classList.add('ap-menu-active');
-      menuContent.classList.add('ap-menu-active');
+      menuBackdrop.classList.add('dj-menu-active');
+      menuContent.classList.add('dj-menu-active');
       menuNavbar.classList.add('open');
       menuOpen = true;
 
    } else {
 
       menuBtn.classList.remove('open');
-      menuBackdrop.classList.remove('ap-menu-active');
-      menuContent.classList.remove('ap-menu-active');
+      menuBackdrop.classList.remove('dj-menu-active');
+      menuContent.classList.remove('dj-menu-active');
       menuNavbar.classList.remove('open');
       menuOpen = false;
 

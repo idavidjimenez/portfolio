@@ -1,12 +1,12 @@
 header {
    width: 0;
 
-   @media screen and (max-width: 1079px) {
+   @media (max-width: $desktop) {
       width: auto;
    }
    
-   .ap-menu {
-      .ap-menu-navbar {
+   .dj-menu {
+      .dj-menu-navbar {
          z-index: 205;
          position: absolute;
          height: 100vh;
@@ -16,27 +16,24 @@ header {
          text-align: center;
          background-color: $white;
    
-         @media screen and (max-width: 1079px) {
+         @media (max-width: $desktop) {
             position: relative;
             height: auto;
             border: 0;
             background-color: transparent;
             align-items: inherit;
-            top: 70px;
+            top: 120px;
+            right: 80px;
             float: right;
          }
 
-         @media screen and (max-width: 810px) {
-            right: 47px;
+         @media (max-width: $md) {
+            right: 50px;
          }
 
-         @media screen and (max-width: 768px) {
+         @media (max-width: $sm) {
             top: 70px;
-            right: 80px;
-         }
-
-         @media screen and (max-width: 576px) {
-            right: 12px;
+            right: 25px;
          }
    
          &.open {
@@ -51,7 +48,7 @@ header {
          padding-left: 10px;
          
          // * HAMBURGER
-         .ap-menu-btn {
+         .dj-menu-btn {
             position: fixed;
             display: flex;
             z-index: 205;
@@ -67,7 +64,7 @@ header {
             -ms-transition: all .5s ease-in-out;
             -o-transition: all .5s ease-in-out;
    
-            .ap-menu-burger {
+            .dj-menu-burger {
                width: 30px;
                height: 2px;
                background: $text-color;
@@ -106,7 +103,7 @@ header {
    
             /* ANIMATION */
             &.open {
-               .ap-menu-burger {
+               .dj-menu-burger {
                   background: transparent;
                   box-shadow: none;
                   
@@ -130,7 +127,7 @@ header {
       }
    
       &-box {
-         .ap-menu-backdrop {
+         .dj-menu-backdrop {
             top: 0;
             right: 0;
             left: 0;
@@ -147,7 +144,7 @@ header {
             -o-transition: all .4s ease-in-out;
          }
    
-         .ap-menu-content {
+         .dj-menu-content {
             top: 0;
             left: 0;
             z-index: 200;
@@ -168,15 +165,15 @@ header {
             -ms-transition: all .5s ease-in-out;
             -o-transition: all .5s ease-in-out;
 
-            @media screen and (min-width: 1079px) {
+            @media (min-width: $desktop) {
                border-top-right-radius: $radius-big;
                border-bottom-right-radius: $radius-big;
             }
    
-            .ap-menu-container {
+            .dj-menu-container {
                padding: 0 98px;
    
-               @media screen and (max-width: 768px) {
+               @media (max-width: $md) {
                   padding: 0;
                }
    
@@ -188,17 +185,17 @@ header {
                   font-style: italic;
                   line-height: 100%;
    
-                  @media screen and (max-width: 375px) {
+                  @media (max-width: 375px) {
                      padding: 0 0 15px 0;
                   }
    
-                  @media screen and (max-width: 320px) {
+                  @media (max-width: 320px) {
                      padding: 0 0 5px 0;
                   }
                }
             }
    
-            .ap-menu-body {
+            .dj-menu-body {
                height: 87%;
                display: flex;
                align-items: center;
@@ -207,20 +204,20 @@ header {
                -moz-box-align: center;
                -ms-flex-align: center;
    
-               @media screen and (max-width: 768px) {
+               @media (max-width: $md) {
                   height: 85%;
                   width: 100vw;
                }
    
-               .ap-menu-grid {
+               .dj-menu-grid {
                   &-left {
                      padding: 0 30px;
    
-                     @media screen and (max-width: 768px) {
+                     @media (max-width: $md) {
                         display: none;
                      }
    
-                     .ap-menu-social {
+                     .dj-menu-social {
                         &-item {
                            position: relative;
                            display: block;
@@ -244,15 +241,15 @@ header {
                   &-right {
                      padding: 0 110px 0 12px;
    
-                     @media screen and (max-width: 768px) {
+                     @media (max-width: $md) {
                         padding: 0 75px;
                      }
    
-                     @media screen and (max-width: 375px) {
+                     @media (max-width: 375px) {
                         padding: 0 24px;
                      }
    
-                     .ap-menu-nav {
+                     .dj-menu-nav {
                         &-item {
                            position: relative;
                            display: block;
@@ -282,7 +279,7 @@ header {
                                  -o-transform: scaleX(1);
                               }
    
-                              @media screen and (max-width: 414px) {
+                              @media (max-width: 414px) {
                                  font-size: $h1-resp;
                               }
                            }
@@ -292,14 +289,14 @@ header {
                }
             }
    
-            .ap-menu-footer {
+            .dj-menu-footer {
                padding: 0;
    
-               @media screen and (max-width: 768px) {
+               @media (max-width: $md) {
                   padding: 0 75px;
                }
    
-               @media screen and (max-width: 375px) {
+               @media (max-width: 375px) {
                   padding: 0 15px;
                }
    
@@ -307,7 +304,7 @@ header {
                   padding-bottom: 12px !important;
                }
    
-               .ap-menu-mail {
+               .dj-menu-mail {
                   a {
                      position: relative;
                      display: inline-block;
@@ -340,8 +337,8 @@ header {
             }
          }
    
-         .ap-menu-active {
-            &.ap-menu-backdrop {
+         .dj-menu-active {
+            &.dj-menu-backdrop {
                opacity: 1;
                transition: all .4s ease-in-out;
                -webkit-transition: all .4s ease-in-out;
@@ -350,7 +347,7 @@ header {
                -o-transition: all .4s ease-in-out;
             }
    
-            &.ap-menu-content {
+            &.dj-menu-content {
                transform: translate3d(0%, 0px, 0px);
                -webkit-transform: translate3d(0%, 0px, 0px);
                -moz-transform: translate3d(0%, 0px, 0px);
