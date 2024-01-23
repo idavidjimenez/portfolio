@@ -34,7 +34,47 @@ button {
   }
 }
 
-.button {
+/* --------------------------------------------------------------
+* Preloader
+-------------------------------------------------------------- */
+#pg-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #FFF;
+  transition: all 0.6s ease-out;
+  width: 100%;
+  height: 100vh;
+}
+#pg-preloader:after, #pg-preloader:before {
+  content: "";
+  position: absolute;
+  border: 4px solid #EB984E;
+  border-radius: 50%;
+  animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+#pg-preloader:after {
+  animation-delay: -0.5s;
+}
+
+@keyframes animate-preloader {
+  0% {
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    opacity: 1;
+  }
+  100% {
+    width: 72px;
+    height: 72px;
+    top: calc(50% - 36px);
+    left: calc(50% - 36px);
+    opacity: 0;
+  }
+}
+.dj-btn {
   font-family: 9.313rem;
   text-decoration: underline !important;
   transition: all 0.2s ease-in-out;
@@ -43,11 +83,11 @@ button {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
 }
-.button:hover {
+.dj-btn:hover {
   color: #E78733;
 }
 @media screen and (max-width: 768px) {
-  .button {
+  .dj-btn {
     font-size: 1rem;
   }
 }
