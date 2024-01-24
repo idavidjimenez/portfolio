@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -38,7 +38,7 @@ button {
 /* --------------------------------------------------------------
 * Preloader
 -------------------------------------------------------------- */
-#pg-preloader {
+#dj-preloader {
   position: fixed;
   inset: 0;
   z-index: 9999;
@@ -48,14 +48,14 @@ button {
   width: 100%;
   height: 100vh;
 }
-#pg-preloader:after, #pg-preloader:before {
+#dj-preloader:after, #dj-preloader:before {
   content: "";
   position: absolute;
   border: 4px solid #EB984E;
   border-radius: 50%;
   animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
-#pg-preloader:after {
+#dj-preloader:after {
   animation-delay: -0.5s;
 }
 
@@ -75,6 +75,41 @@ button {
     opacity: 0;
   }
 }
+/* --------------------------------------------------------------
+* Transition page
+-------------------------------------------------------------- */
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
+.load-container .loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: #EB984E;
+  width: 0%;
+  height: 100%;
+}
+
+/* --------------------------------------------------------------
+* Icon
+-------------------------------------------------------------- */
+.dj-icon a, .dj-icon span {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 96px;
+}
+
+/* --------------------------------------------------------------
+* Button
+-------------------------------------------------------------- */
 .dj-btn {
   font-family: 9.313rem;
   text-decoration: underline !important;
@@ -93,16 +128,17 @@ button {
   }
 }
 
+/* --------------------------------------------------------------
+* JS
+-------------------------------------------------------------- */
 .start-scrolled {
   height: 100% !important;
   width: 100% !important;
   border-radius: 0 !important;
-  transition: 0.5s all;
 }
 
 .intro-scrolled {
   border-radius: 0 !important;
-  transition: 0.5s all;
 }
 
 header {
@@ -112,6 +148,17 @@ header {
   header {
     width: auto;
   }
+}
+header .dj-menu {
+  /* --------------------------------------------------------------
+  * Navbar
+  -------------------------------------------------------------- */
+  /* --------------------------------------------------------------
+  * Button
+  -------------------------------------------------------------- */
+  /* --------------------------------------------------------------
+  * Menu
+  -------------------------------------------------------------- */
 }
 header .dj-menu .dj-menu-navbar {
   z-index: 205;
@@ -146,8 +193,29 @@ header .dj-menu .dj-menu-navbar {
     right: 25px;
   }
 }
-header .dj-menu .dj-menu-navbar.open {
-  border: 0;
+header .dj-menu .dj-menu-navbar.page {
+  height: auto;
+  width: 100%;
+  padding: 0 40px;
+}
+header .dj-menu .dj-menu-navbar.page .dj-menu-toggle {
+  position: absolute;
+  right: 80px;
+  top: 78px;
+}
+@media (max-width: 1079px) {
+  header .dj-menu .dj-menu-navbar.page {
+    top: auto;
+    right: auto;
+  }
+}
+@media (max-width: 768px) {
+  header .dj-menu .dj-menu-navbar.page {
+    padding: 0 25px;
+  }
+  header .dj-menu .dj-menu-navbar.page .dj-menu-toggle {
+    right: 55px;
+  }
 }
 header .dj-menu-toggle {
   position: relative;
@@ -456,6 +524,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   width: 93%;
   margin: auto;
   border-radius: 12px;
+  transition: 0.8s all;
 }
 @media (max-width: 1400px) {
   .dj-start .content {
@@ -474,15 +543,11 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   justify-content: space-between;
   color: #FFF;
 }
-.dj-start .bar-icon {
+.dj-start .bar .dj-icon {
   position: absolute;
   left: 100px;
   top: 50px;
-}
-.dj-start .bar-icon span {
-  font-family: "Playfair Display", serif;
-  font-weight: 900;
-  font-size: 96px;
+  z-index: 205;
 }
 .dj-start .bar-scroll {
   font-size: 2.25rem;
@@ -492,7 +557,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 }
 .dj-start .quote {
   position: absolute;
-  top: 25%;
+  top: 40%;
   left: 60%;
 }
 .dj-start .quote img {
@@ -510,7 +575,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   .dj-start .bar {
     color: #222222;
   }
-  .dj-start .bar-icon {
+  .dj-start .bar .dj-icon {
     position: relative;
     left: auto;
     top: auto;
@@ -549,6 +614,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   padding: 40px 2.2%;
   position: relative;
   background-color: #F8F8F8;
+  transition: 0.8s all;
 }
 @media (min-width: 1079px) {
   .dj-intro {

@@ -6,6 +6,9 @@ header {
    }
    
    .dj-menu {
+      /* --------------------------------------------------------------
+      * Navbar
+      -------------------------------------------------------------- */
       .dj-menu-navbar {
          z-index: 205;
          position: absolute;
@@ -35,12 +38,36 @@ header {
             top: 70px;
             right: 25px;
          }
-   
-         &.open {
-            border: 0;
+
+         &.page {
+            height: auto;
+            width: 100%;
+            padding: 0 40px;
+
+            .dj-menu-toggle {
+               position: absolute;
+               right: 80px;
+               top: 78px;
+            }
+
+            @media (max-width: $desktop) {
+               top: auto;
+               right: auto;
+            }
+
+            @media (max-width: $md) {
+               padding: 0 25px;
+
+               .dj-menu-toggle {
+                  right: 55px;
+               }
+            }
          }
       }
    
+      /* --------------------------------------------------------------
+      * Button
+      -------------------------------------------------------------- */
       &-toggle {
          position: relative;
          display: flex;
@@ -126,6 +153,9 @@ header {
          }
       }
    
+      /* --------------------------------------------------------------
+      * Menu
+      -------------------------------------------------------------- */
       &-box {
          .dj-menu-backdrop {
             top: 0;

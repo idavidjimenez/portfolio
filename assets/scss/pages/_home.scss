@@ -10,6 +10,7 @@
       width: 93%;
       margin: auto;
       border-radius: $radius;
+      transition: .8s all;
 
       @media (max-width: $xxl) {
          width: 90%;
@@ -27,16 +28,11 @@
       justify-content: space-between;
       color: $white;
 
-      &-icon {
+      .dj-icon {
          position: absolute;
          left: 100px;
          top: 50px;
-
-         span {
-            font-family: $logo-font;
-            font-weight: 900;
-            font-size: 96px;
-         }
+         z-index: 205;
       }
 
       &-scroll {
@@ -49,7 +45,7 @@
 
    .quote {
       position: absolute;
-      top: 25%;
+      top: 40%;
       left: 60%;
 
       img {
@@ -69,7 +65,7 @@
       .bar {
          color: $text-color;
 
-         &-icon {
+         .dj-icon {
             position: relative;
             left: auto;
             top: auto;
@@ -111,6 +107,7 @@
    padding: 40px 2.2%;
    position: relative;
    background-color: $bg-color;
+   transition: .8s all;
 
    @media (min-width: $desktop) {
       border-top-left-radius: $radius-big;
