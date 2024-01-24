@@ -810,7 +810,11 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   }
 }
 
-.projects {
+#projects {
+  background-color: #F8F8F8;
+}
+
+.main-projects {
   padding: 225px 0 60px 0;
 }
 
