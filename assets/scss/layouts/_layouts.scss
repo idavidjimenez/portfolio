@@ -71,10 +71,15 @@
 * Icon
 -------------------------------------------------------------- */
 .dj-icon {
-   a, span {
+   a {
       font-family: $logo-font;
       font-weight: 900;
       font-size: 96px;
+      letter-spacing: -10px;
+
+      span {
+         font-weight: 400;
+      }
    }
 }
 
