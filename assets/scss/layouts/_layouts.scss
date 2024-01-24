@@ -60,3 +60,14 @@
       font-size: $h3-resp;
    }
 }
+
+.start-scrolled {
+   height: 100% !important;
+   width: 100% !important;
+   border-radius: 0 !important;
+   transition: .5s all;
+}
+.intro-scrolled {
+   border-radius: 0 !important;
+   transition: .5s all;
+}

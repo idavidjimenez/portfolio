@@ -10,6 +10,7 @@
 a {
   text-decoration: none;
   color: #222222;
+  transition: 0.3s;
 }
 
 button {
@@ -92,6 +93,18 @@ button {
   }
 }
 
+.start-scrolled {
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 0 !important;
+  transition: 0.5s all;
+}
+
+.intro-scrolled {
+  border-radius: 0 !important;
+  transition: 0.5s all;
+}
+
 header {
   width: 0;
 }
@@ -108,7 +121,7 @@ header .dj-menu .dj-menu-navbar {
   display: flex;
   align-items: center;
   text-align: center;
-  background-color: #FFF;
+  background-color: transparent;
 }
 @media (max-width: 1079px) {
   header .dj-menu .dj-menu-navbar {
@@ -440,13 +453,13 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   background-position: center center;
   background-repeat: no-repeat;
   height: 90%;
-  width: 90%;
+  width: 93%;
   margin: auto;
   border-radius: 12px;
 }
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
   .dj-start .content {
-    width: 93%;
+    width: 90%;
   }
 }
 @media (max-width: 576px) {
@@ -461,13 +474,21 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   justify-content: space-between;
   color: #FFF;
 }
-.dj-start .bar__icon span {
+.dj-start .bar-icon {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+}
+.dj-start .bar-icon span {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 96px;
 }
-.dj-start .bar__scroll {
+.dj-start .bar-scroll {
   font-size: 2.25rem;
+  position: absolute;
+  right: 100px;
+  top: 85px;
 }
 .dj-start .quote {
   position: absolute;
@@ -489,7 +510,12 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   .dj-start .bar {
     color: #222222;
   }
-  .dj-start .bar__scroll {
+  .dj-start .bar-icon {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  .dj-start .bar-scroll {
     display: none;
   }
   .dj-start .quote {
@@ -598,7 +624,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   padding: 40px 3%;
   background-color: #F8F8F8;
 }
-.dj-projects .project__image {
+.dj-projects .project-image {
   width: 100%;
   height: 80vh;
   border-radius: 12px;
@@ -606,7 +632,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.dj-projects .project__text h2 {
+.dj-projects .project-text h2 {
   font-weight: 500;
   font-size: 1.313rem;
 }
@@ -616,7 +642,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
     padding: 45px 6.5%;
     height: auto;
   }
-  .dj-projects .project__image {
+  .dj-projects .project-image {
     height: auto;
   }
 }

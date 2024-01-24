@@ -14,7 +14,7 @@ header {
          display: flex;
          align-items: center;
          text-align: center;
-         background-color: $white;
+         background-color: transparent;
    
          @media (max-width: $desktop) {
             position: relative;

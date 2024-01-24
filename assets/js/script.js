@@ -2,11 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
    // * HScroll
    var width = window.innerWidth;
-   if(width >= 1079) {
-
-      var s = skrollr.init();
-
-   }
+   if(width >= 1079) { var s = skrollr.init(); }
 
    // * Button nav navigation
    const menuBtn      = document.querySelector('.dj-menu-btn');
@@ -35,6 +31,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
       }
 
+   });
+
+   // * Full width on scroll
+   const selectStart = document.querySelector('#dj-start');
+   const selectIntro = document.querySelector('#dj-intro');
+
+   if (selectStart) {
+
+      document.addEventListener('scroll', () => {
+
+         if(window.scrollY > 50) {
+
+            selectStart.classList.add('start-scrolled')
+            selectIntro.classList.add('intro-scrolled')
+
+         } else {
+
+            selectStart.classList.remove('start-scrolled');
+            selectIntro.classList.remove('intro-scrolled');
+
+         }
+
+      });
+   }
+
+   // * Animation on scroll function and init
+   function aos_init() {
+
+      AOS.init({
+
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+
+      });
+
+   }
+   window.addEventListener('load', () => {
+
+      aos_init();
+      
    });
 
 });
