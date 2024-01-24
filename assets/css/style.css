@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  font-size: 100%;
+}
+
 a {
   text-decoration: none;
   color: #222222;
@@ -16,6 +20,12 @@ a {
 button {
   background: none;
   border: none;
+}
+
+@media (max-width: 768px) {
+  br {
+    display: none;
+  }
 }
 
 .dv-skroll.home {
@@ -76,29 +86,6 @@ button {
   }
 }
 /* --------------------------------------------------------------
-* Transition page
--------------------------------------------------------------- */
-.load-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: 10;
-  pointer-events: none;
-}
-.load-container .loading-screen {
-  position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  background-color: #EB984E;
-  width: 0%;
-  height: 100%;
-}
-
-/* --------------------------------------------------------------
 * Icon
 -------------------------------------------------------------- */
 .dj-icon a {
@@ -115,7 +102,7 @@ button {
 * Button
 -------------------------------------------------------------- */
 .dj-btn {
-  font-family: 9.313rem;
+  font-family: 4rem;
   text-decoration: underline !important;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -143,6 +130,29 @@ button {
 
 .intro-scrolled {
   border-radius: 0 !important;
+}
+
+/* --------------------------------------------------------------
+* Page Header
+-------------------------------------------------------------- */
+.dj-header {
+  margin-bottom: 150px;
+}
+.dj-header span {
+  display: block;
+}
+.dj-header h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.dj-header p {
+  font-size: 1.625rem;
+}
+@media (max-width: 414px) {
+  .dj-header h1 {
+    font-size: 47px;
+  }
 }
 
 header {
@@ -604,7 +614,6 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   .dj-start .quote {
     position: relative;
     width: 90%;
-    top: 60%;
     left: 12px;
   }
 }
@@ -693,13 +702,13 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   }
 }
 
-.dj-projects {
+.dj-main-projects {
   height: 100vh;
   min-width: 120%;
   padding: 40px 3%;
   background-color: #F8F8F8;
 }
-.dj-projects .project-image {
+.dj-main-projects .project-image {
   width: 100%;
   height: 80vh;
   border-radius: 12px;
@@ -707,38 +716,38 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.dj-projects .project-text h2 {
+.dj-main-projects .project-text h2 {
   font-weight: 500;
   font-size: 1.313rem;
 }
 @media (max-width: 1079px) {
-  .dj-projects {
+  .dj-main-projects {
     min-width: 100%;
     padding: 45px 6.5%;
     height: auto;
   }
-  .dj-projects .project-image {
+  .dj-main-projects .project-image {
     height: auto;
   }
 }
 @media (max-width: 992px) {
-  .dj-projects {
+  .dj-main-projects {
     padding: 90px 10.6%;
   }
-  .dj-projects .project {
+  .dj-main-projects .project {
     margin-bottom: 50px;
   }
-  .dj-projects .project:nth-last-child(1) {
+  .dj-main-projects .project:nth-last-child(1) {
     margin-bottom: 0;
   }
 }
 @media (max-width: 768px) {
-  .dj-projects {
+  .dj-main-projects {
     padding: 90px 5%;
   }
 }
 @media (max-width: 576px) {
-  .dj-projects {
+  .dj-main-projects {
     padding: 75px 3%;
   }
 }
@@ -798,5 +807,75 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 @media (max-width: 414px) {
   .dj-work .text p {
     font-size: 1.875rem;
+  }
+}
+
+.projects {
+  padding: 225px 0 60px 0;
+}
+
+.dj-projects .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dj-projects .dj-project {
+  width: 45%;
+  margin-bottom: 100px;
+}
+.dj-projects .dj-project-img {
+  display: block;
+}
+.dj-projects .dj-project-img img {
+  width: 100%;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+.dj-projects .dj-project-text {
+  margin: 38px auto 0 auto;
+  max-width: 370px;
+}
+.dj-projects .dj-project-text-header {
+  display: inline !important;
+}
+.dj-projects .dj-project-text-header h3 {
+  display: inline !important;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.dj-projects .dj-project-text-body {
+  display: inline !important;
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+.dj-projects .dj-project-text-body p {
+  display: inline;
+}
+.dj-projects .dj-project-text-body::before {
+  content: " - ";
+}
+@media (min-width: 768px) {
+  .dj-projects .dj-project:nth-child(2n) {
+    margin-top: -120px;
+  }
+}
+@media (max-width: 1079px) {
+  .dj-projects .dj-project-img img {
+    height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .dj-projects .dj-project {
+    width: 100%;
+  }
+  .dj-projects .dj-project-img img {
+    height: 700px;
+  }
+}
+@media (max-width: 576px) {
+  .dj-projects .dj-project-img img {
+    height: 520px;
   }
 }/*# sourceMappingURL=style.css.map */

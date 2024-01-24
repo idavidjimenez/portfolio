@@ -4,6 +4,9 @@
    box-sizing: border-box;
    font-family: $body-font;
 }
+html {
+   font-size: 100%;
+}
 
 // * Elements
 a {
@@ -14,6 +17,11 @@ a {
 button {
    background: none;
    border: none;
+}
+br {
+   @media (max-width: $md) {
+      display: none;
+   }
 }
 
 .dv-skroll.home {

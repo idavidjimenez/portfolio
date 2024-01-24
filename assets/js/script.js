@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
    const menuNavbar   = document.querySelector('.dj-menu-navbar');
    const menuBackdrop = document.querySelector('.dj-menu-backdrop');
    const menuContent  = document.querySelector('.dj-menu-content');
+   const menuIcon     = document.querySelector('.dj-icon');
 
    let menuOpen = false;
    menuBtn.addEventListener('click', () => {
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
          menuBackdrop.classList.add('dj-menu-active');
          menuContent.classList.add('dj-menu-active');
          menuNavbar.classList.add('open');
+         menuIcon.classList.add('d-none');
          menuOpen = true;
 
       } else {
@@ -27,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
          menuBackdrop.classList.remove('dj-menu-active');
          menuContent.classList.remove('dj-menu-active');
          menuNavbar.classList.remove('open');
+         menuIcon.classList.remove('d-none');
          menuOpen = false;
 
       }
