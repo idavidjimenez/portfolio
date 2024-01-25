@@ -255,6 +255,7 @@ header {
                            font-size: $text;
                            line-height: 120%;
                            letter-spacing: .00464286em;
+                           font-family: $title-font;
                            transition: all .2s ease-in-out;
                            -webkit-transition: all .2s ease-in-out;
                            -moz-transition: all .2s ease-in-out;
@@ -290,6 +291,7 @@ header {
                               position: relative;
                               font-size: $h1;
                               font-weight: 400;
+                              font-family: $title-font;
                               letter-spacing: -.05em;
                               line-height: 100%;
    
@@ -340,6 +342,7 @@ header {
                      display: inline-block;
                      padding: 0 0 5px 0;
                      font-size: $text;
+                     font-family: $title-font;
                      line-height: 20px;
                      letter-spacing: .00464286em;
    

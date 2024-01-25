@@ -44,6 +44,11 @@
          position: absolute;
          right: 100px;
          top: 85px;
+
+         span {
+            font-family: $title-font;
+            font-weight: 500;
+         }
       }
    }
 
@@ -142,7 +147,7 @@
       h2 {
          font-family: $title-font;
          font-size: $h2;
-         font-weight: 500;
+         font-weight: 600;
          margin-bottom: 25px;
       }
 
@@ -288,6 +293,10 @@
 
       a {
          color: $white;
+
+         &:hover {
+            color: $black;
+         }
       }
    }
 
