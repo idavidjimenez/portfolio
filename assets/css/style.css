@@ -964,7 +964,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
     height: auto;
   }
   .dj-main-projects .project-text h2 {
-    font-size: 1.875rem;
+    font-size: 1.625rem;
   }
 }
 @media (max-width: 992px) {
