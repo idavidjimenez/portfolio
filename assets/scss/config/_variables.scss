@@ -1,10 +1,7 @@
 // * =============== GOOGLE FONTS =============== * //
-// * Icon
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
-// * Tittle
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
-// * Text
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');       // * Icon
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');    // * Tittle
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); // * Text
 
 // * ---- COLORS ---- * //
 // * GENERAL
@@ -13,7 +10,7 @@ $black: #000;
 
 // * FONTS
 $title-color: #222222;
-$text-color: #222222;
+$text-color:  #222222;
 
 // * BRAN
 $brand: #EB984E;
@@ -53,7 +50,7 @@ $h2-resp: 1.875rem; // * 30px
 $h3-resp: 1rem;     // * 18px
 
 // * Texts
-$text-resp: .875rem; // * 14px
+$text-resp:  .875rem; // * 14px
 $small-resp: .75rem;  // * 12px
 $extra-small-resp: 9px; // * 9px
 
@@ -71,6 +68,6 @@ $radius-small: 8px;
 $border: .5px solid $black;
 
 // * Fonts
-$logo-font: 'Playfair Display', serif;
+$logo-font:  'Playfair Display', serif;
 $title-font: 'Poppins', sans-serif;
-$body-font: 'Montserrat', sans-serif;
+$body-font:  'Montserrat', sans-serif;

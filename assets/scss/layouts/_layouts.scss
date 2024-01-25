@@ -55,6 +55,7 @@
 
       span {
          font-weight: 400;
+         font-size: 96px;
       }
    }
 }
@@ -75,8 +76,8 @@
       color: $brand-hover;
    }
 
-   @media screen and (max-width: 768px) {
-      font-size: $h3-resp;
+   @media screen and (max-width: $desktop) {
+      font-size: $h3;
    }
 }
 
@@ -108,6 +109,7 @@
 
       span {
          font-family: $title-font;
+         font-size: $title;
       }
    }
    

@@ -15,10 +15,6 @@
       @media (max-width: $xxl) {
          width: 90%;
       }
-
-      @media (max-width: $sm) {
-         width: 100%;
-      }
    }
    
    .bar {
@@ -99,18 +95,30 @@
       .bar {
          padding: 0 25px;
       }
+
       .quote {
-         position: relative;
-         width: 90%;
-         left: 12px;
+         top: auto;
+         left: 80px;
+         bottom: 90px;
+         width: 70%;
       }
    }
 
    @media (max-width: $sm) {
       .content {
          @include cover('../img/team/david.jpg');
-         height: 100%;
-         border-radius: 0;
+
+         .bar {
+            .dj-icon {
+               position: absolute;
+               top: 10px;
+               left: 25px;
+            }
+         }
+
+         .quote {
+            left: 50px;
+         }
       }
    }
 }
@@ -164,15 +172,8 @@
    }
 
    @media (max-width: $lg) {
-      .text {
-         margin-top: 50px;
-         position: relative;
-      }
-   }
-
-   @media (max-width: $sm) {
       .subtitle {
-         margin-bottom: 25px;
+         margin-bottom: 15px;
       }
 
       .image {
@@ -188,10 +189,17 @@
       }
 
       .text {
+         margin-top: 50px;
+         position: relative;
+
          h2 {
             font-size: $h2-resp;
          }
       }
+   }
+
+   @media (max-width: $sm) {
+      
    }
 }
 
@@ -201,10 +209,20 @@
    padding: 40px 3%;
    background-color: $bg-color;
 
+   .list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+   }
+
    .project {
+      width: 32%;
+      
       &-image {
          width: 100%;
-         height: 80vh;
+         height: 82vh;
          border-radius: $radius;
          margin-bottom: 15px;
          object-fit: cover;
@@ -224,8 +242,17 @@
       height: auto;
 
       .project {
+         width: 48%;
+         margin-bottom: 50px;
+
          &-image {
             height: auto;
+         }
+
+         &-text {
+            h2 {
+               font-size: $h2-resp;
+            }
          }
       }
    }
@@ -244,6 +271,10 @@
 
    @media (max-width: $md) {
       padding: 90px 5%;
+
+      .project {
+         width: 100%;
+      }
    }
 
    @media (max-width: $sm) {
