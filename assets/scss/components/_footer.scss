@@ -1,0 +1,219 @@
+.dj-footer {
+   @media (min-width: $md) {
+      margin-top: 150px !important;
+   }
+   @media (min-width: 360px) {
+      margin-top: 120px;
+   }
+   
+   margin-top: 100px;
+   position: relative;
+   overflow: hidden;
+   color: $text-color;
+   background: $white;
+
+   @media (min-width: $lg) {
+      height: 100%;
+      min-height: 700px;
+      max-height: 1100px;
+   }
+
+   @media (max-width: $lg) {
+      &-content {
+         padding: 90px 0;
+      }
+   }
+
+   &-content {
+      justify-content: space-between;
+      height: 100%;
+      padding: 120px 0;
+   }
+
+   &-header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 150px;
+
+      &-title {
+         font-size: 5.4vw;
+         color: $title-color;
+
+         @media screen and (min-width: 1920px) {
+            h2, a {
+               font-size: 102px !important;
+            }
+         }
+
+         @media screen and (max-width: $xl) {
+            h2, a {
+               font-size: $h1;
+            }
+         }
+         @media screen and (max-width: $md) {
+            h2, a {
+               font-size: 3rem;
+            }
+         }
+
+         h2 {
+            font-size: inherit;
+            font-weight: 500;
+            letter-spacing: inherit;
+            line-height: inherit;
+         }
+
+         a {
+            color: $title-color;
+            position: relative;
+            display: inline-block;
+            padding: 0 0 8px 0;
+            font-size: inherit;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+               color: $brand;
+            }
+
+            &::before {
+               content: "";
+               display: block;
+               position: absolute;
+               left: 0;
+               right: 0;
+               bottom: 0;
+               height: 1px;
+               background: $black;
+            }
+         }
+      }
+   }
+
+   &-body {
+      align-items: center;
+
+      &-left {
+         .dj-footer-mail {
+            a {
+               position: relative;
+               display: inline-block;
+               padding: 0 0 5px 0;
+               color: $text-color;
+               font-size: 1.125rem;
+               line-height: 20px;
+               letter-spacing: .00464286em;
+
+               &::before {
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  height: 1px;
+                  background: rgba(190, 190, 190, 0.3);
+                  transition: all .2s ease-in-out;
+               }
+
+               &:hover {
+                  &::before {
+                     background: $brand;
+                  }
+               }
+            }
+         }
+
+         .dj-footer-address {
+            margin: 28px 0 0 0;
+
+            address {
+               font-size: 0.875rem;
+               font-style: normal;
+               color: rgba(0, 0, 0, 0.6);
+            }
+         }
+
+         .dj-footer-privacy {
+            a {
+               font-size: $small;
+
+               &::after {
+                  display: block;
+                  width: 151px;
+                  content: '';
+                  border-bottom: solid 1px $text-color;
+                  transform: scaleX(0);
+                  transition: transform 250ms ease-in-out;
+               }
+
+               &:hover::after {
+                  transform: scaleX(1);
+               }
+            }
+         }
+      }
+
+      &-right {
+         .dj-footer-social {
+            margin: -18px 0;
+
+            &-item {
+               width: calc(50% - 40px);
+               height: auto;
+               padding: 18px 0;
+               margin: 15px;
+               line-height: normal;
+               position: relative;
+               display: inline-block;
+               font-size: 1.25rem;
+               text-align: left;
+            }
+
+            &-title {
+               a {
+                  color: rgba(0, 0, 0, 0.6);
+                  transition: all .2s ease-in-out;
+
+                  &:hover {
+                     color: $black;
+                  }
+               }
+            }
+
+            &-svg {
+               display: none !important;
+               width: 1.5em;
+               height: 1.5em;
+               fill: currentColor;
+               vertical-align: middle;
+
+               a {
+                  color: rgba(0, 0, 0, 0.6);
+               }
+            }
+
+            @media (max-width: $lg) {
+               &-title {
+                  display: none !important;
+               }
+
+               &-svg {
+                  display: block !important;
+               }
+            }
+
+            @media (max-width: $md) {
+               padding: 33px 0 0 0;
+
+               &-item {
+                  width: 76px;
+                  height: 63px;
+                  line-height: 64px;
+                  letter-spacing: .00464286em;
+                  text-align: center;
+               }
+            }
+         }
+      }
+   }
+}
