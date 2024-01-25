@@ -57,7 +57,7 @@
          }
          @media (max-width: $md) {
             h2, a {
-               font-size: 3rem;
+               font-size: $h2 !important;
             }
          }
 
