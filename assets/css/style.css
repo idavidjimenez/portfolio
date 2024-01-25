@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
 }
 
 html {
@@ -586,6 +587,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .dj-start .bar-scroll span {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  font-size: 2.25rem;
 }
 .dj-start .quote {
   position: absolute;
