@@ -87,8 +87,8 @@
                left: 0;
                right: 0;
                bottom: 0;
-               height: 1px;
-               background: $black;
+               height: 1.5px;
+               background: $brand;
             }
          }
       }
@@ -140,13 +140,12 @@
 
          .dj-footer-privacy {
             a {
-               font-size: $small;
 
                &::after {
                   display: block;
-                  width: 151px;
+                  width: 197px;
                   content: '';
-                  border-bottom: solid 1px $text-color;
+                  border-bottom: solid 1px $brand;
                   transform: scaleX(0);
                   transition: transform 250ms ease-in-out;
                }

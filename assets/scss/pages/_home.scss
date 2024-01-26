@@ -157,7 +157,6 @@
 
    .text {
       position: absolute;
-      max-width: 455px;
       bottom: 40px;
 
       h2 {
@@ -309,6 +308,8 @@
       width: 100%;
       padding: 40px 3%;
       color: $white;
+      display: flex;
+      flex-direction: column;
       
       @media (min-width: $desktop) {
          border-top-left-radius: $radius-big;
@@ -317,14 +318,12 @@
    }
 
    .text {
-      width: 65%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
+      width: 80%;
+      margin: auto;
 
       p {
          font-family: $title-font;
+         font-weight: 500;
          font-size: 40px;
       }
    }
@@ -356,11 +355,7 @@
    @media (max-width: $sm) {
       .text {
          width: 90%;
-      }
-   }
 
-   @media (max-width: 414px) {
-      .text {
          p {
             font-size: $h2-resp;
          }
