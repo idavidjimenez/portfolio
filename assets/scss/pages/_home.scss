@@ -104,6 +104,8 @@
    }
 
    @media (max-width: $sm) {
+      height: 90vh;
+
       .content {
          @include cover('../img/team/david.jpg');
 

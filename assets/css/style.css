@@ -190,7 +190,7 @@ button {
 }
 @media (max-width: 576px) {
   .dj-modal .modal-fullscreen {
-    height: 96vh;
+    height: 95vh;
   }
 }
 
@@ -870,6 +870,9 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   }
 }
 @media (max-width: 576px) {
+  .dj-start {
+    height: 90vh;
+  }
   .dj-start .content {
     background-image: url("../img/team/david.jpg");
     background-size: cover;
