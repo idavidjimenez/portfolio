@@ -1139,10 +1139,33 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .project-main-header h1 span.venturest {
   color: #9D81DC;
 }
+.project-main-header h1 span.aprisoft {
+  color: #EB984E;
+}
+.project-main-header h1 span.puliglobal {
+  color: #0F0147;
+}
+.project-main-header h1 span.dama-selek {
+  color: #C79040;
+}
+.project-main-header h1 span.mjt {
+  color: #70A075;
+}
+.project-main-header h1 span.diaz {
+  color: #31426F;
+}
+.project-main-header h1 span.travel {
+  color: #14505C;
+}
+.project-main-header h1 span.blog {
+  color: #F14D78;
+}
+.project-main-header h1 span.minimal {
+  color: #191919;
+}
 .project-main-header h3 {
   font-size: clamp(1.125rem, -18px + 3.5vw, 1.625rem);
   font-weight: 600;
-  text-transform: capitalize;
 }
 .project-main-header a {
   position: relative;

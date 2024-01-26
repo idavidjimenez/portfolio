@@ -16,16 +16,22 @@
 
          span {
             font-size: clamp(42px, -6px + 9vw, 180px);
-            &.venturest {
-               color: $venturest;
-            }
+
+            &.venturest { color: $venturest; }
+            &.aprisoft { color: $aprisoft; }
+            &.puliglobal { color: $puliglobal; }
+            &.dama-selek { color: $dama-selek; }
+            &.mjt { color: $mjt; }
+            &.diaz { color: $diaz; }
+            &.travel { color: $travel; }
+            &.blog { color: $blog; }
+            &.minimal { color: $minimal; }
          }
       }
 
       h3 {
          font-size: clamp($text, -18px + 3.5vw, $big-text);
          font-weight: 600;
-         text-transform: capitalize;
       }
 
       a {
