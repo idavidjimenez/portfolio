@@ -143,12 +143,13 @@
 
    // * Custom styles
    .modal-fullscreen {
-      height: 93vh;
+      height: 96vh;
    }
 
    .modal-content {
       border-top-left-radius: $radius;
       border-top-right-radius: $radius;
+      background-color: $bg-color;
    }
 
    @media (max-width: $sm) {

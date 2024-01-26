@@ -75,11 +75,7 @@ header {
          display: flex;
          align-items: center;
          padding-left: 10px;
-         z-index: 300;
-
-         @media (max-width: $sm) {
-            z-index: 1100;
-         }
+         z-index: 1100;
          
          // * HAMBURGER
          .dj-menu-btn {
@@ -92,10 +88,6 @@ header {
             cursor: pointer;
             /* border: 3px solid #fff; */
             transition: all .5s ease-in-out;
-            -webkit-transition: all .5s ease-in-out;
-            -moz-transition: all .5s ease-in-out;
-            -ms-transition: all .5s ease-in-out;
-            -o-transition: all .5s ease-in-out;
    
             .dj-menu-burger {
                width: 30px;
@@ -113,24 +105,12 @@ header {
                   background: $text-color;
                   border-radius: 5px;
                   transition: all .5s ease-in-out;
-                  -webkit-transition: all .5s ease-in-out;
-                  -moz-transition: all .5s ease-in-out;
-                  -ms-transition: all .5s ease-in-out;
-                  -o-transition: all .5s ease-in-out;
                }
                &::before {
                   transform: translateY(-8px);
-                  -webkit-transform: translateY(-8px);
-                  -moz-transform: translateY(-8px);
-                  -ms-transform: translateY(-8px);
-                  -o-transform: translateY(-8px);
                }
                &::after {
                   transform: translateY(8px);
-                  -webkit-transform: translateY(8px);
-                  -moz-transform: translateY(8px);
-                  -ms-transform: translateY(8px);
-                  -o-transform: translateY(8px);
                }
             }
    
@@ -142,17 +122,9 @@ header {
                   
                   &::before{
                      transform: rotate(45deg);
-                     -webkit-transform: rotate(45deg);
-                     -moz-transform: rotate(45deg);
-                     -ms-transform: rotate(45deg);
-                     -o-transform: rotate(45deg);
                   }
                   &::after {
                      transform: rotate(-45deg);
-                     -webkit-transform: rotate(-45deg);
-                     -moz-transform: rotate(-45deg);
-                     -ms-transform: rotate(-45deg);
-                     -o-transform: rotate(-45deg);
                   }
                }
             }
@@ -174,42 +146,25 @@ header {
             pointer-events: none;
             background: rgba(238,238,238,.7);
             transition: all .4s ease-in-out;
-            -webkit-transition: all .4s ease-in-out;
-            -moz-transition: all .4s ease-in-out;
-            -ms-transition: all .4s ease-in-out;
-            -o-transition: all .4s ease-in-out;
          }
    
          .dj-menu-content {
             top: 0;
             left: 0;
-            z-index: 200;
+            z-index: 1060;
             height: 100vh;
             display: block;
             position: fixed;
             overflow: auto;
-            -webkit-overflow-scrolling: touch;
             background: $white;
             transform: translate3d(-100%, 0px, 0px);
-            -webkit-transform: translate3d(-100%, 0px, 0px);
-            -moz-transform: translate3d(-100%, 0px, 0px);
-            -ms-transform: translate3d(-100%, 0px, 0px);
-            -o-transform: translate3d(-100%, 0px, 0px);
             transition: all .5s ease-in-out;
-            -webkit-transition: all .5s ease-in-out;
-            -moz-transition: all .5s ease-in-out;
-            -ms-transition: all .5s ease-in-out;
-            -o-transition: all .5s ease-in-out;
 
             @media (min-width: $desktop) {
                border-top-right-radius: $radius-big;
                border-bottom-right-radius: $radius-big;
             }
-            
-            @media (max-width: $sm) {
-               z-index: 1060;
-            }
-   
+
             .dj-menu-container {
                padding: 0 98px;
    
@@ -239,10 +194,6 @@ header {
                height: 87%;
                display: flex;
                align-items: center;
-               -webkit-box-align: center;
-               -webkit-align-items: center;
-               -moz-box-align: center;
-               -ms-flex-align: center;
    
                @media (max-width: $md) {
                   height: 85%;
@@ -267,10 +218,6 @@ header {
                            letter-spacing: .00464286em;
                            font-family: $title-font;
                            transition: all .2s ease-in-out;
-                           -webkit-transition: all .2s ease-in-out;
-                           -moz-transition: all .2s ease-in-out;
-                           -ms-transition: all .2s ease-in-out;
-                           -o-transition: all .2s ease-in-out;
    
                            &:hover {
                               color: $brand;
@@ -315,10 +262,6 @@ header {
    
                               &:hover:after {
                                  transform: scaleX(1);
-                                 -webkit-transform: scaleX(1);
-                                 -moz-transform: scaleX(1);
-                                 -ms-transform: scaleX(1);
-                                 -o-transform: scaleX(1);
                               }
    
                               @media (max-width: 414px) {
@@ -366,10 +309,6 @@ header {
                         height: 1px;
                         background: rgba(0,0,0,.3);
                         transition: all .2s ease-in-out;
-                        -webkit-transition: all .2s ease-in-out;
-                        -moz-transition: all .2s ease-in-out;
-                        -ms-transition: all .2s ease-in-out;
-                        -o-transition: all .2s ease-in-out;
                      }
    
                      &:hover:before {
@@ -384,23 +323,11 @@ header {
             &.dj-menu-backdrop {
                opacity: 1;
                transition: all .4s ease-in-out;
-               -webkit-transition: all .4s ease-in-out;
-               -moz-transition: all .4s ease-in-out;
-               -ms-transition: all .4s ease-in-out;
-               -o-transition: all .4s ease-in-out;
             }
    
             &.dj-menu-content {
                transform: translate3d(0%, 0px, 0px);
-               -webkit-transform: translate3d(0%, 0px, 0px);
-               -moz-transform: translate3d(0%, 0px, 0px);
-               -ms-transform: translate3d(0%, 0px, 0px);
-               -o-transform: translate3d(0%, 0px, 0px);
                transition: all .5s ease-in-out;
-               -webkit-transition: all .5s ease-in-out;
-               -moz-transition: all .5s ease-in-out;
-               -ms-transition: all .5s ease-in-out;
-               -o-transition: all .5s ease-in-out;
             }
          }
       }

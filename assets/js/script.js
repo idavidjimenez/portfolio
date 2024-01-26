@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-   // * HScroll
-   var width = window.innerWidth;
-   if(width >= 1079) { var s = skrollr.init(); }
-
    // * Button nav navigation
    const menuBtn      = document.querySelector('.dj-menu-btn');
    const menuNavbar   = document.querySelector('.dj-menu-navbar');
@@ -87,15 +83,15 @@ document.addEventListener('DOMContentLoaded', () => {
       
    });
 
-   // Ajustar la posición del modal al cargar la página para ocultarlo inicialmente
+   // * Adjust the position of the modal on page load to hide the modal initially
    $(document).ready(function(){
       $('.dj-modal .modal-dialog').css({
          'transform': 'translateY(100%)',
-         'transition': 'transform 0s' // Evita la animación inicial
+         'transition': 'transform 0s' // * Avoid initial animation
       });
    });
 
-   // Mostrar el modal desde abajo cuando se abre
+   // * Show the modal from below when opened
    $('#modalProject').on('shown.bs.modal', function () {
       $(this).find('.modal-dialog').css({
          'transform': 'translateY(0)',
@@ -103,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
    });
 
-   // Ocultar el modal hacia abajo cuando se cierra
+   // * Hide modal down when closed
    $('#modalProject').on('hidden.bs.modal', function () {
       $(this).find('.modal-dialog').css({
          'transform': 'translateY(100%)',
