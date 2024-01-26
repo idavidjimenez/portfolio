@@ -22,6 +22,7 @@ a {
   text-decoration: none;
   color: #222222;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 button {
@@ -113,10 +114,6 @@ button {
   font-weight: 500;
   text-decoration: underline !important;
   transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
 }
 .dj-btn:hover {
   color: #E78733;
@@ -165,6 +162,31 @@ button {
   .dj-header h1 {
     font-size: 47px;
   }
+}
+
+/* --------------------------------------------------------------
+* Modal Custom
+-------------------------------------------------------------- */
+.dj-modal .modal-fullscreen {
+  height: 93vh;
+}
+.dj-modal .modal-dialog {
+  position: fixed;
+  bottom: 0; /* Mostrar el modal desde abajo */
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+.dj-modal.modal.fade .modal-backdrop {
+  opacity: 0;
+}
+.dj-modal.modal.fade .modal-dialog {
+  transition: transform 0.5s ease;
+}
+.dj-modal .modal-content {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 header {

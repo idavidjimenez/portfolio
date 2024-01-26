@@ -90,4 +90,28 @@ document.addEventListener('DOMContentLoaded', () => {
       
    });
 
+   // Ajustar la posición del modal al cargar la página para ocultarlo inicialmente
+   $(document).ready(function(){
+      $('.dj-modal .modal-dialog').css({
+         'transform': 'translateY(100%)',
+         'transition': 'transform 0s' // Evita la animación inicial
+      });
+   });
+
+   // Mostrar el modal desde abajo cuando se abre
+   $('#modalProject').on('shown.bs.modal', function () {
+      $(this).find('.modal-dialog').css({
+         'transform': 'translateY(0)',
+         'transition': 'transform 0.5s ease'
+      });
+   });
+
+   // Ocultar el modal hacia abajo cuando se cierra
+   $('#modalProject').on('hidden.bs.modal', function () {
+      $(this).find('.modal-dialog').css({
+         'transform': 'translateY(100%)',
+         'transition': 'transform 0.1s ease'
+      });
+   });
+
 });
