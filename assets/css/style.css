@@ -1117,9 +1117,12 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 }
 
 .project-header {
-  padding-bottom: 225px;
+  padding-bottom: 175px;
 }
 
+.project-main {
+  padding: 50px 0;
+}
 .project-main-header {
   text-align: center;
   margin-bottom: 100px;
@@ -1129,6 +1132,12 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 50px;
+}
+.project-main-header h1 span {
+  font-size: clamp(42px, -6px + 9vw, 180px);
+}
+.project-main-header h1 span.venturest {
+  color: #9D81DC;
 }
 .project-main-header h3 {
   font-size: clamp(1.125rem, -18px + 3.5vw, 1.625rem);
@@ -1151,12 +1160,12 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 2px;
-  background: #222222;
+  height: 1.5px;
+  background: rgba(34, 34, 34, 0.3);
   transition: all 0.2s ease-in-out;
 }
 .project-main-header a:hover::before {
-  background: #EB984E;
+  background: #222222;
 }
 .project-main-gallery img {
   width: 100%;
