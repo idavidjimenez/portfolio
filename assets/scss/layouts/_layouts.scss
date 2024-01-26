@@ -124,9 +124,10 @@
 * Modal Custom
 -------------------------------------------------------------- */
 .dj-modal {
+   // * Animation styles
    .modal-dialog {
       position: fixed;
-      bottom: 0; /* Mostrar el modal desde abajo */
+      bottom: 0;
       left: 0;
       right: 0;
       transform: translateY(100%);
@@ -140,14 +141,19 @@
       transition: transform 0.5s ease;
    }
 
-   @media (min-width: $sm) {
-      .modal-fullscreen {
-         height: 93vh;
-      }
+   // * Custom styles
+   .modal-fullscreen {
+      height: 93vh;
+   }
 
-      .modal-content {
-         border-top-left-radius: $radius;
-         border-top-right-radius: $radius;
+   .modal-content {
+      border-top-left-radius: $radius;
+      border-top-right-radius: $radius;
+   }
+
+   @media (max-width: $sm) {
+      .modal-fullscreen {
+         height: 96vh;
       }
    }
 }
