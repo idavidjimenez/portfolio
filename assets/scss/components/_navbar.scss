@@ -10,7 +10,6 @@ header {
       * Navbar
       -------------------------------------------------------------- */
       .dj-menu-navbar {
-         z-index: 205;
          position: absolute;
          height: 100vh;
          width: 50px;
@@ -76,12 +75,16 @@ header {
          display: flex;
          align-items: center;
          padding-left: 10px;
+         z-index: 300;
+
+         @media (max-width: $sm) {
+            z-index: 1100;
+         }
          
          // * HAMBURGER
          .dj-menu-btn {
             position: fixed;
             display: flex;
-            z-index: 205;
             justify-content: center;
             align-items: center;
             width: 30px;
@@ -201,6 +204,10 @@ header {
             @media (min-width: $desktop) {
                border-top-right-radius: $radius-big;
                border-bottom-right-radius: $radius-big;
+            }
+            
+            @media (max-width: $sm) {
+               z-index: 1060;
             }
    
             .dj-menu-container {

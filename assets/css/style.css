@@ -167,9 +167,6 @@ button {
 /* --------------------------------------------------------------
 * Modal Custom
 -------------------------------------------------------------- */
-.dj-modal .modal-fullscreen {
-  height: 93vh;
-}
 .dj-modal .modal-dialog {
   position: fixed;
   bottom: 0; /* Mostrar el modal desde abajo */
@@ -184,9 +181,14 @@ button {
 .dj-modal.modal.fade .modal-dialog {
   transition: transform 0.5s ease;
 }
-.dj-modal .modal-content {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+@media (min-width: 576px) {
+  .dj-modal .modal-fullscreen {
+    height: 93vh;
+  }
+  .dj-modal .modal-content {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
 }
 
 header {
@@ -209,7 +211,6 @@ header .dj-menu {
   -------------------------------------------------------------- */
 }
 header .dj-menu .dj-menu-navbar {
-  z-index: 205;
   position: absolute;
   height: 100vh;
   width: 50px;
@@ -273,11 +274,16 @@ header .dj-menu-toggle {
   display: flex;
   align-items: center;
   padding-left: 10px;
+  z-index: 300;
+}
+@media (max-width: 576px) {
+  header .dj-menu-toggle {
+    z-index: 1100;
+  }
 }
 header .dj-menu-toggle .dj-menu-btn {
   position: fixed;
   display: flex;
-  z-index: 205;
   justify-content: center;
   align-items: center;
   width: 30px;
@@ -385,6 +391,11 @@ header .dj-menu-box .dj-menu-content {
   header .dj-menu-box .dj-menu-content {
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
+  }
+}
+@media (max-width: 576px) {
+  header .dj-menu-box .dj-menu-content {
+    z-index: 1060;
   }
 }
 header .dj-menu-box .dj-menu-content .dj-menu-container {
@@ -794,7 +805,6 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   position: absolute;
   left: 100px;
   top: 50px;
-  z-index: 205;
 }
 .dj-start .bar .dj-icon a {
   color: #FFF;

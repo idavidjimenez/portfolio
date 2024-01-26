@@ -124,9 +124,6 @@
 * Modal Custom
 -------------------------------------------------------------- */
 .dj-modal {
-   .modal-fullscreen {
-      height: 93vh;
-   }
    .modal-dialog {
       position: fixed;
       bottom: 0; /* Mostrar el modal desde abajo */
@@ -143,8 +140,14 @@
       transition: transform 0.5s ease;
    }
 
-   .modal-content {
-      border-top-left-radius: $radius;
-      border-top-right-radius: $radius;
+   @media (min-width: $sm) {
+      .modal-fullscreen {
+         height: 93vh;
+      }
+
+      .modal-content {
+         border-top-left-radius: $radius;
+         border-top-right-radius: $radius;
+      }
    }
 }
