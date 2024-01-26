@@ -227,7 +227,7 @@ header {
                   }
    
                   &-right {
-                     padding: 0 110px 0 12px;
+                     padding: 0 100px 0 12px;
    
                      @media (max-width: $md) {
                         padding: 0 75px;
@@ -247,7 +247,7 @@ header {
                               display: inline-block;
                               position: relative;
                               font-size: $h1;
-                              font-weight: 400;
+                              font-weight: 500;
                               font-family: $title-font;
                               letter-spacing: -.05em;
                               line-height: 100%;
