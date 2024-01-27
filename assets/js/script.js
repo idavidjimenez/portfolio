@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
    });
 
    // * Show the modal from below when opened
-   $('#modalProject').on('shown.bs.modal', function () {
+   $('.dj-modal').on('shown.bs.modal', function () {
       $(this).find('.modal-dialog').css({
          'transform': 'translateY(0)',
          'transition': 'transform 0.5s ease'
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
    });
 
    // * Hide modal down when closed
-   $('#modalProject').on('hidden.bs.modal', function () {
+   $('.dj-modal').on('hidden.bs.modal', function () {
       $(this).find('.modal-dialog').css({
          'transform': 'translateY(100%)',
          'transition': 'transform 0.1s ease'
