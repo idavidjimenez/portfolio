@@ -1,10 +1,14 @@
-.project-header {
+.project-main-header {
    padding-bottom: 175px;
+
+   @media (max-width: $sm) {
+      padding-bottom: 125px;
+   }
 }
 .project-main {
    padding: 50px 0;
 
-   &-header {
+   .project-header {
       text-align: center;
       margin-bottom: 100px;
 
@@ -16,57 +20,63 @@
 
          span {
             font-size: clamp(42px, -6px + 9vw, 180px);
-
-            &.venturest { color: $venturest; }
-            &.aprisoft { color: $aprisoft; }
-            &.puliglobal { color: $puliglobal; }
-            &.dama-selek { color: $dama-selek; }
-            &.mjt { color: $mjt; }
-            &.diaz { color: $diaz; }
-            &.travel { color: $travel; }
-            &.blog { color: $blog; }
-            &.minimal { color: $minimal; }
          }
       }
 
       h3 {
-         font-size: clamp($text, -18px + 3.5vw, $big-text);
-         font-weight: 600;
+         font-size: clamp($text, -18px + 3.5vw, $text);
+         font-weight: 400;
       }
 
-      a {
-         position: relative;
-         display: inline-block;
-         padding: 0 0 5px 0;
-         color: $text-color;
-         font-weight: 600;
-         line-height: 20px;
-         letter-spacing: .00464286em;
+      &-web {
+         display: flex;
+         align-items: center;
+         justify-content: center;
 
-         &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 1.5px;
-            background: rgba(34, 34, 34, 0.3);
-            transition: all .2s ease-in-out;
+         i {
+            font-size: 32px;
+            margin-right: 10px;
          }
 
-         &:hover {
+         a {
+            position: relative;
+            display: inline-block;
+            padding: 0 0 5px 0;
+            color: $text-color;
+            font-size: $h3;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: .00464286em;
+   
             &::before {
-               background: $text-color;
+               content: "";
+               display: block;
+               position: absolute;
+               left: 0;
+               right: 0;
+               bottom: 0;
+               height: 1.5px;
+               background: rgba(34, 34, 34, 0.3);
+               transition: all .2s ease-in-out;
+            }
+   
+            &:hover {
+               &::before {
+                  background: $text-color;
+               }
             }
          }
       }
    }
 
-   &-gallery {
+   .project-gallery {
       img {
          width: 100%;
          border-radius: $radius-big;
+
+         @media (max-width: $md) {
+            border-radius: $radius;
+         }
       }
    }
 }
