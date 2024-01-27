@@ -30,12 +30,6 @@ button {
   border: none;
 }
 
-@media (max-width: 768px) {
-  br {
-    display: none;
-  }
-}
-
 .venturest {
   color: #9D81DC !important;
 }
@@ -125,6 +119,9 @@ button {
   }
 }
 
+/* --------------------------------------------------------------
+* Underlines
+-------------------------------------------------------------- */
 /* --------------------------------------------------------------
 * Preloader
 -------------------------------------------------------------- */
@@ -219,32 +216,83 @@ button {
 /* --------------------------------------------------------------
 * Page Header
 -------------------------------------------------------------- */
-.dj-header {
+.dj-header-page {
   margin-bottom: 150px;
 }
-.dj-header span {
+.dj-header-page span {
   display: block;
 }
-.dj-header h1 {
+.dj-header-page h1 {
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: 50px;
 }
-.dj-header h1 span {
+.dj-header-page h1 span {
   font-family: "Poppins", sans-serif;
   font-size: 4rem;
 }
-.dj-header p {
+.dj-header-page p {
   font-size: 1.625rem;
 }
 @media (max-width: 414px) {
-  .dj-header h1 {
+  .dj-header-page h1 {
     font-size: 47px;
   }
 }
 
+.dj-header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.dj-header h1 {
+  font-size: clamp(42px, -6px + 9vw, 180px);
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+.dj-header h1 span {
+  font-size: clamp(42px, -6px + 9vw, 180px);
+}
+.dj-header h3 {
+  font-size: clamp(0.875rem, -18px + 3.5vw, 1.125rem);
+  font-weight: 400;
+}
+.dj-header-web {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dj-header-web i {
+  font-size: 32px;
+  margin-right: 10px;
+}
+.dj-header-web a {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 5px 0;
+  color: #222222;
+  font-size: 1.313rem;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.00464286em;
+}
+.dj-header-web a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5px;
+  background: rgba(190, 190, 190, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+.dj-header-web a:hover::before {
+  background: #222222;
+}
+
 .dj-heading h2 {
-  font-size: 1.125rem;
+  font-size: clamp(0.875rem, -18px + 3.5vw, 1.125rem);
   font-weight: 400;
 }
 .dj-heading h3 {
@@ -284,9 +332,6 @@ button {
   }
 }
 
-/* --------------------------------------------------------------
-* Underlines
--------------------------------------------------------------- */
 header {
   width: 0;
 }
@@ -1230,56 +1275,6 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 
 .project-main {
   padding: 50px 0;
-}
-.project-header {
-  text-align: center;
-  margin-bottom: 100px;
-}
-.project-header h1 {
-  font-size: clamp(42px, -6px + 9vw, 180px);
-  font-weight: 700;
-  text-transform: capitalize;
-  margin-bottom: 50px;
-}
-.project-header h1 span {
-  font-size: clamp(42px, -6px + 9vw, 180px);
-}
-.project-header h3 {
-  font-size: clamp(1.125rem, -18px + 3.5vw, 1.125rem);
-  font-weight: 400;
-}
-.project-header-web {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.project-header-web i {
-  font-size: 32px;
-  margin-right: 10px;
-}
-.project-header-web a {
-  position: relative;
-  display: inline-block;
-  padding: 0 0 5px 0;
-  color: #222222;
-  font-size: 1.313rem;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: 0.00464286em;
-}
-.project-header-web a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 1.5px;
-  background: rgba(190, 190, 190, 0.8);
-  transition: all 0.3s ease-in-out;
-}
-.project-header-web a:hover::before {
-  background: #222222;
 }
 .project-gallery img {
   width: 100%;

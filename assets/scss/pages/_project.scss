@@ -11,51 +11,6 @@
       padding: 50px 0;
    }
 
-   &-header {
-      text-align: center;
-      margin-bottom: 100px;
-   
-      h1 {
-         font-size: clamp(42px, -6px + 9vw, 180px);
-         font-weight: 700;
-         text-transform: capitalize;
-         margin-bottom: 50px;
-   
-         span {
-            font-size: clamp(42px, -6px + 9vw, 180px);
-         }
-      }
-   
-      h3 {
-         font-size: clamp($text, -18px + 3.5vw, $text);
-         font-weight: 400;
-      }
-   
-      &-web {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-   
-         i {
-            font-size: 32px;
-            margin-right: 10px;
-         }
-   
-         a {
-            position: relative;
-            display: inline-block;
-            padding: 0 0 5px 0;
-            color: $text-color;
-            font-size: $h3;
-            font-weight: 600;
-            line-height: 20px;
-            letter-spacing: .00464286em;
-   
-            @include underline_1;
-         }
-      }
-   }
-
    &-gallery {
       img {
          width: 100%;

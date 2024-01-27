@@ -23,11 +23,6 @@ button {
    background: none;
    border: none;
 }
-br {
-   @media (max-width: $md) {
-      display: none;
-   }
-}
 
 .venturest {color: $venturest !important; }
 .bg-venturest {background-color: $bg-venturest !important; }
