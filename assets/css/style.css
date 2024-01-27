@@ -191,7 +191,7 @@ button {
 }
 @media (max-width: 576px) {
   .dj-modal .modal-fullscreen {
-    height: 95vh;
+    height: 92vh;
   }
 }
 
