@@ -29,15 +29,32 @@ br {
    }
 }
 
-.venturest { color: $venturest; }
-.aprisoft { color: $aprisoft; }
-.puliglobal { color: $puliglobal; }
-.dama-selek { color: $dama-selek; }
-.mjt { color: $mjt; }
-.diaz { color: $diaz; }
-.travel { color: $travel; }
-.blog { color: $blog; }
-.minimal { color: $minimal; }
+.venturest {color: $venturest !important; }
+.bg-venturest {background-color: $bg-venturest !important; }
+
+.aprisoft { color: $aprisoft !important; }
+.bg-aprisoft { background-color: $bg-aprisoft !important; }
+
+.puliglobal { color: $puliglobal !important; }
+.bg-puliglobal { background-color: $bg-puliglobal !important; }
+
+.dama-selek { color: $dama-selek !important; }
+.bg-dama-selek { background-color: $bg-dama-selek !important; }
+
+.mjt { color: $mjt !important; }
+.bg-mjt { background-color: $bg-mjt !important; }
+
+.diaz { color: $diaz !important; }
+.bg-diaz { background-color: $bg-diaz !important; }
+
+.travel { color: $travel !important; }
+.bg-travel { background-color: $bg-travel !important; }
+
+.blog { color: $blog !important; }
+.bg-blog { background-color: $bg-blog !important; }
+
+.minimal { color: $minimal !important; }
+.bg-minimal { background-color: $bg-minimal !important; }
 
 .dv-skroll.home {
    position: fixed;

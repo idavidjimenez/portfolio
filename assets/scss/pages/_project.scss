@@ -5,39 +5,42 @@
       padding-bottom: 125px;
    }
 }
-.project-main {
-   padding: 50px 0;
 
-   .project-header {
+.project {
+   &-main {
+      padding: 50px 0;
+   }
+
+   &-header {
       text-align: center;
       margin-bottom: 100px;
-
+   
       h1 {
          font-size: clamp(42px, -6px + 9vw, 180px);
          font-weight: 700;
          text-transform: capitalize;
          margin-bottom: 50px;
-
+   
          span {
             font-size: clamp(42px, -6px + 9vw, 180px);
          }
       }
-
+   
       h3 {
          font-size: clamp($text, -18px + 3.5vw, $text);
          font-weight: 400;
       }
-
+   
       &-web {
          display: flex;
          align-items: center;
          justify-content: center;
-
+   
          i {
             font-size: 32px;
             margin-right: 10px;
          }
-
+   
          a {
             position: relative;
             display: inline-block;
@@ -48,35 +51,30 @@
             line-height: 20px;
             letter-spacing: .00464286em;
    
-            &::before {
-               content: "";
-               display: block;
-               position: absolute;
-               left: 0;
-               right: 0;
-               bottom: 0;
-               height: 1.5px;
-               background: rgba(34, 34, 34, 0.3);
-               transition: all .2s ease-in-out;
-            }
-   
-            &:hover {
-               &::before {
-                  background: $text-color;
-               }
-            }
+            @include underline_1;
          }
       }
    }
 
-   .project-gallery {
+   &-gallery {
       img {
          width: 100%;
          border-radius: $radius-big;
-
+   
          @media (max-width: $md) {
             border-radius: $radius;
          }
       }
+   }
+}
+
+.dj-figure {
+   height: 100%;
+   padding: clamp(20px, 4vw, 80px);
+   background: $text-color;
+   border-radius: $radius-big;
+
+   @media (max-width: $md) {
+      border-radius: $radius;
    }
 }

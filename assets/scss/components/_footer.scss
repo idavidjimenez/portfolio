@@ -108,23 +108,7 @@
                line-height: 20px;
                letter-spacing: .00464286em;
 
-               &::before {
-                  content: "";
-                  display: block;
-                  position: absolute;
-                  left: 0;
-                  right: 0;
-                  bottom: 0;
-                  height: 1px;
-                  background: rgba(190, 190, 190, 0.3);
-                  transition: all .2s ease-in-out;
-               }
-
-               &:hover {
-                  &::before {
-                     background: $brand;
-                  }
-               }
+               @include underline_1;
             }
          }
 
@@ -140,7 +124,6 @@
 
          .dj-footer-privacy {
             a {
-
                &::after {
                   display: block;
                   width: 197px;

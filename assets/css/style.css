@@ -37,39 +37,75 @@ button {
 }
 
 .venturest {
-  color: #9D81DC;
+  color: #9D81DC !important;
+}
+
+.bg-venturest {
+  background-color: #E1D5F6 !important;
 }
 
 .aprisoft {
-  color: #EB984E;
+  color: #EB984E !important;
+}
+
+.bg-aprisoft {
+  background-color: #E7CFBA !important;
 }
 
 .puliglobal {
-  color: #0F0147;
+  color: #0F0147 !important;
+}
+
+.bg-puliglobal {
+  background-color: #E9F0FF !important;
 }
 
 .dama-selek {
-  color: #C79040;
+  color: #C79040 !important;
+}
+
+.bg-dama-selek {
+  background-color: #E2D6C5 !important;
 }
 
 .mjt {
-  color: #70A075;
+  color: #70A075 !important;
+}
+
+.bg-mjt {
+  background-color: #E0F1E7 !important;
 }
 
 .diaz {
-  color: #31426F;
+  color: #31426F !important;
+}
+
+.bg-diaz {
+  background-color: #8192BF !important;
 }
 
 .travel {
-  color: #14505C;
+  color: #14505C !important;
+}
+
+.bg-travel {
+  background-color: #8AB6BC !important;
 }
 
 .blog {
-  color: #F14D78;
+  color: #F14D78 !important;
+}
+
+.bg-blog {
+  background-color: #FFF4F7 !important;
 }
 
 .minimal {
-  color: #191919;
+  color: #191919 !important;
+}
+
+.bg-minimal {
+  background-color: #E1DBD8 !important;
 }
 
 .dv-skroll.home {
@@ -161,6 +197,13 @@ button {
 }
 
 /* --------------------------------------------------------------
+* Margins section
+-------------------------------------------------------------- */
+.dj-block {
+  margin: clamp(60px, 3vw, 120px) 0;
+}
+
+/* --------------------------------------------------------------
 * JS
 -------------------------------------------------------------- */
 .start-scrolled {
@@ -200,6 +243,16 @@ button {
   }
 }
 
+.dj-heading h2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.dj-heading h3 {
+  font-size: clamp(26px, 16px + 2.1vw, 56px);
+  font-weight: 600;
+  line-height: 120%;
+}
+
 /* --------------------------------------------------------------
 * Modal Custom
 -------------------------------------------------------------- */
@@ -231,6 +284,9 @@ button {
   }
 }
 
+/* --------------------------------------------------------------
+* Underlines
+-------------------------------------------------------------- */
 header {
   width: 0;
 }
@@ -648,12 +704,12 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 1px;
-  background: rgba(190, 190, 190, 0.3);
-  transition: all 0.2s ease-in-out;
+  height: 1.5px;
+  background: rgba(190, 190, 190, 0.8);
+  transition: all 0.3s ease-in-out;
 }
 .dj-footer-body-left .dj-footer-mail a:hover::before {
-  background: #EB984E;
+  background: #222222;
 }
 .dj-footer-body-left .dj-footer-address {
   margin: 28px 0 0 0;
@@ -1175,33 +1231,33 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .project-main {
   padding: 50px 0;
 }
-.project-main .project-header {
+.project-header {
   text-align: center;
   margin-bottom: 100px;
 }
-.project-main .project-header h1 {
+.project-header h1 {
   font-size: clamp(42px, -6px + 9vw, 180px);
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 50px;
 }
-.project-main .project-header h1 span {
+.project-header h1 span {
   font-size: clamp(42px, -6px + 9vw, 180px);
 }
-.project-main .project-header h3 {
+.project-header h3 {
   font-size: clamp(1.125rem, -18px + 3.5vw, 1.125rem);
   font-weight: 400;
 }
-.project-main .project-header-web {
+.project-header-web {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.project-main .project-header-web i {
+.project-header-web i {
   font-size: 32px;
   margin-right: 10px;
 }
-.project-main .project-header-web a {
+.project-header-web a {
   position: relative;
   display: inline-block;
   padding: 0 0 5px 0;
@@ -1211,7 +1267,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   line-height: 20px;
   letter-spacing: 0.00464286em;
 }
-.project-main .project-header-web a::before {
+.project-header-web a::before {
   content: "";
   display: block;
   position: absolute;
@@ -1219,18 +1275,30 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   right: 0;
   bottom: 0;
   height: 1.5px;
-  background: rgba(34, 34, 34, 0.3);
-  transition: all 0.2s ease-in-out;
+  background: rgba(190, 190, 190, 0.8);
+  transition: all 0.3s ease-in-out;
 }
-.project-main .project-header-web a:hover::before {
+.project-header-web a:hover::before {
   background: #222222;
 }
-.project-main .project-gallery img {
+.project-gallery img {
   width: 100%;
   border-radius: 24px;
 }
 @media (max-width: 768px) {
-  .project-main .project-gallery img {
+  .project-gallery img {
+    border-radius: 12px;
+  }
+}
+
+.dj-figure {
+  height: 100%;
+  padding: clamp(20px, 4vw, 80px);
+  background: #222222;
+  border-radius: 24px;
+}
+@media (max-width: 768px) {
+  .dj-figure {
     border-radius: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
