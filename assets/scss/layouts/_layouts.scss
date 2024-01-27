@@ -61,43 +61,7 @@
 }
 
 /* --------------------------------------------------------------
-* Button
--------------------------------------------------------------- */
-.dj-btn {
-   font-weight: 500;
-   text-decoration: underline !important;
-   transition: all .2s ease-in-out;
-
-   &:hover {
-      color: $brand-hover;
-   }
-
-   @media screen and (max-width: $desktop) {
-      font-size: $h3;
-   }
-}
-
-/* --------------------------------------------------------------
-* Margins section
--------------------------------------------------------------- */
-.dj-block {
-   margin: clamp(60px, 3vw, 120px) 0;
-}
-
-/* --------------------------------------------------------------
-* JS
--------------------------------------------------------------- */
-.start-scrolled {
-   height: 100% !important;
-   width: 100% !important;
-   border-radius: 0 !important;
-}
-.intro-scrolled {
-   border-radius: 0 !important;
-}
-
-/* --------------------------------------------------------------
-* Page Header
+* Page Headers
 -------------------------------------------------------------- */
 .dj-header-page {
    margin-bottom: 150px;
@@ -171,6 +135,8 @@
    }
 }
 .dj-heading {
+   margin-bottom: clamp(60px, 3vw, 120px);
+
    h2 {
       font-size: clamp($small, -18px + 3.5vw, $text);
       font-weight: 400;
@@ -180,6 +146,42 @@
       font-weight: 600;
       line-height: 120%;
    }
+}
+
+/* --------------------------------------------------------------
+* Button
+-------------------------------------------------------------- */
+.dj-btn {
+   font-weight: 500;
+   text-decoration: underline !important;
+   transition: all .2s ease-in-out;
+
+   &:hover {
+      color: $brand-hover;
+   }
+
+   @media screen and (max-width: $desktop) {
+      font-size: $h3;
+   }
+}
+
+/* --------------------------------------------------------------
+* Margins section
+-------------------------------------------------------------- */
+.dj-block {
+   margin: $margin 0;
+}
+
+/* --------------------------------------------------------------
+* JS
+-------------------------------------------------------------- */
+.start-scrolled {
+   height: 100% !important;
+   width: 100% !important;
+   border-radius: 0 !important;
+}
+.intro-scrolled {
+   border-radius: 0 !important;
 }
 
 /* --------------------------------------------------------------
@@ -218,5 +220,20 @@
       .modal-fullscreen {
          height: 92vh;
       }
+   }
+}
+
+/* --------------------------------------------------------------
+* Figure Image
+-------------------------------------------------------------- */
+.dj-figure {
+   height: 100%;
+   padding: clamp(20px, 4vw, 80px);
+   background: $text-color;
+   border-radius: $radius-big;
+   margin-bottom: 0;
+
+   @media (max-width: $md) {
+      border-radius: $radius;
    }
 }

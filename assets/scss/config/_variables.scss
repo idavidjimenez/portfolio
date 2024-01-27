@@ -94,6 +94,7 @@ $radius: 12px;
 $radius-big: 24px;
 $radius-small: 8px;
 $border: .5px solid $black;
+$margin: clamp(60px, 3vw, 120px);
 
 // * Fonts
 $logo-font:  'Playfair Display', serif;

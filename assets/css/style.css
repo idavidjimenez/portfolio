@@ -177,44 +177,7 @@ button {
 }
 
 /* --------------------------------------------------------------
-* Button
--------------------------------------------------------------- */
-.dj-btn {
-  font-weight: 500;
-  text-decoration: underline !important;
-  transition: all 0.2s ease-in-out;
-}
-.dj-btn:hover {
-  color: #E78733;
-}
-@media screen and (max-width: 1079px) {
-  .dj-btn {
-    font-size: 1.313rem;
-  }
-}
-
-/* --------------------------------------------------------------
-* Margins section
--------------------------------------------------------------- */
-.dj-block {
-  margin: clamp(60px, 3vw, 120px) 0;
-}
-
-/* --------------------------------------------------------------
-* JS
--------------------------------------------------------------- */
-.start-scrolled {
-  height: 100% !important;
-  width: 100% !important;
-  border-radius: 0 !important;
-}
-
-.intro-scrolled {
-  border-radius: 0 !important;
-}
-
-/* --------------------------------------------------------------
-* Page Header
+* Page Headers
 -------------------------------------------------------------- */
 .dj-header-page {
   margin-bottom: 150px;
@@ -291,6 +254,9 @@ button {
   background: #222222;
 }
 
+.dj-heading {
+  margin-bottom: clamp(60px, 3vw, 120px);
+}
 .dj-heading h2 {
   font-size: clamp(0.875rem, -18px + 3.5vw, 1.125rem);
   font-weight: 400;
@@ -299,6 +265,43 @@ button {
   font-size: clamp(26px, 16px + 2.1vw, 56px);
   font-weight: 600;
   line-height: 120%;
+}
+
+/* --------------------------------------------------------------
+* Button
+-------------------------------------------------------------- */
+.dj-btn {
+  font-weight: 500;
+  text-decoration: underline !important;
+  transition: all 0.2s ease-in-out;
+}
+.dj-btn:hover {
+  color: #E78733;
+}
+@media screen and (max-width: 1079px) {
+  .dj-btn {
+    font-size: 1.313rem;
+  }
+}
+
+/* --------------------------------------------------------------
+* Margins section
+-------------------------------------------------------------- */
+.dj-block {
+  margin: clamp(60px, 3vw, 120px) 0;
+}
+
+/* --------------------------------------------------------------
+* JS
+-------------------------------------------------------------- */
+.start-scrolled {
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 0 !important;
+}
+
+.intro-scrolled {
+  border-radius: 0 !important;
 }
 
 /* --------------------------------------------------------------
@@ -329,6 +332,22 @@ button {
 @media (max-width: 576px) {
   .dj-modal .modal-fullscreen {
     height: 92vh;
+  }
+}
+
+/* --------------------------------------------------------------
+* Figure Image
+-------------------------------------------------------------- */
+.dj-figure {
+  height: 100%;
+  padding: clamp(20px, 4vw, 80px);
+  background: #222222;
+  border-radius: 24px;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .dj-figure {
+    border-radius: 12px;
   }
 }
 
@@ -1274,26 +1293,49 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 }
 
 .project-main {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 .project-gallery img {
   width: 100%;
+}
+.project-gallery-cover .dj-figure, .project-gallery-cover img {
   border-radius: 24px;
 }
-@media (max-width: 768px) {
-  .project-gallery img {
+@media (max-width: 992px) {
+  .project-gallery-cover .dj-figure, .project-gallery-cover img {
     border-radius: 12px;
   }
 }
-
-.dj-figure {
-  height: 100%;
-  padding: clamp(20px, 4vw, 80px);
-  background: #222222;
-  border-radius: 24px;
+.project-elements .dj-figure, .project-elements img {
+  border-radius: 12px;
 }
-@media (max-width: 768px) {
-  .dj-figure {
-    border-radius: 12px;
-  }
+.project-elements .article-element {
+  margin-bottom: clamp(60px, 3vw, 120px);
+}
+.project-elements .article-element-info {
+  padding-top: 24px;
+}
+.project-elements .article-element-info .info-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+.project-elements .article-element-info .info-title {
+  font-size: clamp(1.125rem, 14px + 0.6vw, 1.313rem);
+  margin-bottom: 0;
+}
+.project-elements .article-element-info .info-data small {
+  position: relative;
+  bottom: 0.2em;
+  margin: 0 0.3em 0 0;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 100%;
+}
+.project-elements .article-element-info .info-data a {
+  font-size: clamp(16px, 14px + 0.6vw, 24px);
+  font-weight: 600;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
