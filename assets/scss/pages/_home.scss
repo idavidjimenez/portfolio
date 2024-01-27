@@ -193,6 +193,9 @@
       }
 
       &-links {
+         a {
+            transition: .3s all !important;
+         }
          @media (max-width: $sm) {
             a {
                display: block;
