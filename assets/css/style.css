@@ -34,29 +34,29 @@ figure {
   margin-bottom: 1px;
 }
 
-.container-alt {
+.dj-container {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 50px;
 }
 @media (max-width: 1200px) {
-  .container-alt {
+  .dj-container {
     padding: 0 40px;
   }
 }
 @media (max-width: 992px) {
-  .container-alt {
+  .dj-container {
     padding: 0 26px;
   }
 }
 @media (max-width: 768px) {
-  .container-alt {
+  .dj-container {
     padding: 0 24px;
   }
 }
 @media (max-width: 576px) {
-  .container-alt {
+  .dj-container {
     padding: 0 16px;
   }
 }
