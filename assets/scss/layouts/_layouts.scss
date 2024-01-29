@@ -147,6 +147,90 @@
       line-height: 120%;
    }
 }
+.dj-heading-section {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 71px;
+   margin-bottom: 48px;
+   background: $white;
+   background-image: $dots;
+   background-position: bottom;
+   background-size: 8px 1px;
+   background-repeat: repeat-x;
+
+   &-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      height: 100%;
+
+      @media (max-width: $desktop) {
+         width: 100%;
+         justify-content: space-between;
+      }
+   }
+
+   &-title {
+      min-width: 150px;
+      font-size: $text;
+      font-weight: 500;
+      margin-bottom: 0;
+
+      @media (max-width: $sm) {
+         font-size: 16px;
+      }
+   }
+
+   /* --------------------------------------------------------------
+   * Page menú
+   -------------------------------------------------------------- */
+   .dj-menu-tabs {
+      display: flex;
+      align-items: center;
+      gap: clamp(8px,5vw,32px);
+      height: 100%;
+      margin: 0;
+
+      li {
+         position: relative;
+         display: flex;
+         align-items: center;
+         height: 100%;
+         cursor: pointer;
+         color: $text-link;
+         white-space: nowrap;
+         transition: .3s;
+
+         &:hover {
+            color: $text-color;
+         }
+
+         &.active {
+            color: $text-color;
+            font-weight: 500;
+
+            &::before {
+               content: "";
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               width: 100%;
+               border-bottom: 2px solid $text-color;
+            }
+         }
+
+         @media (max-width: $sm) {
+            font-size: 16px;
+         }
+      }
+   }
+}
+.sticky {
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
 
 /* --------------------------------------------------------------
 * Button
@@ -170,6 +254,9 @@
 -------------------------------------------------------------- */
 .dj-block {
    margin: $margin 0;
+}
+.dj-padding {
+   padding: $padding 0;
 }
 
 /* --------------------------------------------------------------
@@ -228,7 +315,7 @@
 -------------------------------------------------------------- */
 .dj-figure {
    height: 100%;
-   padding: clamp(20px, 4vw, 80px);
+   padding: clamp(20px, 4vw, 60px);
    background: $text-color;
    border-radius: $radius-big;
    margin-bottom: 0;

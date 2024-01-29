@@ -30,6 +30,10 @@ button {
   border: none;
 }
 
+figure {
+  margin-bottom: 1px;
+}
+
 .venturest {
   color: #9D81DC !important;
 }
@@ -267,6 +271,88 @@ button {
   line-height: 120%;
 }
 
+.dj-heading-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 71px;
+  margin-bottom: 48px;
+  background: #FFF;
+  background-image: linear-gradient(to right, #222222 0 10%, rgba(255, 255, 255, 0) 10%);
+  background-position: bottom;
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+  /* --------------------------------------------------------------
+  * Page menú
+  -------------------------------------------------------------- */
+}
+.dj-heading-section-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+}
+@media (max-width: 1079px) {
+  .dj-heading-section-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.dj-heading-section-title {
+  min-width: 150px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .dj-heading-section-title {
+    font-size: 16px;
+  }
+}
+.dj-heading-section .dj-menu-tabs {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 5vw, 32px);
+  height: 100%;
+  margin: 0;
+}
+.dj-heading-section .dj-menu-tabs li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.dj-heading-section .dj-menu-tabs li:hover {
+  color: #222222;
+}
+.dj-heading-section .dj-menu-tabs li.active {
+  color: #222222;
+  font-weight: 500;
+}
+.dj-heading-section .dj-menu-tabs li.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid #222222;
+}
+@media (max-width: 576px) {
+  .dj-heading-section .dj-menu-tabs li {
+    font-size: 16px;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 /* --------------------------------------------------------------
 * Button
 -------------------------------------------------------------- */
@@ -289,6 +375,10 @@ button {
 -------------------------------------------------------------- */
 .dj-block {
   margin: clamp(60px, 3vw, 120px) 0;
+}
+
+.dj-padding {
+  padding: clamp(60px, 3vw, 120px) 0;
 }
 
 /* --------------------------------------------------------------
@@ -340,7 +430,7 @@ button {
 -------------------------------------------------------------- */
 .dj-figure {
   height: 100%;
-  padding: clamp(20px, 4vw, 80px);
+  padding: clamp(20px, 4vw, 60px);
   background: #222222;
   border-radius: 24px;
   margin-bottom: 0;
@@ -675,7 +765,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 }
 @media (min-width: 768px) {
   .dj-footer {
-    margin-top: 150px !important;
+    margin-top: 150px;
   }
 }
 @media (min-width: 360px) {
@@ -1337,5 +1427,51 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .project-elements .article-element-info .info-data a {
   font-size: clamp(16px, 14px + 0.6vw, 24px);
   font-weight: 600;
+  transition: 0.3s;
   cursor: pointer;
+}
+.project-elements .article-element-info .info-data a:hover {
+  text-decoration: underline;
+}
+.project-typography {
+  background-color: #FFF;
+}
+.project-typography .dj-grid-typography {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 clamp(20px, 4vw, 80px);
+}
+.project-typography .dj-grid-typography-item {
+  padding: var(--gutter) 0;
+  background-image: linear-gradient(to right, #222222 0 10%, rgba(255, 255, 255, 0) 10%);
+  background-position: bottom;
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+}
+.project-typography .dj-grid-typography-item:nth-child(3n+1) {
+  grid-column: 1/3;
+}
+.project-typography .dj-grid-typography-figure {
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(4px, 3vw, 20px);
+  overflow: hidden;
+}
+.project-typography .dj-grid-typography-img {
+  display: block;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.dj-content-tabs-item {
+  position: relative;
+  display: none;
+}
+.dj-content-tabs-item.active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
