@@ -26,6 +26,25 @@ button {
 figure {
    margin-bottom: 1px;
 }
+.container-alt {
+   width: 100%;
+   max-width: 1920px;
+   margin: 0 auto;
+   padding: 0 50px;
+   
+   @media (max-width: $xl) {
+      padding: 0 40px;
+   }
+   @media (max-width: $lg) {
+      padding: 0 26px;
+   }
+   @media (max-width: $md) {
+      padding: 0 24px;
+   }
+   @media (max-width: $sm) {
+      padding: 0 16px;
+   }
+}
 
 .venturest {color: $venturest !important; }
 .bg-venturest {background-color: $bg-venturest !important; }

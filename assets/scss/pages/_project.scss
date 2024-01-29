@@ -150,7 +150,7 @@
             object-fit: contain;
 
             &:nth-child(2) {
-               max-width: 80%;
+               max-width: 100%;
             }
 
             @media (max-width: $lg) {
