@@ -8,6 +8,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
+  color: #222222;
 }
 
 html {
@@ -898,6 +899,8 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .dj-footer-body-left .dj-footer-address address {
   font-size: 0.875rem;
   font-style: normal;
+}
+.dj-footer-body-left .dj-footer-address address p {
   color: rgba(0, 0, 0, 0.6);
 }
 .dj-footer-body-left .dj-footer-privacy a::after {
@@ -1413,7 +1416,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 -------------------------------------------------------------- */
 .project {
   /* --------------------------------------------------------------
-  * Typography
+  * Info
   -------------------------------------------------------------- */
 }
 .project-main {
@@ -1467,42 +1470,42 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .project-elements .article-element-info .info-data a:hover {
   text-decoration: underline;
 }
-.project-typography {
+.project-info {
   background-color: #FFF;
 }
-.project-typography .dj-grid-typography {
+.project-info .dj-grid-typography {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 clamp(20px, 4vw, 80px);
 }
 @media (max-width: 768px) {
-  .project-typography .dj-grid-typography {
+  .project-info .dj-grid-typography {
     display: flex;
     flex-direction: column;
   }
 }
-.project-typography .dj-grid-typography-item {
+.project-info .dj-grid-typography-item {
   padding: 20px 0;
   background-image: linear-gradient(to right, #222222 0 10%, rgba(255, 255, 255, 0) 10%);
   background-position: bottom;
   background-size: 8px 1px;
   background-repeat: repeat-x;
 }
-.project-typography .dj-grid-typography-item:first-child .dj-grid-typography-figure {
+.project-info .dj-grid-typography-item:first-child .dj-grid-typography-figure {
   height: 400px;
 }
 @media (max-width: 992px) {
-  .project-typography .dj-grid-typography-item:first-child .dj-grid-typography-figure {
+  .project-info .dj-grid-typography-item:first-child .dj-grid-typography-figure {
     height: auto;
   }
 }
-.project-typography .dj-grid-typography-item:nth-child(3n+1) {
+.project-info .dj-grid-typography-item:nth-child(3n+1) {
   grid-column: 1/3;
 }
-.project-typography .dj-grid-typography-item:nth-child(2) .grid-typography-figure {
+.project-info .dj-grid-typography-item:nth-child(2) .grid-typography-figure {
   height: 100%;
 }
-.project-typography .dj-grid-typography-figure {
+.project-info .dj-grid-typography-figure {
   height: auto;
   position: relative;
   display: flex;
@@ -1512,27 +1515,39 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   gap: clamp(4px, 3vw, 20px);
   overflow: hidden;
 }
-.project-typography .dj-grid-typography-figure__caption {
+.project-info .dj-grid-typography-figure__caption {
   width: 100%;
   font-size: 11px;
+  font-weight: 500;
   text-transform: uppercase;
 }
-.project-typography .dj-grid-typography-figure:nth-child(2) {
+.project-info .dj-grid-typography-figure:nth-child(2) {
   height: 100%;
 }
-.project-typography .dj-grid-typography-img {
+.project-info .dj-grid-typography-img {
   display: block;
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.project-typography .dj-grid-typography-img:nth-child(2) {
+.project-info .dj-grid-typography-img:nth-child(2) {
   max-width: 100%;
 }
 @media (max-width: 992px) {
-  .project-typography .dj-grid-typography-img {
+  .project-info .dj-grid-typography-img {
     width: 100%;
   }
+}
+.project-info .dj-palette-desc {
+  width: 300px;
+  margin-bottom: 2em;
+  font-size: 16px;
+  font-size: clamp(1.125rem, 14px + 0.38vw, 1.313rem);
+}
+.project-info .dj-palette-list .list-palette {
+  position: relative;
+  display: inline-flex;
+  box-sizing: content-box;
 }
 
 /* --------------------------------------------------------------

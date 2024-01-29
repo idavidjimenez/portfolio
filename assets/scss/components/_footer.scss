@@ -118,7 +118,10 @@
             address {
                font-size: 0.875rem;
                font-style: normal;
-               color: rgba(0, 0, 0, 0.6);
+               
+               p {
+                  color: $text-link;
+               }
             }
          }
 
