@@ -455,6 +455,9 @@ figure {
   border-top-right-radius: 12px;
   background-color: #F8F8F8;
 }
+.dj-modal .modal-content .modal-body {
+  padding: 0;
+}
 @media (max-width: 576px) {
   .dj-modal .modal-fullscreen {
     height: 92vh;
