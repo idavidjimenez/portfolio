@@ -34,6 +34,10 @@
          
          a {
             color: $white;
+
+            span {
+               color: $white;
+            }
          }
       }
 
@@ -47,6 +51,7 @@
             font-family: $title-font;
             font-weight: 500;
             font-size: $h2;
+            color: $white;
          }
       }
    }
@@ -92,6 +97,10 @@
 
             a {
                color: $black;
+
+               span {
+                  color: $black;
+               }
             }
          }
          
@@ -354,6 +363,12 @@
       }
    }
 
+   .subtitle {
+      h3 {
+         color: $white;
+      }
+   }
+
    .text {
       width: 80%;
       margin: auto;
@@ -362,6 +377,7 @@
          font-family: $title-font;
          font-weight: 500;
          font-size: 40px;
+         color: $white;
       }
    }
 

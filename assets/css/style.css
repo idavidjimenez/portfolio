@@ -1014,6 +1014,9 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .dj-start .bar .dj-icon a {
   color: #FFF;
 }
+.dj-start .bar .dj-icon a span {
+  color: #FFF;
+}
 .dj-start .bar-scroll {
   font-size: 2.25rem;
   position: absolute;
@@ -1024,6 +1027,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 2.25rem;
+  color: #FFF;
 }
 .dj-start .quote {
   position: absolute;
@@ -1061,6 +1065,9 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
     top: auto;
   }
   .dj-start .bar .dj-icon a {
+    color: #000;
+  }
+  .dj-start .bar .dj-icon a span {
     color: #000;
   }
   .dj-start .bar-scroll {
@@ -1291,6 +1298,9 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
     border-bottom-left-radius: 24px;
   }
 }
+.dj-work .subtitle h3 {
+  color: #FFF;
+}
 .dj-work .text {
   width: 80%;
   margin: auto;
@@ -1299,6 +1309,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 40px;
+  color: #FFF;
 }
 .dj-work .link {
   bottom: 20px;
