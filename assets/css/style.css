@@ -15,6 +15,13 @@ html {
   font-size: 100%;
 }
 
+#projects,
+#project,
+#contact,
+#about-me {
+  background-color: #F8F8F8;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
@@ -1347,11 +1354,6 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   .dj-work .text p {
     font-size: 1.875rem;
   }
-}
-
-#projects,
-#project {
-  background-color: #F8F8F8;
 }
 
 .main-projects {
