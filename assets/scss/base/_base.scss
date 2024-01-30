@@ -20,6 +20,12 @@ a {
    transition: .3s;
    cursor: pointer;
 }
+ul {
+   padding: 0;
+}
+li {
+   list-style: none;
+}
 button {
    background: none;
    border: none;
