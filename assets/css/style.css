@@ -1427,11 +1427,11 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 }
 
 .project-main-header {
-  padding-bottom: 175px;
+  padding-bottom: 150px;
 }
 @media (max-width: 576px) {
   .project-main-header {
-    padding-bottom: 125px;
+    padding-bottom: 100px;
   }
 }
 
@@ -1447,7 +1447,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   -------------------------------------------------------------- */
 }
 .project-main {
-  padding: 50px 0 0 0;
+  padding: 75px 0 0 0;
 }
 .project-gallery img {
   width: 100%;
