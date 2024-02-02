@@ -47,7 +47,27 @@ header {
             .dj-menu-toggle {
                position: absolute;
                right: 80px;
-               top: 78px;
+
+               .dj-menu-contact {
+                  margin-right: 30px;
+
+                  &::after {
+                     display: block;
+                     content: '';
+                     border-bottom: solid 2px $brand;
+                     transform: scaleX(0);
+                     transition: transform 250ms ease-in-out;
+                  }
+
+                  &:hover {
+                     &::after {
+                        transform: scaleX(1);
+                     }
+                  }
+               }
+               .dj-menu-btn {
+                  margin-left: 122px;
+               }
             }
 
             @media (max-width: $desktop) {
@@ -61,7 +81,7 @@ header {
 
                .dj-menu-toggle {
                   right: 60px;
-                  top: 80px;
+                  top: 65px;
                }
             }
          }
@@ -143,6 +163,7 @@ header {
             opacity: 0;
             z-index: 197;
             position: fixed;
+            pointer-events: none;
             background: rgba(238,238,238,.7);
             transition: all .4s ease-in-out;
          }
@@ -322,6 +343,7 @@ header {
             &.dj-menu-backdrop {
                opacity: 1;
                transition: all .4s ease-in-out;
+               pointer-events: all;
             }
    
             &.dj-menu-content {

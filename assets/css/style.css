@@ -582,7 +582,22 @@ header .dj-menu .dj-menu-navbar.page {
 header .dj-menu .dj-menu-navbar.page .dj-menu-toggle {
   position: absolute;
   right: 80px;
-  top: 78px;
+}
+header .dj-menu .dj-menu-navbar.page .dj-menu-toggle .dj-menu-contact {
+  margin-right: 30px;
+}
+header .dj-menu .dj-menu-navbar.page .dj-menu-toggle .dj-menu-contact::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #EB984E;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+header .dj-menu .dj-menu-navbar.page .dj-menu-toggle .dj-menu-contact:hover::after {
+  transform: scaleX(1);
+}
+header .dj-menu .dj-menu-navbar.page .dj-menu-toggle .dj-menu-btn {
+  margin-left: 122px;
 }
 @media (max-width: 1079px) {
   header .dj-menu .dj-menu-navbar.page {
@@ -597,7 +612,7 @@ header .dj-menu .dj-menu-navbar.page .dj-menu-toggle {
   }
   header .dj-menu .dj-menu-navbar.page .dj-menu-toggle {
     right: 60px;
-    top: 80px;
+    top: 65px;
   }
 }
 header .dj-menu-toggle {
@@ -660,6 +675,7 @@ header .dj-menu-box .dj-menu-backdrop {
   opacity: 0;
   z-index: 197;
   position: fixed;
+  pointer-events: none;
   background: rgba(238, 238, 238, 0.7);
   transition: all 0.4s ease-in-out;
 }
@@ -823,6 +839,7 @@ header .dj-menu-box .dj-menu-content .dj-menu-footer .dj-menu-mail a:hover:befor
 header .dj-menu-box .dj-menu-active.dj-menu-backdrop {
   opacity: 1;
   transition: all 0.4s ease-in-out;
+  pointer-events: all;
 }
 header .dj-menu-box .dj-menu-active.dj-menu-content {
   transform: translate3d(0%, 0px, 0px);
