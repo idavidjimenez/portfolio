@@ -249,6 +249,43 @@
       font-size: $h3;
    }
 }
+.dj-button {
+   grid-column-gap: 12px;
+   grid-row-gap: 8px;
+   border: 1px solid $text-color;
+   background-color: $text-color;
+   color: $white;
+   letter-spacing: .32px;
+   white-space: nowrap;
+   cursor: pointer;
+   border-radius: 100px;
+   justify-content: center;
+   align-items: center;
+   padding: 16px 20px;
+   font-size: 22px;
+   font-weight: 500;
+   text-decoration: none;
+   transition: .5s;
+   display: flex;
+
+   .icon {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+
+      i {
+         color: $white;
+         font-size: 28px;
+         margin-top: 3px;
+      }
+   }
+
+   &:hover {
+      background-color: $brand;
+      border-color: $brand;
+      transition: .3s;
+   }
+}
 
 /* --------------------------------------------------------------
 * Margins section
