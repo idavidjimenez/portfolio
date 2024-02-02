@@ -27,3 +27,10 @@
 		}
 	}
 }
+
+@mixin dots {
+	background-image: $dots;
+	background-position: bottom;
+	background-size: 8px 1px;
+	background-repeat: repeat-x;
+}

@@ -25,10 +25,6 @@
                @media (max-width: $lg) {
                   margin-bottom: 40px;
                }
-
-               @media (max-width: $xxl) {
-                  height: 325px;
-               }
             }
 
             .dj-button {
@@ -83,6 +79,47 @@
                }
             }
          }
+      }
+   }
+}
+
+.dj-experience {
+   margin-top: 150px;
+
+   .dj-title {
+      position: sticky;
+      top: 20px;
+      z-index: 1;
+   }
+
+   &-item {
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      @include dots;
+
+      @media (max-width: 444px) {
+         display: block;
+
+         &-date {
+            margin-top: 10px;
+         }
+      }
+
+      &-title {
+         font-size: $h3;
+         font-weight: 600;
+         margin-bottom: 10px;
+      }
+
+      &-date {
+         color: $text-link;
+      }
+
+      &:last-child {
+         margin-bottom: 0;
       }
    }
 }

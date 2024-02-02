@@ -396,6 +396,11 @@ figure {
   z-index: 1;
 }
 
+.dj-title {
+  font-size: clamp(36px, -6px + 9vw, 48px);
+  font-weight: 600;
+}
+
 /* --------------------------------------------------------------
 * Button
 -------------------------------------------------------------- */
@@ -1794,11 +1799,6 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
     margin-bottom: 40px;
   }
 }
-@media (max-width: 1400px) {
-  .about-me .dj-header-bio-img img {
-    height: 325px;
-  }
-}
 .about-me .dj-header-bio-img .dj-button.mobile {
   display: none;
 }
@@ -1844,4 +1844,43 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   .about-me .dj-header-bio-text .dj-button.desktop {
     display: none;
   }
+}
+
+.dj-experience {
+  margin-top: 150px;
+}
+.dj-experience .dj-title {
+  position: sticky;
+  top: 20px;
+  z-index: 1;
+}
+.dj-experience-item {
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  background-image: linear-gradient(to right, #222222 0 10%, rgba(255, 255, 255, 0) 10%);
+  background-position: bottom;
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+}
+@media (max-width: 444px) {
+  .dj-experience-item {
+    display: block;
+  }
+  .dj-experience-item-date {
+    margin-top: 10px;
+  }
+}
+.dj-experience-item-title {
+  font-size: 1.313rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.dj-experience-item-date {
+  color: rgba(0, 0, 0, 0.6);
+}
+.dj-experience-item:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
