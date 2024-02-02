@@ -585,6 +585,7 @@ header .dj-menu .dj-menu-navbar.page .dj-menu-toggle {
   top: 70px;
 }
 header .dj-menu .dj-menu-navbar.page .dj-menu-toggle .dj-menu-contact {
+  margin-top: 3px;
   margin-right: 30px;
   font-weight: 500;
 }
