@@ -47,9 +47,11 @@ header {
             .dj-menu-toggle {
                position: absolute;
                right: 80px;
+               top: 70px;
 
                .dj-menu-contact {
                   margin-right: 30px;
+                  font-weight: 500;
 
                   &::after {
                      display: block;

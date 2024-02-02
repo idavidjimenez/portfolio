@@ -582,9 +582,11 @@ header .dj-menu .dj-menu-navbar.page {
 header .dj-menu .dj-menu-navbar.page .dj-menu-toggle {
   position: absolute;
   right: 80px;
+  top: 70px;
 }
 header .dj-menu .dj-menu-navbar.page .dj-menu-toggle .dj-menu-contact {
   margin-right: 30px;
+  font-weight: 500;
 }
 header .dj-menu .dj-menu-navbar.page .dj-menu-toggle .dj-menu-contact::after {
   display: block;
@@ -1791,7 +1793,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
     margin-bottom: 40px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 1400px) {
   .about-me .dj-header-bio-img img {
     height: 325px;
   }
