@@ -28,6 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
    });
+   menuBackdrop.addEventListener('click', () => {
+
+      menuBtn.classList.remove('open');
+      menuBackdrop.classList.remove('dj-menu-active');
+      menuContent.classList.remove('dj-menu-active');
+      menuNavbar.classList.remove('open');
+      menuOpen = false;
+
+   });
 
    // * Preloader
    const preloader = document.querySelector('#dj-preloader');

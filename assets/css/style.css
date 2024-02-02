@@ -660,7 +660,6 @@ header .dj-menu-box .dj-menu-backdrop {
   opacity: 0;
   z-index: 197;
   position: fixed;
-  pointer-events: none;
   background: rgba(238, 238, 238, 0.7);
   transition: all 0.4s ease-in-out;
 }
@@ -1750,7 +1749,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 }
 
 .about-me {
-  padding: 225px 0 60px 0;
+  padding: 200px 0 20px 0;
 }
 .about-me .dj-header {
   text-align: left;
