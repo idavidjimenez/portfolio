@@ -93,19 +93,16 @@
    }
 
    &-item {
-      justify-content: space-between;
-      align-items: flex-end;
+      @include dots;
       padding-bottom: 30px;
       margin-bottom: 30px;
-      display: flex;
-      @include dots;
 
-      @media (max-width: 444px) {
-         display: block;
-
-         &-date {
-            margin-top: 10px;
-         }
+      &-button {
+         justify-content: space-between;
+         align-items: flex-end;
+         display: flex;  
+         width: 100%;
+         text-align: left;
       }
 
       &-title {
@@ -118,8 +115,22 @@
          color: $text-link;
       }
 
+      &-body {
+         padding-top: 40px;
+      }
+
       &:last-child {
          margin-bottom: 0;
+      }
+
+      @media (max-width: 444px) {
+         &-button {
+            display: block;
+         }
+
+         &-date {
+            margin-top: 10px;
+         }
       }
    }
 }

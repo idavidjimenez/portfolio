@@ -1855,23 +1855,19 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   z-index: 1;
 }
 .dj-experience-item {
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  display: flex;
   background-image: linear-gradient(to right, #222222 0 10%, rgba(255, 255, 255, 0) 10%);
   background-position: bottom;
   background-size: 8px 1px;
   background-repeat: repeat-x;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
-@media (max-width: 444px) {
-  .dj-experience-item {
-    display: block;
-  }
-  .dj-experience-item-date {
-    margin-top: 10px;
-  }
+.dj-experience-item-button {
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  width: 100%;
+  text-align: left;
 }
 .dj-experience-item-title {
   font-size: 1.313rem;
@@ -1881,6 +1877,17 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .dj-experience-item-date {
   color: rgba(0, 0, 0, 0.6);
 }
+.dj-experience-item-body {
+  padding-top: 40px;
+}
 .dj-experience-item:last-child {
   margin-bottom: 0;
+}
+@media (max-width: 444px) {
+  .dj-experience-item-button {
+    display: block;
+  }
+  .dj-experience-item-date {
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
