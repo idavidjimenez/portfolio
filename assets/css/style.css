@@ -1846,9 +1846,6 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   }
 }
 
-.dj-experience {
-  margin-top: 150px;
-}
 .dj-experience-title {
   position: sticky;
   top: 20px;
@@ -1882,6 +1879,11 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 @media (max-width: 1079px) {
   .dj-experience .dj-title-text {
     justify-content: start;
+  }
+}
+@media (max-width: 478px) {
+  .dj-experience .dj-title-text {
+    display: block;
   }
 }
 .dj-experience-item {
@@ -1919,5 +1921,39 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   }
   .dj-experience-item-date {
     margin-top: 10px;
+  }
+}
+
+.dj-training-header .dj-heading {
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .dj-training-header .dj-heading {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+}
+.dj-training-header .dj-heading h3 {
+  font-size: clamp(36px, 3.4vw, 48px);
+}
+.dj-training-image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 70%;
+     object-position: 50% 70%;
+  border-radius: 12px;
+}
+@media (max-width: 992px) {
+  .dj-training-image {
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .dj-training-image {
+    height: 300px;
+    margin-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
