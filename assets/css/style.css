@@ -1849,10 +1849,40 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .dj-experience {
   margin-top: 150px;
 }
-.dj-experience .dj-title {
+.dj-experience-title {
   position: sticky;
   top: 20px;
   z-index: 1;
+}
+.dj-experience .dj-title {
+  font-size: clamp(36px, 3.4vw, 48px);
+}
+.dj-experience .dj-title-text {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 38px;
+}
+.dj-experience .dj-title-text i {
+  margin-left: 5px;
+}
+@media (max-width: 1400px) {
+  .dj-experience .dj-title-text {
+    margin-right: 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .dj-experience .dj-title-text {
+    margin-right: 15px;
+  }
+  .dj-experience .dj-title-text p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1079px) {
+  .dj-experience .dj-title-text {
+    justify-content: start;
+  }
 }
 .dj-experience-item {
   background-image: linear-gradient(to right, #222222 0 10%, rgba(255, 255, 255, 0) 10%);
