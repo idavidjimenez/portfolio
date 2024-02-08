@@ -46,6 +46,16 @@ button {
   border: none;
 }
 
+input,
+textarea {
+  background-color: transparent;
+}
+input:focus,
+textarea:focus {
+  border-bottom: 1.5px solid #000000;
+  outline: none;
+}
+
 figure {
   margin-bottom: 1px;
 }
@@ -2094,8 +2104,74 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   border-radius: 40px;
   transition: all 0.3s ease-in-out;
 }
+.dj-contact .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box:hover {
+  color: #FFF;
+  background-color: #000;
+  border-color: #000;
+}
 @media (max-width: 576px) {
   .dj-contact .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box {
     width: 100%;
+  }
+}
+.dj-contact .dj-form-contact .dj-input input {
+  font-size: 2.25rem;
+  border: 0;
+  border-bottom: 1.5px solid #CCC;
+  border-radius: 0;
+  transition: all 0.2s ease-in-out;
+  padding: 21px 0;
+  margin: 0 0 70px 0;
+  width: 100%;
+}
+.dj-contact .dj-form-contact .dj-input input::-moz-placeholder {
+  color: #CCC;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.dj-contact .dj-form-contact .dj-input input::placeholder {
+  color: #CCC;
+  transition: all 0.2s ease-in-out;
+}
+.dj-contact .dj-form-contact .dj-input input:focus {
+  border-bottom: 1.5px solid #000000;
+  outline: none;
+}
+.dj-contact .dj-form-contact .dj-textarea textarea {
+  border: 0;
+  outline: 0;
+  font-size: 2.25rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 35px 0;
+  padding: 21px 0;
+  border-bottom: 1.5px solid #CCC;
+  border-radius: 0;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  resize: none;
+}
+.dj-contact .dj-form-contact .dj-textarea textarea::-moz-placeholder {
+  color: #CCC;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.dj-contact .dj-form-contact .dj-textarea textarea::placeholder {
+  color: #CCC;
+  transition: all 0.2s ease-in-out;
+}
+.dj-contact .dj-form-contact .dj-textarea textarea:focus {
+  border-bottom: 1.5px solid #000000;
+  outline: none;
+}
+.dj-contact .dj-form-contact .dj-button {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .dj-contact .dj-form-contact .dj-input input,
+  .dj-contact .dj-form-contact .dj-input textarea,
+  .dj-contact .dj-form-contact .dj-textarea input,
+  .dj-contact .dj-form-contact .dj-textarea textarea {
+    font-size: 1.75rem;
+    padding: 15px 0;
   }
 }/*# sourceMappingURL=style.css.map */

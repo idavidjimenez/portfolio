@@ -36,6 +36,15 @@ button {
    background: none;
    border: none;
 }
+input,
+textarea {
+   background-color: transparent;
+   
+   &:focus {
+      border-bottom: 1.5px solid #000000;
+      outline: none;
+   }
+}
 figure {
    margin-bottom: 1px;
 }
