@@ -106,6 +106,56 @@
             <h1 data-aos="fade-down" data-aos-delay="200"><span>¡Hola!</span> cuéntame <br> sobre tu idea.</h1>
             <p data-aos="fade" data-aos-delay="300">¿Tienes un negocio que quieras mostrar? <br> Rellena el formulario y hablemos.</p>
          </div>
+
+         <form action="../assets/php/mail.php" method="post" class="dj-form-contact">
+            <div class="dj-checkbox">
+               <h2 class="dj-label">Estoy interesado/a en...</h2>
+
+               <div class="dj-checkbox-buttons">
+                  <input type="radio" id="consulta" name="asunto" value="Consulta general">
+                  <label for="consulta" class="dj-checkbox-box">
+                     Consulta general
+                  </label>
+
+                  <input type="radio" id="presupuesto" name="asunto" value="Presupuesto web">
+                  <label for="presupuesto" class="dj-checkbox-box">
+                     Presupuesto web
+                  </label>
+
+                  <input type="radio" id="marketing" name="asunto" value="Marketing digital">
+                  <label for="marketing" class="dj-checkbox-box">
+                     Marketing digital
+                  </label>
+
+                  <input type="radio" id="llamada" name="asunto" value="Llamada telefónica">
+                  <label for="llamada" class="dj-checkbox-box">
+                     Llamada telefónica
+                  </label>
+               </div>
+            </div>
+
+            <div class="dj-input dj-name">
+               <input type="text" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="row">
+               <div class="dj-input dj-mail col-md-6">
+                  <input type="mail" name="mail" placeholder="Tu email" required>
+               </div>
+
+               <div class="dj-input dj-phone col-md-6">
+                  <input type="tel" name="telefono" placeholder="Tu nº de teléfono">
+               </div>
+            </div>
+
+            <div class="dj-textarea">
+               <textarea name="mensaje" placeholder="Háblanos sobre tu proyecto" required></textarea>
+            </div>
+
+            <div class="dj-btn">
+               <button>Enviar el mensaje</button>
+            </div>
+         </form>
       </div>
    </main>
 

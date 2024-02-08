@@ -401,6 +401,13 @@ figure {
   font-weight: 600;
 }
 
+.dj-label {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #CCC;
+  padding: 0 0 20px 0;
+}
+
 /* --------------------------------------------------------------
 * Button
 -------------------------------------------------------------- */
@@ -2050,4 +2057,45 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 }
 .dj-contact .dj-header p {
   font-size: clamp(1.125rem, 2vw, 1.625rem);
+}
+.dj-contact .dj-form-contact {
+  max-width: 992px;
+  margin: auto;
+}
+.dj-contact .dj-form-contact .dj-checkbox {
+  margin: 0 0 30px 0;
+}
+.dj-contact .dj-form-contact .dj-checkbox-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dj-contact .dj-form-contact .dj-checkbox-buttons input {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+}
+.dj-contact .dj-form-contact .dj-checkbox-buttons input:checked + .dj-checkbox-box {
+  padding: 20px 30px;
+  color: #FFF;
+  background-color: #000;
+  border-radius: 40px;
+  border-color: #000;
+}
+.dj-contact .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box {
+  display: block;
+  padding: 20px 35px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #e5e4e4;
+  border-radius: 40px;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 576px) {
+  .dj-contact .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
