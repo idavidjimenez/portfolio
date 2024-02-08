@@ -434,8 +434,8 @@ figure {
   font-size: 22px;
   font-weight: 500;
   text-decoration: none;
-  transition: 0.5s;
   display: flex;
+  transition: 0.3s;
 }
 .dj-button .icon {
   justify-content: center;
@@ -450,7 +450,6 @@ figure {
 .dj-button:hover {
   background-color: #EB984E;
   border-color: #EB984E;
-  transition: 0.3s;
 }
 
 .dj-button-alt {
@@ -613,7 +612,7 @@ header .dj-menu .dj-menu-navbar.page {
 }
 header .dj-menu .dj-menu-navbar.page .dj-menu-toggle {
   position: absolute;
-  right: 68px;
+  right: 79px;
   top: 70px;
 }
 header .dj-menu .dj-menu-navbar.page .dj-menu-toggle .dj-menu-contact {

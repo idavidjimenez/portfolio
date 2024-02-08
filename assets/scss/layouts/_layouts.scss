@@ -269,8 +269,8 @@
    font-size: 22px;
    font-weight: 500;
    text-decoration: none;
-   transition: .5s;
    display: flex;
+   transition: .3s;
 
    .icon {
       justify-content: center;
@@ -287,7 +287,6 @@
    &:hover {
       background-color: $brand;
       border-color: $brand;
-      transition: .3s;
    }
 }
 .dj-button-alt {
