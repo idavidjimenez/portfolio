@@ -11,5 +11,9 @@
             color: $brand;
          }
       }
+
+      p {
+         font-size: clamp($text, 2vw, $big-text);
+      }
    }
 }

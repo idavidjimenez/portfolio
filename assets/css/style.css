@@ -2047,4 +2047,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .dj-contact .dj-header h1 span {
   font-size: clamp(42px, -6px + 9vw, 104px);
   color: #EB984E;
+}
+.dj-contact .dj-header p {
+  font-size: clamp(1.125rem, 2vw, 1.625rem);
 }/*# sourceMappingURL=style.css.map */
