@@ -46,7 +46,7 @@ header {
 
             .dj-menu-toggle {
                position: absolute;
-               right: 80px;
+               right: 68px;
                top: 70px;
 
                .dj-menu-contact {
@@ -76,6 +76,10 @@ header {
             @media (max-width: $desktop) {
                top: auto;
                right: auto;
+
+               .dj-menu-toggle {
+                  right: 55px;
+               }
             }
 
             @media (max-width: $md) {
@@ -83,8 +87,13 @@ header {
                margin-top: 10px;
 
                .dj-menu-toggle {
-                  right: 60px;
+                  right: 53px;
                   top: 65px;
+               }
+            }
+            @media (max-width: $sm) {
+               .dj-menu-toggle {
+                  right: 45px;
                }
             }
          }

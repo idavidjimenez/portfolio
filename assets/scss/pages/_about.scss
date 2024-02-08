@@ -167,24 +167,31 @@
 
 .dj-training {
    &-header {
+      margin-bottom: 90px;
+
       .dj-heading {
          margin-left: 30px;
          margin-bottom: 0;
 
+         h3 {
+            font-size: clamp(36px, 3.4vw, 48px);
+            margin-bottom: 75px;
+         }
+
          @media (max-width: $md) {
             margin-left: 0;
             margin-bottom: 40px;
-         }
 
-         h3 {
-            font-size: clamp(36px, 3.4vw, 48px);
+            h3 {
+               margin-bottom: 50px;
+            }
          }
       }
    }
 
    &-image {
       width: 100%;
-      height: 300px;
+      height: 275px;
       object-fit: cover;
       object-position: 50% 70%;
       border-radius: $radius;
@@ -193,8 +200,50 @@
          height: 250px;
       }
       @media (max-width: $md) {
-         height: 300px;
+         height: 275px;
          margin-bottom: 40px;
+      }
+   }
+
+   &-list {
+      grid-row-gap: 24px;
+      flex-direction: column;
+      display: flex;
+
+      .dj-training-item {
+         @include dots;
+         justify-content: space-between;
+         align-items: center;
+         padding-bottom: 24px;
+         display: flex;
+         margin-top: 10px;
+
+         h4 {
+            font-size: $h3;
+         }
+
+         a {
+            background-color: $white;
+            border-radius: 50%;
+            padding: 6px 10px 4px 10px;
+
+            i {
+               font-size: 21px;
+            }
+
+            &:hover {
+               opacity: .6;
+            }
+         }
+
+         @media (max-width: $sm) {
+            h4 {
+               font-size: $text;
+            }
+            p {
+               font-size: $small;
+            }
+         }
       }
    }
 }
