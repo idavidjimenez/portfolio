@@ -209,6 +209,7 @@
 
    &.home {
       margin-top: 0 !important;
+      
       @media (min-width: $desktop) {
          display: none;
       }

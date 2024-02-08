@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
    var width = window.innerWidth;
-   if(width >= 1079) { var s = skrollr.init(); }
+   if(width >= 1181) { var s = skrollr.init(); }
 
    // * Full width on scroll
    const selectStart = document.querySelector('#dj-start');
