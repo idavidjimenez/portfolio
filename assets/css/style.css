@@ -2087,7 +2087,6 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   visibility: hidden;
 }
 .dj-contact .dj-form-contact .dj-checkbox-buttons input:checked + .dj-checkbox-box {
-  padding: 20px 30px;
   color: #FFF;
   background-color: #000;
   border-radius: 40px;
