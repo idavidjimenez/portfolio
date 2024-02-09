@@ -48,7 +48,6 @@ $mailer -> msgHTML($body);
 $mailer -> AltBody = strip_tags($body); // * Elimina etiquetas si el gestor de mail no soporta HTML
 
 $answer = $mailer -> send();
-
-var_dump($answer);
+header('Locatioin: Location: ../../contacto/confirmacion/');
 
 ?>
