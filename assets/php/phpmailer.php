@@ -23,6 +23,7 @@ $nombre   = $_POST['nombre'];
 $mail     = $_POST['mail'];
 $telefono = $_POST['telefono'];
 $mensaje  = $_POST['mensaje'];
+// $archivo  = $_POST['archivo'];
 
 // * Comprobamos si ha rellenado o marcado lo neceario, si no lo sustituimos
 if(empty(trim($nombre))) $nombre = 'Anónimo';
@@ -46,6 +47,14 @@ $mailer -> addAddress('davidjimenezweb@gmail.com', 'Sitio web');
 $mailer -> Subject = 'Mensaje desde la web';
 $mailer -> msgHTML($body);
 $mailer -> AltBody = strip_tags($body); // * Elimina etiquetas si el gestor de mail no soporta HTML
+
+/*
+if($archivo['size'] > 0) {
+
+   $mailer -> addAttachment($archivo['tmp_name'], $archivo['name']);
+
+}^
+*/
 
 $answer = $mailer -> send();
 header('Locatioin: Location: ../../contacto/confirmacion/');
