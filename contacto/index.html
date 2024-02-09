@@ -107,12 +107,12 @@
             <p data-aos="fade" data-aos-delay="300">¿Tienes un negocio que quieras mostrar? <br> Rellena el formulario y hablemos.</p>
          </div>
 
-         <form action="../assets/php/mail.php" method="POST" class="dj-form-contact">
+         <form action="../assets/php/phpmailer.php" method="POST" class="dj-form-contact">
             <div class="dj-checkbox" data-aos="fade">
                <h2 class="dj-label">Estoy interesado/a en...</h2>
 
                <div class="dj-checkbox-buttons">
-                  <input type="radio" id="consulta" name="asunto" value="Consulta general">
+                  <input type="radio" id="consulta" name="asunto" value="Consulta general" checked>
                   <label for="consulta" class="dj-checkbox-box">
                      Consulta general
                   </label>
@@ -135,12 +135,12 @@
             </div>
 
             <div class="dj-input dj-name" data-aos="fade">
-               <input type="text" name="nombre" placeholder="Tu nombre*">
+               <input type="text" name="nombre" placeholder="Tu nombre*" required value="David">
             </div>
 
             <div class="row">
                <div class="dj-input dj-mail col-md-6" data-aos="fade">
-                  <input type="mail" name="mail" placeholder="Tu email*">
+                  <input type="mail" name="mail" placeholder="Tu email*" required value="prueba@gmail.com">
                </div>
 
                <div class="dj-input dj-phone col-md-6" data-aos="fade">
@@ -149,7 +149,7 @@
             </div>
 
             <div class="dj-textarea" data-aos="fade">
-               <textarea name="mensaje" placeholder="Háblanos sobre tu proyecto*"></textarea>
+               <textarea name="mensaje" placeholder="Háblanos sobre tu proyecto*" required>Mensaje de prueba</textarea>
             </div>
 
             <button class="dj-button" data-aos="fade">Enviar el mensaje</button>
