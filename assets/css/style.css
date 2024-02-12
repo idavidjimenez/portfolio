@@ -650,7 +650,7 @@ header .dj-menu .dj-menu-navbar.page .dj-menu-toggle .dj-menu-contact:hover::aft
 header .dj-menu .dj-menu-navbar.page .dj-menu-toggle .dj-menu-btn {
   margin-left: 122px;
 }
-@media (max-width: 1079px) {
+@media (max-width: 1181px) {
   header .dj-menu .dj-menu-navbar.page {
     top: auto;
     right: auto;
@@ -1149,7 +1149,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   font-size: 2.25rem;
   position: absolute;
   right: 100px;
-  top: 85px;
+  top: 100px;
 }
 .dj-start .bar-scroll span {
   font-family: "Poppins", sans-serif;
@@ -2054,45 +2054,55 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   }
 }
 
-.dj-contact {
+.dj-contact,
+.dj-confirm {
   padding: 200px 0 20px 0;
 }
-.dj-contact .dj-header h1 {
+.dj-contact .dj-header h1,
+.dj-confirm .dj-header h1 {
   font-size: clamp(42px, -6px + 9vw, 104px);
   text-transform: none;
 }
-.dj-contact .dj-header h1 span {
+.dj-contact .dj-header h1 span,
+.dj-confirm .dj-header h1 span {
   font-size: clamp(42px, -6px + 9vw, 104px);
   color: #EB984E;
 }
-.dj-contact .dj-header p {
+.dj-contact .dj-header p,
+.dj-confirm .dj-header p {
   font-size: clamp(1.125rem, 2vw, 1.625rem);
 }
-.dj-contact .dj-form-contact {
+.dj-contact .dj-form-contact,
+.dj-confirm .dj-form-contact {
   max-width: 992px;
   margin: auto;
 }
-.dj-contact .dj-form-contact .dj-checkbox {
+.dj-contact .dj-form-contact .dj-checkbox,
+.dj-confirm .dj-form-contact .dj-checkbox {
   margin: 0 0 30px 0;
 }
-.dj-contact .dj-form-contact .dj-checkbox-buttons {
+.dj-contact .dj-form-contact .dj-checkbox-buttons,
+.dj-confirm .dj-form-contact .dj-checkbox-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.dj-contact .dj-form-contact .dj-checkbox-buttons input {
+.dj-contact .dj-form-contact .dj-checkbox-buttons input,
+.dj-confirm .dj-form-contact .dj-checkbox-buttons input {
   position: absolute;
   padding: 0;
   margin: 0;
   visibility: hidden;
 }
-.dj-contact .dj-form-contact .dj-checkbox-buttons input:checked + .dj-checkbox-box {
+.dj-contact .dj-form-contact .dj-checkbox-buttons input:checked + .dj-checkbox-box,
+.dj-confirm .dj-form-contact .dj-checkbox-buttons input:checked + .dj-checkbox-box {
   color: #FFF;
   background-color: #000;
   border-radius: 40px;
   border-color: #000;
 }
-.dj-contact .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box {
+.dj-contact .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box,
+.dj-confirm .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box {
   display: block;
   padding: 20px 35px;
   margin: auto;
@@ -2103,17 +2113,20 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   border-radius: 40px;
   transition: all 0.3s ease-in-out;
 }
-.dj-contact .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box:hover {
+.dj-contact .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box:hover,
+.dj-confirm .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box:hover {
   color: #FFF;
   background-color: #000;
   border-color: #000;
 }
 @media (max-width: 576px) {
-  .dj-contact .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box {
+  .dj-contact .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box,
+  .dj-confirm .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box {
     width: 100%;
   }
 }
-.dj-contact .dj-form-contact .dj-input input {
+.dj-contact .dj-form-contact .dj-input input,
+.dj-confirm .dj-form-contact .dj-input input {
   font-size: 2.25rem;
   border: 0;
   border-bottom: 1.5px solid #CCC;
@@ -2123,20 +2136,23 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   margin: 0 0 70px 0;
   width: 100%;
 }
-.dj-contact .dj-form-contact .dj-input input::-moz-placeholder {
+.dj-contact .dj-form-contact .dj-input input::-moz-placeholder, .dj-confirm .dj-form-contact .dj-input input::-moz-placeholder {
   color: #CCC;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.dj-contact .dj-form-contact .dj-input input::placeholder {
+.dj-contact .dj-form-contact .dj-input input::placeholder,
+.dj-confirm .dj-form-contact .dj-input input::placeholder {
   color: #CCC;
   transition: all 0.2s ease-in-out;
 }
-.dj-contact .dj-form-contact .dj-input input:focus {
+.dj-contact .dj-form-contact .dj-input input:focus,
+.dj-confirm .dj-form-contact .dj-input input:focus {
   border-bottom: 1.5px solid #000000;
   outline: none;
 }
-.dj-contact .dj-form-contact .dj-textarea textarea {
+.dj-contact .dj-form-contact .dj-textarea textarea,
+.dj-confirm .dj-form-contact .dj-textarea textarea {
   border: 0;
   outline: 0;
   font-size: 2.25rem;
@@ -2149,28 +2165,44 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   width: 100%;
   resize: none;
 }
-.dj-contact .dj-form-contact .dj-textarea textarea::-moz-placeholder {
+.dj-contact .dj-form-contact .dj-textarea textarea::-moz-placeholder, .dj-confirm .dj-form-contact .dj-textarea textarea::-moz-placeholder {
   color: #CCC;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.dj-contact .dj-form-contact .dj-textarea textarea::placeholder {
+.dj-contact .dj-form-contact .dj-textarea textarea::placeholder,
+.dj-confirm .dj-form-contact .dj-textarea textarea::placeholder {
   color: #CCC;
   transition: all 0.2s ease-in-out;
 }
-.dj-contact .dj-form-contact .dj-textarea textarea:focus {
+.dj-contact .dj-form-contact .dj-textarea textarea:focus,
+.dj-confirm .dj-form-contact .dj-textarea textarea:focus {
   border-bottom: 1.5px solid #000000;
   outline: none;
 }
-.dj-contact .dj-form-contact .dj-button {
+.dj-contact .dj-form-contact .dj-button,
+.dj-confirm .dj-form-contact .dj-button {
   width: 100%;
 }
 @media (max-width: 768px) {
   .dj-contact .dj-form-contact .dj-input input,
   .dj-contact .dj-form-contact .dj-input textarea,
   .dj-contact .dj-form-contact .dj-textarea input,
-  .dj-contact .dj-form-contact .dj-textarea textarea {
+  .dj-contact .dj-form-contact .dj-textarea textarea,
+  .dj-confirm .dj-form-contact .dj-input input,
+  .dj-confirm .dj-form-contact .dj-input textarea,
+  .dj-confirm .dj-form-contact .dj-textarea input,
+  .dj-confirm .dj-form-contact .dj-textarea textarea {
     font-size: 1.75rem;
     padding: 15px 0;
+  }
+}
+
+.dj-confirm .dj-header {
+  margin-bottom: 300px;
+}
+@media (max-width: 992px) {
+  .dj-confirm .dj-header {
+    margin-bottom: 100px;
   }
 }/*# sourceMappingURL=style.css.map */

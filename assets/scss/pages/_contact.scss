@@ -1,4 +1,5 @@
-.dj-contact {
+.dj-contact,
+.dj-confirm {
    padding: 200px 0 20px 0;
 
    .dj-header {
@@ -129,6 +130,16 @@
                }
             }
          }
+      }
+   }
+}
+
+.dj-confirm {
+   .dj-header {
+      margin-bottom: 300px;
+
+      @media (max-width: $lg) {
+         margin-bottom: 100px;
       }
    }
 }

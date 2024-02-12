@@ -73,7 +73,7 @@ header {
                }
             }
 
-            @media (max-width: 1079px) {
+            @media (max-width: $desktop) {
                top: auto;
                right: auto;
 
