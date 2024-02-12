@@ -35,6 +35,10 @@ li {
 button {
    background: none;
    border: none;
+   
+   &:focus {
+      outline: none !important;
+   }
 }
 input,
 textarea {

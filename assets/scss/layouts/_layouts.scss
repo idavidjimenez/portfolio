@@ -378,6 +378,11 @@
       border-top-right-radius: $radius;
       background-color: $bg-color;
 
+      .modal-header {
+         border-bottom: 0;
+         padding: 40px;
+      }
+
       .modal-body {
          padding: 0;
       }

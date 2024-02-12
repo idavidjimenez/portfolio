@@ -45,6 +45,9 @@ button {
   background: none;
   border: none;
 }
+button:focus {
+  outline: none !important;
+}
 
 input,
 textarea {
@@ -545,6 +548,10 @@ figure {
   border-top-right-radius: 12px;
   background-color: #F8F8F8;
 }
+.dj-modal .modal-content .modal-header {
+  border-bottom: 0;
+  padding: 40px;
+}
 .dj-modal .modal-content .modal-body {
   padding: 0;
 }
@@ -679,7 +686,7 @@ header .dj-menu-toggle {
   display: flex;
   align-items: center;
   padding-left: 10px;
-  z-index: 1100;
+  z-index: 1000;
 }
 header .dj-menu-toggle .dj-menu-btn {
   position: fixed;
@@ -741,7 +748,7 @@ header .dj-menu-box .dj-menu-backdrop {
 header .dj-menu-box .dj-menu-content {
   top: 0;
   left: 0;
-  z-index: 1060;
+  z-index: 999;
   height: 100vh;
   display: block;
   position: fixed;
@@ -1537,7 +1544,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 }
 
 .project-main-header {
-  padding-bottom: 150px;
+  padding-bottom: 225px;
 }
 @media (max-width: 576px) {
   .project-main-header {
@@ -1555,9 +1562,6 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   /* --------------------------------------------------------------
   * Info
   -------------------------------------------------------------- */
-}
-.project-main {
-  padding: 75px 0 0 0;
 }
 .project-gallery img {
   width: 100%;
