@@ -1,44 +1,48 @@
 <?php
 
-// * Comprobamos si viene desde un form POST
-if($_SERVER['REQUEST_METHOD'] != 'POST') {
+if (isset($_POST['nombre'])  && !empty($_POST['nombre']) &&
+	 isset($_POST['mail'])    && !empty($_POST['mail'])   &&
+	 isset($_POST['mensaje']) && !empty($_POST['mensaje'])) {
 
-	header('Location: ../../contacto/');
+	$nombre = $_POST['nombre'];
+	$correo = $_POST['mail'];
+   $asunto = $_POST['asunto'];
+   $telefono = $_POST['telefono'];
+   $mensaje = nl2br($_POST['mensaje']);
+
+   if(empty($asunto)   || $asunto   == '') $asunto   = 'No lo ha indicado';
+   if(empty($telefono) || $telefono == '') $telefono = 'No lo ha proporcionado';
+
+	$to = 'davidjimenezweb@gmail.com';
+
+   $body = <<<HTML
+   
+      <h1>Contacto desde la web</h1>
+      <p style="font-size: 18px;">De: $nombre — $correo</p>
+      <p style="font-size: 18px;">Teléfono: $telefono</p>
+      <p style="font-size: 18px;">El posible cliente prefiere: $asunto</p>
+      <h2>Mensaje</h2>
+      <p style="font-size: 18px;">$mensaje</p>
+   
+   HTML;
+
+	// * Configuración de los encabezados
+	$headers = "MIME-Version: 1.0 \r\n";
+   $headers.= "Content-type: text/html; charset=utf-8 \r\n";
+
+   // * Cabeceras adicionales
+	$headers.= "From: Portfolio — Contacto <davidjimenezweb@tb-hosting.com> \r\n";
+   // $headers.= "Cc: copia@gmail.com \r\n";
+   // $headers.= "Bcc: copia-oculta@gmail.com \r\n";
+
+	// * Enviar correo
+	$envio = mail($to, 'Han rellenado el formulario del portfolio', $body, $headers);
+	echo '<script language="javascript">window.location.href="../../confirmacion/"</script>';
+
+} else {
+
+	echo '<script language="javascript">alert("Complete los campos obligatorios");window.location.href="../../contacto/"</script>';
 
 }
-
-// * Guardamos los inputs en variables
-$asunto   = $_POST['asunto'];
-$nombre   = $_POST['nombre'];
-$mail     = $_POST['mail'];
-$telefono = $_POST['telefono'];
-$mensaje  = $_POST['mensaje'];
-
-// * Comprobamos si ha rellenado o marcado lo neceario, si no lo sustituimos
-if(empty(trim($nombre))) $nombre = 'Anónimo';
-if(empty(trim($asunto))) $asunto = 'No seleccionado';
-
-$body = 
-<<<HTML
-
-	<h1>Contacto desde la web</h1>
-	<p>De: $nombre — $mail</p>
-	<p>Al posible cliente le gustaría: $asunto</p>
-	<h2>Mensaje</h2>
-	$mensaje
-
-HTML;
-
-// * cABECERAS
-$headers = "MIME-Version: 1.0 \r\n";
-$headers.= "Content-type: text/html; charset=utf-8 \r\n";
-$headers.= "From: $nombre <$mail> \r\n";
-$headers.= "To: Sitio web <davidjimenezweb@gmail.com> \r\n";
-// $headers.= "Cc: copia@gmail.com \r\n";
-// $headers.= "Bcc: copia-oculta@gmail.com \r\n";
-
-// * Remitente
-$rta = mail('davidjimenezweb@gmail.com', "Mensaje desde la web", $body, $headers);
-header('Locatioin: Location: ../../contacto/confirmacion/');
 
 ?>
