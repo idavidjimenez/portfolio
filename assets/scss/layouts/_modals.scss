@@ -31,7 +31,14 @@
 
       .modal-header {
          border-bottom: 0;
-         padding: 40px;
+         padding: 0;
+
+         button {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            z-index: 10;
+         }
       }
 
       .modal-body {

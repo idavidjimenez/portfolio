@@ -566,7 +566,13 @@ figure {
 }
 .dj-modal .modal-content .modal-header {
   border-bottom: 0;
-  padding: 40px;
+  padding: 0;
+}
+.dj-modal .modal-content .modal-header button {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  z-index: 10;
 }
 .dj-modal .modal-content .modal-body {
   padding: 0;
@@ -1543,7 +1549,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 }
 
 .project-main-header {
-  padding-bottom: 225px;
+  padding-bottom: 150px;
 }
 @media (max-width: 576px) {
   .project-main-header {
@@ -1561,6 +1567,9 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   /* --------------------------------------------------------------
   * Info
   -------------------------------------------------------------- */
+}
+.project-main {
+  margin-top: 75px;
 }
 .project-gallery img {
   width: 100%;
