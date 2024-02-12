@@ -776,7 +776,6 @@ header .dj-menu-box .dj-menu-content .dj-menu-container .title {
   color: rgba(0, 0, 0, 0.3);
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  font-style: italic;
   line-height: 100%;
 }
 @media (max-width: 375px) {
