@@ -1,0 +1,81 @@
+/* --------------------------------------------------------------
+* Button
+-------------------------------------------------------------- */
+.dj-btn {
+   font-weight: 500;
+   text-decoration: underline !important;
+   transition: all .2s ease-in-out;
+
+   &:hover {
+      color: $brand-hover;
+   }
+
+   @media screen and (max-width: $desktop) {
+      font-size: $h3;
+   }
+}
+.dj-button {
+   grid-column-gap: 12px;
+   grid-row-gap: 8px;
+   border: 1px solid $text-color;
+   background-color: $text-color;
+   color: $white;
+   letter-spacing: .32px;
+   white-space: nowrap;
+   cursor: pointer;
+   border-radius: 100px;
+   justify-content: center;
+   align-items: center;
+   padding: 16px 20px;
+   font-size: 22px;
+   font-weight: 500;
+   text-decoration: none;
+   display: flex;
+   transition: .3s;
+
+   .icon {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+
+      i {
+         color: $white;
+         font-size: 28px;
+         margin-top: 3px;
+      }
+   }
+
+   &:hover {
+      background-color: $brand;
+      border-color: $brand;
+   }
+}
+.dj-button-alt {
+   padding: 15px 25px;
+   border: 1px solid $text-color;
+   border-radius: 50px;
+
+   i {
+      font-size: 21px;
+      margin-left: 10px;
+   }
+
+   &:hover {
+      color: $brand;
+      border-color: $brand;
+
+      i {
+         color: $brand;
+      }
+   }
+
+   @media (max-width: $sm) {
+      display: block;
+      text-align: center;
+      font-size: $small;
+
+      i {
+         font-size: 16px;
+      }
+   }
+}

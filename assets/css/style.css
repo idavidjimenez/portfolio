@@ -237,6 +237,52 @@ figure {
 }
 
 /* --------------------------------------------------------------
+* Margins section
+-------------------------------------------------------------- */
+.dj-block {
+  margin: clamp(60px, 3vw, 120px) 0;
+}
+
+.dj-padding {
+  padding: clamp(60px, 3vw, 120px) 0;
+}
+
+/* --------------------------------------------------------------
+* JS
+-------------------------------------------------------------- */
+.start-scrolled {
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 0 !important;
+}
+
+.intro-scrolled {
+  border-radius: 0 !important;
+}
+
+/* --------------------------------------------------------------
+* Figure Image
+-------------------------------------------------------------- */
+.dj-figure {
+  height: 100%;
+  padding: clamp(20px, 4vw, 60px);
+  background: #222222;
+  border-radius: 24px;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .dj-figure {
+    border-radius: 12px;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* --------------------------------------------------------------
 * Page Headers
 -------------------------------------------------------------- */
 .dj-header-page {
@@ -403,12 +449,6 @@ figure {
   }
 }
 
-.sticky {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
 .dj-title {
   font-size: clamp(36px, -6px + 9vw, 48px);
   font-weight: 600;
@@ -500,30 +540,6 @@ figure {
 }
 
 /* --------------------------------------------------------------
-* Margins section
--------------------------------------------------------------- */
-.dj-block {
-  margin: clamp(60px, 3vw, 120px) 0;
-}
-
-.dj-padding {
-  padding: clamp(60px, 3vw, 120px) 0;
-}
-
-/* --------------------------------------------------------------
-* JS
--------------------------------------------------------------- */
-.start-scrolled {
-  height: 100% !important;
-  width: 100% !important;
-  border-radius: 0 !important;
-}
-
-.intro-scrolled {
-  border-radius: 0 !important;
-}
-
-/* --------------------------------------------------------------
 * Modal Custom
 -------------------------------------------------------------- */
 .dj-modal .modal-dialog {
@@ -558,22 +574,6 @@ figure {
 @media (max-width: 576px) {
   .dj-modal .modal-fullscreen {
     height: 92vh;
-  }
-}
-
-/* --------------------------------------------------------------
-* Figure Image
--------------------------------------------------------------- */
-.dj-figure {
-  height: 100%;
-  padding: clamp(20px, 4vw, 60px);
-  background: #222222;
-  border-radius: 24px;
-  margin-bottom: 0;
-}
-@media (max-width: 768px) {
-  .dj-figure {
-    border-radius: 12px;
   }
 }
 

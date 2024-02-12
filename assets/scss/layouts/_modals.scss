@@ -1,0 +1,47 @@
+/* --------------------------------------------------------------
+* Modal Custom
+-------------------------------------------------------------- */
+.dj-modal {
+   // * Animation styles
+   .modal-dialog {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: translateY(100%);
+      transition: transform 0.5s ease;
+   }
+   &.modal.fade .modal-backdrop {
+      opacity: 0;
+   }
+   
+   &.modal.fade .modal-dialog {
+      transition: transform 0.5s ease;
+   }
+
+   // * Custom styles
+   .modal-fullscreen {
+      height: 92vh;
+   }
+
+   .modal-content {
+      border-top-left-radius: $radius;
+      border-top-right-radius: $radius;
+      background-color: $bg-color;
+
+      .modal-header {
+         border-bottom: 0;
+         padding: 40px;
+      }
+
+      .modal-body {
+         padding: 0;
+      }
+   }
+
+   @media (max-width: $sm) {
+      .modal-fullscreen {
+         height: 92vh;
+      }
+   }
+}

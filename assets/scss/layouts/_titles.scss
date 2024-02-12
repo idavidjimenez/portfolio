@@ -1,0 +1,180 @@
+/* --------------------------------------------------------------
+* Page Headers
+-------------------------------------------------------------- */
+.dj-header-page {
+   margin-bottom: 150px;
+
+   span {
+      display: block;
+   }
+   h1 {
+      font-size: $title;
+      font-weight: 600;
+      margin-bottom: 50px;
+
+      span {
+         font-family: $title-font;
+         font-size: $title;
+      }
+   }
+   
+   p {
+      font-size: $big-text;
+   }
+
+   @media (max-width: 414px) {
+      h1 {
+         font-size: 47px;
+      }
+   }
+}
+
+.dj-header {
+   text-align: center;
+   margin-bottom: 100px;
+
+   h1 {
+      font-size: clamp(42px, -6px + 9vw, 180px);
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 50px;
+
+      span {
+         font-size: clamp(42px, -6px + 9vw, 180px);
+      }
+   }
+
+   h3 {
+      font-size: clamp($small, -18px + 3.5vw, $text);
+      font-weight: 400;
+   }
+
+   &-web {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+         font-size: 32px;
+         margin-right: 10px;
+      }
+
+      a {
+         position: relative;
+         display: inline-block;
+         padding: 0 0 5px 0;
+         color: $text-color;
+         font-size: $h3;
+         font-weight: 600;
+         line-height: 20px;
+         letter-spacing: .00464286em;
+
+         @include underline_1;
+      }
+   }
+}
+
+.dj-heading {
+   margin-bottom: clamp(60px, 3vw, 120px);
+
+   h2 {
+      font-size: clamp($small, -18px + 3.5vw, $text);
+      font-weight: 400;
+   }
+   h3 {
+      font-size: clamp(26px, 16px + 2.1vw, 56px);
+      font-weight: 600;
+      line-height: 120%;
+   }
+}
+
+.dj-heading-section {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 71px;
+   margin-bottom: 48px;
+   background: $white;
+   background-image: $dots;
+   background-position: bottom;
+   background-size: 8px 1px;
+   background-repeat: repeat-x;
+
+   &-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      height: 100%;
+
+      @media (max-width: $desktop) {
+         width: 100%;
+         justify-content: space-between;
+      }
+   }
+
+   &-title {
+      min-width: 150px;
+      font-size: $text;
+      font-weight: 500;
+      margin-bottom: 0;
+
+      @media (max-width: $sm) {
+         font-size: 16px;
+      }
+   }
+
+   /* --------------------------------------------------------------
+   * Page menú
+   -------------------------------------------------------------- */
+   .dj-menu-tabs {
+      display: flex;
+      align-items: center;
+      gap: clamp(8px,5vw,32px);
+      height: 100%;
+      margin: 0;
+
+      li {
+         position: relative;
+         display: flex;
+         align-items: center;
+         height: 100%;
+         cursor: pointer;
+         color: $text-link;
+         white-space: nowrap;
+         transition: .3s;
+
+         &:hover {
+            color: $text-color;
+         }
+
+         &.active {
+            color: $text-color;
+            font-weight: 500;
+
+            &::before {
+               content: "";
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               width: 100%;
+               border-bottom: 2px solid $text-color;
+            }
+         }
+
+         @media (max-width: $sm) {
+            font-size: 16px;
+         }
+      }
+   }
+}
+
+.dj-title {
+   font-size: clamp(36px, -6px + 9vw, 48px);
+   font-weight: 600;
+}
+.dj-label {
+   font-size: 2.25rem;
+   font-weight: 400;
+   color: $text-label;
+   padding: 0 0 20px 0;
+}
