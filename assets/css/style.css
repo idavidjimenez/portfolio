@@ -803,12 +803,15 @@ header .dj-menu-box .dj-menu-content .dj-menu-body {
   }
 }
 header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-left {
-  padding: 0 30px;
+  padding: 0 30px 0 12px;
 }
 @media (max-width: 768px) {
   header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-left {
     display: none;
   }
+}
+header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-left .dj-menu-social {
+  margin-top: 12px;
 }
 header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-left .dj-menu-social-item {
   position: relative;
@@ -824,7 +827,7 @@ header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-left .dj-menu-s
   color: #EB984E;
 }
 header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-right {
-  padding: 0 100px 0 12px;
+  padding: 0 20px 0 50px;
 }
 @media (max-width: 768px) {
   header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-right {
