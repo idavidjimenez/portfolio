@@ -6,9 +6,9 @@ header {
    }
    
    .dj-menu {
-      /* --------------------------------------------------------------
+      /* ------------------------------------------------
       * Navbar
-      -------------------------------------------------------------- */
+      ------------------------------------------------ */
       .dj-menu-navbar {
          position: absolute;
          height: 100vh;
@@ -19,7 +19,7 @@ header {
          background-color: transparent;
          transition: .3s all;
    
-         @media (max-width: $desktop) {
+         /* @media (max-width: $desktop) {
             position: relative;
             height: auto;
             border: 0;
@@ -37,7 +37,7 @@ header {
          @media (max-width: $sm) {
             top: 90px;
             right: 20px;
-         }
+         } */
 
          &.page {
             height: auto;
@@ -99,9 +99,9 @@ header {
          }
       }
    
-      /* --------------------------------------------------------------
+      /* ------------------------------------------------
       * Button
-      -------------------------------------------------------------- */
+      ------------------------------------------------ */
       &-toggle {
          position: relative;
          display: flex;
@@ -163,9 +163,9 @@ header {
          }
       }
    
-      /* --------------------------------------------------------------
+      /* ------------------------------------------------
       * Menu
-      -------------------------------------------------------------- */
+      ------------------------------------------------ */
       &-box {
          .dj-menu-backdrop {
             top: 0;
@@ -182,19 +182,20 @@ header {
    
          .dj-menu-content {
             top: 0;
-            left: 0;
+            right: 0;
             z-index: 999;
             height: 100vh;
             display: block;
             position: fixed;
             overflow: auto;
             background: $white;
-            transform: translate3d(-100%, 0px, 0px);
+            transform: translate3d(100%, 0px, 0px);
             transition: all .5s ease-in-out;
+            opacity: 0;
 
-            @media (min-width: $desktop) {
-               border-top-right-radius: $radius-big;
-               border-bottom-right-radius: $radius-big;
+            @media (min-width: $md) {
+               border-top-left-radius: $radius-big;
+               border-bottom-left-radius: $radius-big;
             }
 
             .dj-menu-container {
@@ -360,6 +361,7 @@ header {
             &.dj-menu-content {
                transform: translate3d(0%, 0px, 0px);
                transition: all .5s ease-in-out;
+               opacity: 1;
             }
          }
       }

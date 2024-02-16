@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
          menuContent.classList.add('dj-menu-active');
          menuNavbar.classList.add('open');
          menuOpen = true;
+         // * Scroll off
+         document.body.style.overflow = 'hidden';
 
       } else {
 
@@ -24,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
          menuContent.classList.remove('dj-menu-active');
          menuNavbar.classList.remove('open');
          menuOpen = false;
+         // * Scroll on
+         document.body.style.overflow = 'auto';
 
       }
 
@@ -35,6 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
       menuContent.classList.remove('dj-menu-active');
       menuNavbar.classList.remove('open');
       menuOpen = false;
+      // * Scroll on
+      document.body.style.overflow = 'auto';
 
    });
 
