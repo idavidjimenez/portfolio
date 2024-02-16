@@ -1118,149 +1118,194 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 /* ------------------------------------------------------
 * Start content
 ------------------------------------------------------ */
-.dj-start {
-  position: relative;
-  min-width: 100%;
-  height: 100vh;
-  background-color: #FFF;
-}
-.dj-start .content {
-  background-image: url("../img/team/david.landscape.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 90%;
-  width: 93%;
-  margin: auto;
-  border-radius: 12px;
-  transition: 0.8s all;
-}
-@media (max-width: 1400px) {
-  .dj-start .content {
-    width: 90%;
-  }
-}
-.dj-start .bar {
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #FFF;
-}
-.dj-start .bar .dj-icon {
-  position: absolute;
-  left: 100px;
-  top: 50px;
-}
-.dj-start .bar .dj-icon a {
-  color: #FFF;
-}
-.dj-start .bar .dj-icon a span {
-  color: #FFF;
-}
-.dj-start .bar-scroll {
-  font-size: 2.25rem;
-  position: absolute;
-  right: 100px;
-  top: 100px;
-}
-.dj-start .bar-scroll span {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 2.25rem;
-  color: #FFF;
-}
-.dj-start .quote {
-  position: absolute;
-  top: 40%;
-  left: 60%;
-}
-.dj-start .quote img {
-  margin-bottom: 40px;
-}
-.dj-start .quote h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  color: #FFF;
-}
-@media (max-width: 1400px) {
-  .dj-start .quote {
-    left: 55%;
-  }
-}
-@media (max-width: 1150px) {
-  .dj-start .quote {
-    left: 50%;
-  }
-}
-@media (max-width: 1181px) {
-  .dj-start {
-    height: 100vh;
-  }
-  .dj-start .bar {
-    color: #222222;
-  }
-  .dj-start .bar .dj-icon {
-    position: relative;
-    left: auto;
-    top: auto;
-  }
-  .dj-start .bar .dj-icon a {
-    color: #000;
-  }
-  .dj-start .bar .dj-icon a span {
-    color: #000;
-  }
-  .dj-start .bar-scroll {
-    display: none;
-  }
-}
-@media (max-width: 1030px) {
-  .dj-start .quote {
-    left: 40%;
-  }
-}
-@media (max-width: 992px) {
-  .dj-start .quote h1 {
-    font-size: 2.25rem;
-  }
-}
-@media (max-width: 768px) {
-  .dj-start .bar {
-    padding: 0 25px;
-  }
-  .dj-start .quote {
-    top: auto;
-    left: 80px;
-    bottom: 90px;
-    width: 70%;
-  }
-}
-@media (max-width: 576px) {
-  .dj-start {
-    height: 90vh;
-  }
-  .dj-start .content {
-    background-image: url("../img/team/david.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  .dj-start .content .bar .dj-icon {
-    position: absolute;
-    top: 10px;
-    left: 25px;
-  }
-  .dj-start .content .quote {
-    left: 50px;
-  }
-}
+/* .dj-start {
+   position: relative;
+   min-width: 100%; // * Ancho de la sección
+   height: 100vh;
+   background-color: $white;
 
+   .content {
+      @include cover('../img/team/david.landscape.jpg');
+      height: 90%;
+      width: 93%;
+      margin: auto;
+      border-radius: $radius;
+      transition: .8s all;
+
+      @media (max-width: $xxl) {
+         width: 90%;
+      }
+   }
+
+   .bar {
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $white;
+
+      .dj-icon {
+         position: absolute;
+         left: 100px;
+         top: 50px;
+
+         a {
+            color: $white;
+
+            span {
+               color: $white;
+            }
+         }
+      }
+
+      &-scroll {
+         font-size: $h2;
+         position: absolute;
+         right: 100px;
+         top: 100px;
+
+         span {
+            font-family: $title-font;
+            font-weight: 500;
+            font-size: $h2;
+            color: $white;
+         }
+      }
+   }
+
+   .quote {
+      position: absolute;
+      top: 40%;
+      left: 60%;
+
+      img {
+         margin-bottom: 40px;
+      }
+
+      h1 {
+         font-size: $h1-resp;
+         font-weight: 500;
+         color: $white;
+      }
+   }
+
+   @media (max-width: $xxl) {
+      .quote {
+         left: 55%
+      }
+   }
+
+   @media (max-width: 1150px) {
+      .quote {
+         left: 50%
+      }
+   }
+
+   @media (max-width: $desktop) {
+      height: 100vh;
+
+      .bar {
+         color: $text-color;
+
+         .dj-icon {
+            position: relative;
+            left: auto;
+            top: auto;
+
+            a {
+               color: $black;
+
+               span {
+                  color: $black;
+               }
+            }
+         }
+
+         &-scroll {
+            display: none;
+         }
+      }
+   }
+
+   @media (max-width: 1030px) {
+      .quote {
+         left: 40%
+      }
+   }
+
+   @media (max-width: $lg) {
+      .quote {
+         h1 {
+            font-size: $h2;
+         }
+      }
+   }
+
+   @media (max-width: $md) {
+      .bar {
+         padding: 0 25px;
+      }
+
+      .quote {
+         top: auto;
+         left: 80px;
+         bottom: 90px;
+         width: 70%;
+      }
+   }
+
+   @media (max-width: $sm) {
+      height: 90vh;
+
+      .content {
+         @include cover('../img/team/david.jpg');
+
+         .bar {
+            .dj-icon {
+               position: absolute;
+               top: 10px;
+               left: 25px;
+            }
+         }
+
+         .quote {
+            left: 50px;
+         }
+      }
+   }
+} */
 .dj-start-v2 {
   position: relative;
-  min-width: 100%;
+  max-width: 100vw;
   height: 100vh;
   background-color: #FFF;
+  position: relative;
+}
+.dj-start-v2 .content {
+  min-width: 100vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.dj-start-v2 .content h1 {
+  font-size: clamp(42px, 9vw, 180px);
+  font-weight: 700;
+}
+.dj-start-v2 .content h1 span {
+  display: block;
+  color: #FFF;
+  text-shadow: -1px -1px 0 #222222, 1px -1px 0 #222222, -1px 1px 0 #222222, 1px 1px 0 #222222;
+  font-size: clamp(42px, 9vw, 180px);
+}
+.dj-start-v2 .content h3 {
+  font-size: clamp(1.125rem, -18px + 3.5vw, 1.625rem);
+  font-weight: 400;
+}
+.dj-start-v2 .content img {
+  position: absolute;
+  bottom: 0;
+  width: 450px;
 }
 
 /* ------------------------------------------------------
