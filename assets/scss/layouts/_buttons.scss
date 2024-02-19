@@ -32,7 +32,7 @@
    font-weight: 500;
    text-decoration: none;
    display: flex;
-   transition: .3s;
+   transition: .3s !important;
 
    .icon {
       justify-content: center;
@@ -58,6 +58,7 @@
    border-radius: 50px;
    font-size: 22px;
    font-weight: 500;
+   transition: .3s !important;
 
    i {
       font-size: 21px;

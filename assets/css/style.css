@@ -495,7 +495,7 @@ figure {
   font-weight: 500;
   text-decoration: none;
   display: flex;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 .dj-button .icon {
   justify-content: center;
@@ -518,6 +518,7 @@ figure {
   border-radius: 50px;
   font-size: 22px;
   font-weight: 500;
+  transition: 0.3s !important;
 }
 .dj-button-alt i {
   font-size: 21px;
@@ -751,7 +752,6 @@ header .dj-menu-box .dj-menu-backdrop {
 header .dj-menu-box .dj-menu-content {
   top: 0;
   right: 0;
-  z-index: 999;
   height: 100vh;
   display: block;
   position: fixed;
@@ -760,6 +760,7 @@ header .dj-menu-box .dj-menu-content {
   transform: translate3d(100%, 0px, 0px);
   transition: all 0.5s ease-in-out;
   opacity: 0;
+  z-index: 0;
 }
 @media (min-width: 768px) {
   header .dj-menu-box .dj-menu-content {
@@ -917,6 +918,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   transform: translate3d(0%, 0px, 0px);
   transition: all 0.5s ease-in-out;
   opacity: 1;
+  z-index: 999;
 }
 
 .dj-footer {
