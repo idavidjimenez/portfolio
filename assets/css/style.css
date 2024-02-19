@@ -1304,9 +1304,10 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   display: none;
 }
 .dj-start-v2 .content-heading h2 {
-  color: #FFF;
   z-index: 5;
-  text-shadow: -1px -1px 0 #222222, 1px -1px 0 #222222, -1px 1px 0 #222222, 1px 1px 0 #222222;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #222222;
 }
 .dj-start-v2 .content-heading h3 {
   font-size: clamp(1.125rem, -18px + 3.5vw, 1.625rem);
@@ -1315,7 +1316,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .dj-start-v2 .content img {
   position: absolute;
   bottom: 0px;
-  width: 430px;
+  width: 30.2%;
   z-index: 1;
 }
 @media (max-width: 1181px) {

@@ -189,12 +189,10 @@
             }
          }
          h2 {
-            color: $white;
             z-index: 5;
-            text-shadow: -1px -1px 0 $title-color,
-                         1px -1px 0 $title-color,
-                         -1px 1px 0 $title-color,
-                         1px 1px 0 $title-color;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $text-color;
          }
       
          h3 {
@@ -206,7 +204,7 @@
       img {
          position: absolute;
          bottom: 0px;
-         width: 430px;
+         width: 30.2%;
          z-index: 1;
       }
 
