@@ -514,8 +514,10 @@ figure {
 
 .dj-button-alt {
   padding: 15px 25px;
-  border: 1px solid #222222;
+  border: 2px solid #222222;
   border-radius: 50px;
+  font-size: 22px;
+  font-weight: 500;
 }
 .dj-button-alt i {
   font-size: 21px;
@@ -532,7 +534,6 @@ figure {
   .dj-button-alt {
     display: block;
     text-align: center;
-    font-size: 0.875rem;
   }
   .dj-button-alt i {
     font-size: 16px;
@@ -1313,18 +1314,31 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   font-size: clamp(1.125rem, -18px + 3.5vw, 1.625rem);
   font-weight: 400;
 }
+.dj-start-v2 .content-heading-buttons {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.dj-start-v2 .content-heading-buttons a {
+  margin: 10px;
+  width: 250px;
+}
 .dj-start-v2 .content img {
   position: absolute;
   bottom: 0px;
-  width: 30.2%;
+  width: 34%;
   z-index: 1;
 }
 @media (max-width: 1181px) {
   .dj-start-v2 .content-heading h1, .dj-start-v2 .content-heading h2 {
     font-size: 82px;
   }
+  .dj-start-v2 .content-heading-buttons {
+    margin-top: 60px;
+  }
   .dj-start-v2 .content img {
-    width: 400px;
+    width: 530px;
   }
 }
 @media (max-width: 768px) {
@@ -1332,15 +1346,37 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
     font-size: 68px;
   }
   .dj-start-v2 .content img {
-    width: 410px;
+    width: 475px;
   }
 }
 @media (max-width: 576px) {
   .dj-start-v2 .content-heading h1, .dj-start-v2 .content-heading h2 {
     font-size: 56px;
   }
+  .dj-start-v2 .content-heading-buttons {
+    margin-top: 50px;
+    display: block;
+  }
+  .dj-start-v2 .content-heading-buttons a {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
   .dj-start-v2 .content img {
-    width: 420px;
+    width: 80%;
+  }
+}
+@media (max-width: 414px) {
+  .dj-start-v2 .content-heading h1, .dj-start-v2 .content-heading h2 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 370px) {
+  .dj-start-v2 .content {
+    margin-top: 150px;
+  }
+  .dj-start-v2 .content-buttons {
+    margin-top: 50px;
   }
 }
 
