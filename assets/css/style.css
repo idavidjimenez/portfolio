@@ -850,6 +850,7 @@ header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-left .dj-menu-s
   display: block;
   padding: 12px 0;
   font-size: 1.125rem;
+  font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.00464286em;
   font-family: "Poppins", sans-serif;
@@ -880,7 +881,7 @@ header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-right .dj-menu-
   display: inline-block;
   position: relative;
   font-size: 3.625rem;
-  font-weight: 500;
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
   letter-spacing: -0.05em;
   line-height: 100%;
@@ -921,6 +922,7 @@ header .dj-menu-box .dj-menu-content .dj-menu-footer .dj-menu-mail a {
   display: inline-block;
   padding: 0 0 5px 0;
   font-size: 1.125rem;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
   line-height: 20px;
   letter-spacing: 0.00464286em;
