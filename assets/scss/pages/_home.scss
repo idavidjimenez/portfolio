@@ -111,6 +111,11 @@
             width: 575px;
          }
       }
+      @media (max-width: 1440px) and (max-height: 820px) {
+         img {
+            width: 530px;
+         }
+      }
       @media (max-width: 1440px) and (max-height: 780px) {
          img {
             width: 490px;

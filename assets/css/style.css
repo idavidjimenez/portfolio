@@ -1256,6 +1256,11 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
     width: 575px;
   }
 }
+@media (max-width: 1440px) and (max-height: 820px) {
+  .dj-start .content img {
+    width: 530px;
+  }
+}
 @media (max-width: 1440px) and (max-height: 780px) {
   .dj-start .content img {
     width: 490px;
