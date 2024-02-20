@@ -1121,263 +1121,107 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 /* ------------------------------------------------------
 * Start content
 ------------------------------------------------------ */
-/* .dj-start {
-   position: relative;
-   min-width: 100%; // * Ancho de la sección
-   height: 100vh;
-   background-color: $white;
-
-   .content {
-      @include cover('../img/team/david.landscape.jpg');
-      height: 90%;
-      width: 93%;
-      margin: auto;
-      border-radius: $radius;
-      transition: .8s all;
-
-      @media (max-width: $xxl) {
-         width: 90%;
-      }
-   }
-
-   .bar {
-      padding: 0 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      color: $white;
-
-      .dj-icon {
-         position: absolute;
-         left: 100px;
-         top: 50px;
-
-         a {
-            color: $white;
-
-            span {
-               color: $white;
-            }
-         }
-      }
-
-      &-scroll {
-         font-size: $h2;
-         position: absolute;
-         right: 100px;
-         top: 100px;
-
-         span {
-            font-family: $title-font;
-            font-weight: 500;
-            font-size: $h2;
-            color: $white;
-         }
-      }
-   }
-
-   .quote {
-      position: absolute;
-      top: 40%;
-      left: 60%;
-
-      img {
-         margin-bottom: 40px;
-      }
-
-      h1 {
-         font-size: $h1-resp;
-         font-weight: 500;
-         color: $white;
-      }
-   }
-
-   @media (max-width: $xxl) {
-      .quote {
-         left: 55%
-      }
-   }
-
-   @media (max-width: 1150px) {
-      .quote {
-         left: 50%
-      }
-   }
-
-   @media (max-width: $desktop) {
-      height: 100vh;
-
-      .bar {
-         color: $text-color;
-
-         .dj-icon {
-            position: relative;
-            left: auto;
-            top: auto;
-
-            a {
-               color: $black;
-
-               span {
-                  color: $black;
-               }
-            }
-         }
-
-         &-scroll {
-            display: none;
-         }
-      }
-   }
-
-   @media (max-width: 1030px) {
-      .quote {
-         left: 40%
-      }
-   }
-
-   @media (max-width: $lg) {
-      .quote {
-         h1 {
-            font-size: $h2;
-         }
-      }
-   }
-
-   @media (max-width: $md) {
-      .bar {
-         padding: 0 25px;
-      }
-
-      .quote {
-         top: auto;
-         left: 80px;
-         bottom: 90px;
-         width: 70%;
-      }
-   }
-
-   @media (max-width: $sm) {
-      height: 90vh;
-
-      .content {
-         @include cover('../img/team/david.jpg');
-
-         .bar {
-            .dj-icon {
-               position: absolute;
-               top: 10px;
-               left: 25px;
-            }
-         }
-
-         .quote {
-            left: 50px;
-         }
-      }
-   }
-} */
-.dj-start-v2 {
+.dj-start {
   position: relative;
   min-width: 100%;
   height: 100vh;
   background-color: #FFF;
   position: relative;
 }
-.dj-start-v2 .content {
+.dj-start .content {
   min-width: 100%;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-.dj-start-v2 .content-heading {
+.dj-start .content-heading {
   margin-bottom: 40px;
   z-index: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-.dj-start-v2 .content-heading h1, .dj-start-v2 .content-heading h2 {
+.dj-start .content-heading h1, .dj-start .content-heading h2 {
   font-size: 7vw;
   font-weight: 700;
   z-index: 1;
 }
-.dj-start-v2 .content-heading h1 span, .dj-start-v2 .content-heading h2 span {
+.dj-start .content-heading h1 span, .dj-start .content-heading h2 span {
   display: none;
 }
-.dj-start-v2 .content-heading h2 {
+.dj-start .content-heading h2 {
   z-index: 5;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #222222;
 }
-.dj-start-v2 .content-heading h3 {
+.dj-start .content-heading h3 {
   font-size: clamp(1.125rem, -18px + 3.5vw, 1.625rem);
   font-weight: 400;
 }
-.dj-start-v2 .content-heading-buttons {
+.dj-start .content-heading-buttons {
   z-index: 2;
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-.dj-start-v2 .content-heading-buttons a {
+.dj-start .content-heading-buttons a {
   margin: 10px;
   width: 250px;
 }
-.dj-start-v2 .content img {
+.dj-start .content img {
   position: absolute;
   bottom: 0px;
   width: 34%;
   z-index: 1;
 }
 @media (max-width: 1181px) {
-  .dj-start-v2 .content-heading h1, .dj-start-v2 .content-heading h2 {
+  .dj-start .content-heading h1, .dj-start .content-heading h2 {
     font-size: 82px;
   }
-  .dj-start-v2 .content-heading-buttons {
+  .dj-start .content-heading-buttons {
     margin-top: 60px;
   }
-  .dj-start-v2 .content img {
+  .dj-start .content img {
     width: 530px;
   }
 }
 @media (max-width: 768px) {
-  .dj-start-v2 .content-heading h1, .dj-start-v2 .content-heading h2 {
+  .dj-start .content-heading h1, .dj-start .content-heading h2 {
     font-size: 68px;
   }
-  .dj-start-v2 .content img {
+  .dj-start .content img {
     width: 475px;
   }
 }
 @media (max-width: 576px) {
-  .dj-start-v2 .content-heading h1, .dj-start-v2 .content-heading h2 {
+  .dj-start .content-heading h1, .dj-start .content-heading h2 {
     font-size: 56px;
   }
-  .dj-start-v2 .content-heading-buttons {
+  .dj-start .content-heading-buttons {
     margin-top: 50px;
     display: block;
   }
-  .dj-start-v2 .content-heading-buttons a {
+  .dj-start .content-heading-buttons a {
     width: 90%;
     margin: auto;
     margin-bottom: 20px;
   }
-  .dj-start-v2 .content img {
+  .dj-start .content img {
     width: 80%;
   }
 }
 @media (max-width: 414px) {
-  .dj-start-v2 .content-heading h1, .dj-start-v2 .content-heading h2 {
+  .dj-start .content-heading h1, .dj-start .content-heading h2 {
     font-size: 42px;
   }
 }
 @media (max-width: 370px) {
-  .dj-start-v2 .content {
+  .dj-start .content {
     margin-top: 150px;
   }
-  .dj-start-v2 .content-buttons {
+  .dj-start .content-buttons {
     margin-top: 50px;
   }
 }
