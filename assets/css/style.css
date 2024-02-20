@@ -323,7 +323,7 @@ figure {
   font-size: clamp(42px, -6px + 9vw, 180px);
 }
 .dj-header h3 {
-  font-size: clamp(0.875rem, -18px + 3.5vw, 1.125rem);
+  font-size: clamp(1.125rem, -18px + 3.5vw, 1.125rem);
   font-weight: 400;
 }
 .dj-header-web {

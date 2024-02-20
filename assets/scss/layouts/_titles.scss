@@ -45,7 +45,7 @@
    }
 
    h3 {
-      font-size: clamp($small, -18px + 3.5vw, $text);
+      font-size: clamp($text, -18px + 3.5vw, $text);
       font-weight: 400;
    }
 
