@@ -2,22 +2,6 @@
 .dj-confirm {
    padding: 200px 0 20px 0;
 
-   .dj-header {
-      h1 {
-         font-size: clamp(42px, -6px + 9vw, 104px);
-         text-transform: none;
-
-         span {
-            font-size: clamp(42px, -6px + 9vw, 104px);
-            color: $brand;
-         }
-      }
-
-      p {
-         font-size: clamp($text, 2vw, $big-text);
-      }
-   }
-
    .dj-form {
       &-contact {
          max-width: $lg;
@@ -120,7 +104,7 @@
             width: 100%;
          }
 
-         @media (max-width: 768px) {
+         @media (max-width: $md) {
             .dj-input,
             .dj-textarea {
                input,

@@ -359,6 +359,36 @@ figure {
 .dj-header-web a:hover::before {
   background: #222222;
 }
+.dj-header.center h1 {
+  font-size: clamp(42px, -6px + 9vw, 104px);
+  text-transform: none;
+}
+.dj-header.center h1 span {
+  font-size: clamp(42px, -6px + 9vw, 104px);
+  color: #EB984E;
+}
+.dj-header.center p {
+  font-size: clamp(1.125rem, 2vw, 1.625rem);
+}
+.dj-header.left {
+  text-align: left;
+}
+.dj-header.left h1 {
+  font-size: clamp(42px, -6px + 9vw, 104px);
+  text-transform: none;
+}
+.dj-header.left h1 span {
+  font-size: clamp(42px, -6px + 9vw, 104px);
+  color: #EB984E;
+}
+.dj-header.left p {
+  font-size: 26px;
+}
+@media (max-width: 768px) {
+  .dj-header.left p {
+    font-size: 1.25rem;
+  }
+}
 
 .dj-heading {
   margin-bottom: clamp(60px, 3vw, 120px);
@@ -2161,20 +2191,6 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .dj-contact,
 .dj-confirm {
   padding: 200px 0 20px 0;
-}
-.dj-contact .dj-header h1,
-.dj-confirm .dj-header h1 {
-  font-size: clamp(42px, -6px + 9vw, 104px);
-  text-transform: none;
-}
-.dj-contact .dj-header h1 span,
-.dj-confirm .dj-header h1 span {
-  font-size: clamp(42px, -6px + 9vw, 104px);
-  color: #EB984E;
-}
-.dj-contact .dj-header p,
-.dj-confirm .dj-header p {
-  font-size: clamp(1.125rem, 2vw, 1.625rem);
 }
 .dj-contact .dj-form-contact,
 .dj-confirm .dj-form-contact {
