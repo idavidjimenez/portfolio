@@ -183,7 +183,6 @@ header {
          .dj-menu-content {
             top: 0;
             right: 0;
-            
             height: 100vh;
             display: block;
             position: fixed;
@@ -262,7 +261,7 @@ header {
                   }
    
                   &-right {
-                     padding: 0 20px 0 50px;
+                     padding: 0 0 0 80px;
    
                      @media (max-width: $md) {
                         padding: 0 75px;

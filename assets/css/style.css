@@ -859,7 +859,7 @@ header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-left .dj-menu-s
   color: #EB984E;
 }
 header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-right {
-  padding: 0 20px 0 50px;
+  padding: 0 0 0 80px;
 }
 @media (max-width: 768px) {
   header .dj-menu-box .dj-menu-content .dj-menu-body .dj-menu-grid-right {
