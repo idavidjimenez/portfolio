@@ -2135,6 +2135,12 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   .dj-training-header .dj-heading h3 {
     margin-bottom: 50px;
   }
+  .dj-training-header .dj-heading a {
+    font-size: 1.125rem;
+  }
+  .dj-training-header .dj-heading a i {
+    display: none;
+  }
 }
 .dj-training-image {
   width: 100%;
@@ -2231,7 +2237,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
 .dj-contact .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box,
 .dj-confirm .dj-form-contact .dj-checkbox-buttons .dj-checkbox-box {
   display: block;
-  padding: 20px 35px;
+  padding: 15px 30px;
   margin: auto;
   margin-bottom: 20px;
   text-align: center;
