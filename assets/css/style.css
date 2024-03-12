@@ -1384,6 +1384,25 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   }
 }
 
+.dj-start-v2 {
+  position: relative;
+  min-width: 100%;
+  height: 100vh;
+  background-color: #FFF;
+  position: relative;
+}
+.dj-start-v2 .content {
+  padding: 30px;
+  margin: 0 auto;
+}
+.dj-start-v2 .dj-start-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 94.5vh;
+  border-radius: 12px;
+}
+
 /* ------------------------------------------------------
 * Main About Me
 ------------------------------------------------------ */
