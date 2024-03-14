@@ -11,89 +11,84 @@ header {
       ------------------------------------------------ */
       .dj-menu-navbar {
          position: absolute;
-         height: 100vh;
-         width: 50px;
          display: flex;
          align-items: center;
          text-align: center;
          background-color: transparent;
          transition: .3s all;
-   
-         /* @media (max-width: $desktop) {
-            position: relative;
-            height: auto;
-            border: 0;
-            background-color: transparent;
-            align-items: inherit;
-            top: 120px;
-            right: 80px;
-            float: right;
+         height: 95px;
+         width: 100%;
+         padding: 0 40px;
+
+         .dj-menu-toggle {
+            position: absolute;
+            right: 79px;
+            top: 35px;
+
+            .dj-menu-contact {
+               margin-top: 3px;
+               margin-right: 30px;
+               font-weight: 500;
+
+               &::after {
+                  display: block;
+                  content: '';
+                  border-bottom: solid 2px $brand;
+                  transform: scaleX(0);
+                  transition: transform 250ms ease-in-out;
+               }
+
+               &:hover {
+                  &::after {
+                     transform: scaleX(1);
+                  }
+               }
+            }
+            .dj-menu-btn {
+               margin-left: 122px;
+            }
+         }
+
+         @media (max-width: $desktop) {
+            top: auto;
+            right: auto;
+
+            .dj-menu-toggle {
+               right: 55px;
+            }
          }
 
          @media (max-width: $md) {
-            right: 50px;
-         }
-
-         @media (max-width: $sm) {
-            top: 90px;
-            right: 20px;
-         } */
-
-         &.page {
-            height: auto;
-            width: 100%;
-            padding: 0 40px;
+            padding: 0 25px;
+            margin-top: 10px;
 
             .dj-menu-toggle {
-               position: absolute;
-               right: 79px;
-               top: 70px;
+               right: 53px;
+               top: 40px;
+            }
+         }
+         @media (max-width: $sm) {
+            .dj-menu-toggle {
+               right: 45px;
+            }
+         }
 
-               .dj-menu-contact {
-                  margin-top: 3px;
-                  margin-right: 30px;
-                  font-weight: 500;
-
-                  &::after {
-                     display: block;
-                     content: '';
-                     border-bottom: solid 2px $brand;
-                     transform: scaleX(0);
-                     transition: transform 250ms ease-in-out;
+         &.start {
+            @media (min-width: $lg) {
+               .dj-menu-toggle {
+                  .dj-menu-contact {
+                     color: $white;
                   }
-
-                  &:hover {
-                     &::after {
-                        transform: scaleX(1);
+   
+                  .dj-menu-btn {
+                     .dj-menu-burger {
+                        background: $white;
+   
+                        &::before, &::after {
+                           background: $white;
+                        }
                      }
                   }
-               }
-               .dj-menu-btn {
-                  margin-left: 122px;
-               }
-            }
-
-            @media (max-width: $desktop) {
-               top: auto;
-               right: auto;
-
-               .dj-menu-toggle {
-                  right: 55px;
-               }
-            }
-
-            @media (max-width: $md) {
-               padding: 0 25px;
-               margin-top: 10px;
-
-               .dj-menu-toggle {
-                  right: 53px;
-                  top: 65px;
-               }
-            }
-            @media (max-width: $sm) {
-               .dj-menu-toggle {
-                  right: 45px;
                }
             }
          }
@@ -154,9 +149,11 @@ header {
                   
                   &::before{
                      transform: rotate(45deg);
+                     background: $text-color !important;
                   }
                   &::after {
                      transform: rotate(-45deg);
+                     background: $text-color !important;
                   }
                }
             }

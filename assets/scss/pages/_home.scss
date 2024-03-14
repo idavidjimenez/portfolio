@@ -286,6 +286,7 @@
       }
    }
 }
+
 .dj-start-v2 {
    position: relative;
    min-width: 100%; // * Ancho de la sección
@@ -298,12 +299,97 @@
       margin: 0 auto;
    }
 
-   .dj-start-image {
+   .dj-start-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .dj-start-text {
+         padding-top: 120px;
+
+         &__name,
+         &__title {
+            font-size: clamp(42px, 5vw, $h1);
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0;
+         }
+
+         &-flex {
+            display: flex;
+            align-items: center;
+         }
+
+         &__text {
+            font-size: $small;
+            margin-bottom: 0;
+            width: 28%;
+
+            @media (max-width: $md) {
+               width: 34%;
+            }
+         }
+      }
+
+      &__buttons {
+         display: flex;
+         align-items: center;
+         margin: 35px 0;
+         width: 50%;
+
+         .dj-button {
+            width: 240px;
+            padding: 14px;
+            font-size: 18px;
+
+            &-icon {
+               background-color: $text-color;
+               padding: 9px 15px;
+               border-radius: 100%;
+               margin-left: -15px;
+
+               i {
+                  color: $white;
+                  font-size: $big-text;
+               }
+            }
+         }
+
+         &:hover {
+            .dj-button,
+            .dj-button-icon {
+               background-color: $brand-hover;
+               border-color: $brand-hover;
+            }
+         }
+      }
+
+      &__bottom {
+         img {
+            width: 220px;
+            border-radius: $radius-small;
+
+            @media (max-width: $lg) {
+               display: none;
+            }
+         }
+      }
+   }
+
+   .dj-start-right {
       img {
          object-fit: cover;
          width: 100%;
-         height: 94.5vh;
+         height: 93vh;
          border-radius: $radius;
+      }
+
+      @media (max-width: $lg) {
+         margin-top: 50px;
+
+         img {
+            height: 325px;
+         }
       }
    }
 }
