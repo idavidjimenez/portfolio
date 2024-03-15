@@ -1518,6 +1518,23 @@
 	</modal>
 	
 	<div id="dj-preloader"></div>
+
+	<!-- Modal -->
+   <div class="modal fade" id="warning-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="warning-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content" style="border-radius: 16px;">
+            <div class="modal-header border-0">
+               <h2 class="modal-title fs-5" id="warning-modal-label">¡Aviso!</h2>
+            </div>
+            <div class="modal-body">
+               Esta página web se encuentra en construcción en estos momentos. Puede que algunos elementos de esta cambie, se añada o elimine en un futuro. Disculpe las molestias.
+            </div>
+            <div class="modal-footer border-0">
+               <button type="button" class="dj-button" data-bs-dismiss="modal" style="padding: 10px 25px; font-size: 14px;">Entendido</button>
+            </div>
+         </div>
+      </div>
+   </div>
   
    <!-- =====================================
 	* JAVASCRIPT LINKS
@@ -1534,5 +1551,12 @@
 	<script src="./assets/js/home.js" type="text/javascript"></script>
 	<!-- * Projects JS -->
    <script src="./assets/js/projects.js" type="text/javascript"></script>
+	<script>
+      $( document ).ready(function() {
+
+         $('#warning-modal').modal('toggle');
+
+      });
+   </script>
 </body>
 </html>
