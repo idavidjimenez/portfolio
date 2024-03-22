@@ -1,7 +1,7 @@
 /* ------------------------------------------------------
 * Start content
 ------------------------------------------------------ */
-.dj-start {
+.dj-start-old {
    position: relative;
    min-width: 100%; // * Ancho de la sección
    height: 100vh;
@@ -287,7 +287,7 @@
    }
 }
 
-.dj-start-v2 {
+.dj-start {
    position: relative;
    min-width: 100%; // * Ancho de la sección
    height: 100vh;
@@ -299,7 +299,7 @@
       margin: 0 auto;
    }
 
-   .dj-start-left {
+   &-left {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -309,7 +309,7 @@
 
          &__name,
          &__title {
-            font-size: clamp(42px, 5vw, $h1);
+            font-size: clamp(42px, 5vw, 190px);
             font-weight: 600;
             text-transform: uppercase;
             margin-bottom: 0;
@@ -376,7 +376,7 @@
       }
    }
 
-   .dj-start-right {
+   &-right {
       img {
          object-fit: cover;
          width: 100%;
