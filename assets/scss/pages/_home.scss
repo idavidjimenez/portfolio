@@ -321,7 +321,7 @@
          }
 
          &__text {
-            font-size: $small;
+            font-size: clamp($small, 1vw, $text);
             margin-bottom: 0;
             width: 28%;
 

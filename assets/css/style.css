@@ -691,7 +691,7 @@ header .dj-menu .dj-menu-navbar .dj-menu-toggle .dj-menu-btn {
     margin-top: 10px;
   }
   header .dj-menu .dj-menu-navbar .dj-menu-toggle {
-    right: 53px;
+    right: 60px;
     top: 40px;
   }
 }
@@ -700,7 +700,7 @@ header .dj-menu .dj-menu-navbar .dj-menu-toggle .dj-menu-btn {
     right: 45px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1181px) {
   header .dj-menu .dj-menu-navbar.start .dj-menu-toggle .dj-menu-contact {
     color: #FFF;
   }
@@ -1412,7 +1412,7 @@ header .dj-menu-box .dj-menu-active.dj-menu-content {
   align-items: center;
 }
 .dj-start-left .dj-start-text__text {
-  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 1vw, 1.125rem);
   margin-bottom: 0;
   width: 28%;
 }
