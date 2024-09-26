@@ -2,652 +2,690 @@
 * Start content
 ------------------------------------------------------ */
 .dj-start-old {
-   position: relative;
-   min-width: 100%; // * Ancho de la sección
-   height: 100vh;
-   background-color: $white;
-   position: relative;
+	position: relative;
+	min-width: 100%; // * Ancho de la sección
+	height: 100vh;
+	background-color: $white;
+	position: relative;
 
-   .content {
-      min-width: 100%;
-      display: flex;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
+	.content {
+		min-width: 100%;
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
 
-      &-heading {
-         margin-bottom: 40px;
-         z-index: auto;
-         display: flex;
-         flex-direction: column;
-         justify-content: flex-end;
+		&-heading {
+			margin-bottom: 40px;
+			z-index: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
 
-         h1, h2 {
-            font-size: 7vw;
-            font-weight: 700;
-            z-index: 1;
+			h1,
+			h2 {
+				font-size: 7vw;
+				font-weight: 700;
+				z-index: 1;
 
-            span {
-               display: none;
-            }
-         }
-         h2 {
-            z-index: 5;
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: $text-color;
-         }
+				span {
+					display: none;
+				}
+			}
 
-         @media (max-width: $desktop) {
-            h1, h2 {
-               font-size: 10vw;
-            }
-         }
-      
-         h3 {
-            font-size: clamp($text, -18px + 3.5vw, $big-text);
-            font-weight: 400;
-         }
+			h2 {
+				z-index: 5;
+				-webkit-text-fill-color: transparent;
+				-webkit-text-stroke-width: 2px;
+				-webkit-text-stroke-color: $text-color;
+			}
 
-         &-buttons {
-            z-index: 2;
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
+			@media (max-width: $desktop) {
 
-            a {
-               margin: 10px;
-               width: 250px;
-            }
+				h1,
+				h2 {
+					font-size: 10vw;
+				}
+			}
 
-            @media (max-width: $sm) {
-               display: block;
-               margin: auto;
-               margin-top: 20px;
+			h3 {
+				font-size: clamp($text, -18px + 3.5vw, $big-text);
+				font-weight: 400;
+			}
 
-               a {
-                  font-size: $text;
-                  width: 225px;
-               }
-            }
-         }
-      }
+			&-buttons {
+				z-index: 2;
+				display: flex;
+				justify-content: center;
+				margin-top: 20px;
 
-      img {
-         position: absolute;
-         bottom: 0px;
-         width: 34%;
-         z-index: 1;
-         overflow: hidden;
-      }
+				a {
+					margin: 10px;
+					width: 250px;
+				}
 
-      @media (max-width: 1024px) {
-         align-items: baseline;
-         margin-top: 225px;
-      }
+				@media (max-width: $sm) {
+					display: block;
+					margin: auto;
+					margin-top: 20px;
 
-      @media (max-width: $md) {
-         margin-top: 175px;
-      }
+					a {
+						font-size: $text;
+						width: 225px;
+					}
+				}
+			}
+		}
 
-      // * ------- Desktop ------- * //
-      @media (max-width: 1920px) and (max-height: 1080px) {
-         img {
-            width: 650px;
-         }
-      }
-      @media (max-width: 1920px) and (max-height: 980px) {
-         img {
-            width: 630px;
-         }
-      }
-      @media (max-width: 1538px) and (max-height: 864px) {
-         img {
-            width: 565px;
-         }
-      }
-      @media (max-width: 1440px) and (max-height: 900px) {
-         img {
-            width: 575px;
-         }
-      }
-      @media (max-width: 1440px) and (max-height: 820px) {
-         img {
-            width: 530px;
-         }
-      }
-      @media (max-width: 1440px) and (max-height: 780px) {
-         img {
-            width: 490px;
-         }
-      }
-      @media (max-width: 1366px) and (max-height: 768px) {
-         img {
-            width: 565px !important;
-         }
-      }
+		img {
+			position: absolute;
+			bottom: 0px;
+			width: 34%;
+			z-index: 1;
+			overflow: hidden;
+		}
 
-      // * ------- Tablet vertical ------- * //
-      // * iPad Pro
-      @media (max-width: 1024px) and (max-height: 1366px) {
-         img {
-            width: 640px;
-         }
-      }
-      // * iPad Air
-      @media (max-width: 820px) and (max-height: 1180px) {
-         img {
-            width: 520px;
-         }
-      }
-      // * iPad Mini
-      @media (max-width: 768px) and (max-height: 1024px) {
-         img {
-            width: 420px !important;
-         }
+		@media (max-width: 1024px) {
+			align-items: baseline;
+			margin-top: 225px;
+		}
 
-         &-heading {
-            &-buttons {
-               margin-top: 20px !important;
-            }
-         }
-      }
+		@media (max-width: $md) {
+			margin-top: 175px;
+		}
 
-      // * ------- Tablet horizontal ------- * //
-      // * iPad Pro
-      @media (max-width: 1366px) and (max-height: 1024px) {
-         img {
-            width: 675px;
-         }
+		// * ------- Desktop ------- * //
+		@media (max-width: 1920px) and (max-height: 1080px) {
+			img {
+				width: 650px;
+			}
+		}
 
-         &-heading {
-            &-buttons {
-               margin-top: 150px;
-            }
-         }
-      }
-      // * iPad Air
-      @media (max-width: 1180px) and (max-height: 820px) {
-         img {
-            width: 545px;
-         }
+		@media (max-width: 1920px) and (max-height: 980px) {
+			img {
+				width: 630px;
+			}
+		}
 
-         &-heading {
-            &-buttons {
-               margin-top: 0;
-            }
-         }
-      }
-      // * iPad Mini
-      @media (max-width: 1024px) and (max-height: 768px) {
-         img {
-            width: 465px !important;
-         }
-      }
+		@media (max-width: 1538px) and (max-height: 864px) {
+			img {
+				width: 565px;
+			}
+		}
 
-      // * ------- Mobile ------- * //
-      // * iPhone 14 Pro Max
-      @media (max-width: 430px) and (max-height: 932px) {
-         margin-top: 235px;
+		@media (max-width: 1440px) and (max-height: 900px) {
+			img {
+				width: 575px;
+			}
+		}
 
-         &-heading {
-            &-buttons {
-               margin-top: 350px !important;
-            }
-         }
-      }
-      // * iPhone 12 Pro
-      @media (max-width: 390px) and (max-height: 844px) {
-         margin-top: 190px;
+		@media (max-width: 1440px) and (max-height: 820px) {
+			img {
+				width: 530px;
+			}
+		}
 
-         img {
-            width: 390px !important;
-         }
+		@media (max-width: 1440px) and (max-height: 780px) {
+			img {
+				width: 490px;
+			}
+		}
 
-         &-heading {
-            &-buttons {
-               margin-top: 320px !important;
-            }
-         }
-      }
-      // * iPhone XR
-      @media (max-width: 414px) and (max-height: 896px) {
-         margin-top: 180px !important;
+		@media (max-width: 1366px) and (max-height: 768px) {
+			img {
+				width: 565px !important;
+			}
+		}
 
-         img {
-            width: 390px !important;
-         }
+		// * ------- Tablet vertical ------- * //
+		// * iPad Pro
+		@media (max-width: 1024px) and (max-height: 1366px) {
+			img {
+				width: 640px;
+			}
+		}
 
-         &-heading {
-            &-buttons {
-               margin-top: 340px !important;
-            }
-         }
-      }
-      // * iPhone 6/7/8 Plus
-      @media (max-width: 414px) and (max-height: 736px) {
-         margin-top: 180px !important;
+		// * iPad Air
+		@media (max-width: 820px) and (max-height: 1180px) {
+			img {
+				width: 520px;
+			}
+		}
 
-         &-heading {
-            &-buttons {
-               margin-top: 200px !important;
-            }
-         }
-      }
-      // * iPhone 5/SE
-      @media (max-width: 320px) and (max-height: 568px) {
-         img {
-            width: 290px !important;
-         }
+		// * iPad Mini
+		@media (max-width: 768px) and (max-height: 1024px) {
+			img {
+				width: 420px !important;
+			}
 
-         &-heading {
-            &-buttons {
-               margin-top: 120px !important;
-            }
-         }
-      }
-      // * Pixel 3 XL
-      @media (max-width: 393px) and (max-height: 768px) {
-         img {
-            width: 330px !important;
-         }
+			&-heading {
+				&-buttons {
+					margin-top: 20px !important;
+				}
+			}
+		}
 
-         &-heading {
-            &-buttons {
-               margin-top: 220px !important;
-            }
-         }
-      }
-      // * Galaxy S20 Ultra
-      @media (max-width: 412px) and (max-height: 915px) {
-         img {
-            width: 330px !important;
-         }
+		// * ------- Tablet horizontal ------- * //
+		// * iPad Pro
+		@media (max-width: 1366px) and (max-height: 1024px) {
+			img {
+				width: 675px;
+			}
 
-         &-heading {
-            &-buttons {
-               margin-top: 290px !important;
-            }
-         }
-      }
-      // * iPhone 6/7/8/SE
-      @media (max-width: 375px) and (max-height: 667px) {
-         margin-top: 150px !important;
+			&-heading {
+				&-buttons {
+					margin-top: 150px;
+				}
+			}
+		}
 
-         img {
-            width: 320px !important;
-         }
+		// * iPad Air
+		@media (max-width: 1180px) and (max-height: 820px) {
+			img {
+				width: 545px;
+			}
 
-         &-heading {
-            &-buttons {
-               margin-top: 190px !important;
-            }
-         }
-      }
-   }
+			&-heading {
+				&-buttons {
+					margin-top: 0;
+				}
+			}
+		}
+
+		// * iPad Mini
+		@media (max-width: 1024px) and (max-height: 768px) {
+			img {
+				width: 465px !important;
+			}
+		}
+
+		// * ------- Mobile ------- * //
+		// * iPhone 14 Pro Max
+		@media (max-width: 430px) and (max-height: 932px) {
+			margin-top: 235px;
+
+			&-heading {
+				&-buttons {
+					margin-top: 350px !important;
+				}
+			}
+		}
+
+		// * iPhone 12 Pro
+		@media (max-width: 390px) and (max-height: 844px) {
+			margin-top: 190px;
+
+			img {
+				width: 390px !important;
+			}
+
+			&-heading {
+				&-buttons {
+					margin-top: 320px !important;
+				}
+			}
+		}
+
+		// * iPhone XR
+		@media (max-width: 414px) and (max-height: 896px) {
+			margin-top: 180px !important;
+
+			img {
+				width: 390px !important;
+			}
+
+			&-heading {
+				&-buttons {
+					margin-top: 340px !important;
+				}
+			}
+		}
+
+		// * iPhone 6/7/8 Plus
+		@media (max-width: 414px) and (max-height: 736px) {
+			margin-top: 180px !important;
+
+			&-heading {
+				&-buttons {
+					margin-top: 200px !important;
+				}
+			}
+		}
+
+		// * iPhone 5/SE
+		@media (max-width: 320px) and (max-height: 568px) {
+			img {
+				width: 290px !important;
+			}
+
+			&-heading {
+				&-buttons {
+					margin-top: 120px !important;
+				}
+			}
+		}
+
+		// * Pixel 3 XL
+		@media (max-width: 393px) and (max-height: 768px) {
+			img {
+				width: 330px !important;
+			}
+
+			&-heading {
+				&-buttons {
+					margin-top: 220px !important;
+				}
+			}
+		}
+
+		// * Galaxy S20 Ultra
+		@media (max-width: 412px) and (max-height: 915px) {
+			img {
+				width: 330px !important;
+			}
+
+			&-heading {
+				&-buttons {
+					margin-top: 290px !important;
+				}
+			}
+		}
+
+		// * iPhone 6/7/8/SE
+		@media (max-width: 375px) and (max-height: 667px) {
+			margin-top: 150px !important;
+
+			img {
+				width: 320px !important;
+			}
+
+			&-heading {
+				&-buttons {
+					margin-top: 190px !important;
+				}
+			}
+		}
+	}
 }
 
 .dj-start {
-   position: relative;
-   min-width: 100%; // * Ancho de la sección
-   height: 100vh;
-   background-color: $white;
-   position: relative;
+	position: relative;
+	min-width: 100%; // * Ancho de la sección
+	height: 100vh;
+	background-color: $white;
+	position: relative;
 
-   .content {
-      padding: 30px;
-      margin: 0 auto;
-   }
+	.content {
+		padding: 30px;
+		margin: 0 auto;
+	}
 
-   &-left {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+	&-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 
-      .dj-start-text {
-         padding-top: 120px;
+		.dj-start-text {
+			padding-top: 120px;
 
-         &__name,
-         &__title {
-            font-size: clamp(42px, 5vw, 190px);
-            font-weight: 600;
-            text-transform: uppercase;
-            margin-bottom: 0;
-         }
+			&__name,
+			&__title {
+				font-size: clamp(42px, 5vw, 190px);
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-bottom: 0;
+			}
 
-         &-flex {
-            display: flex;
-            align-items: center;
-         }
+			&__title {
+				color: $brand;
+			}
 
-         &__text {
-            font-size: clamp($small, 1vw, $text);
-            margin-bottom: 0;
-            width: 28%;
+			&-flex {
+				display: flex;
+				align-items: center;
+			}
 
-            @media (max-width: $md) {
-               width: 34%;
-            }
-         }
-      }
+			&__text {
+				font-size: clamp($small, 1vw, $text);
+				margin-bottom: 0;
+				width: 28%;
 
-      &__buttons {
-         display: flex;
-         align-items: center;
-         margin: 35px 0;
-         width: 50%;
+				@media (max-width: $md) {
+					width: 34%;
+				}
+			}
+		}
 
-         .dj-button {
-            width: 240px;
-            padding: 14px;
-            font-size: 18px;
+		&__buttons {
+			display: flex;
+			align-items: center;
+			margin: 35px 0;
+			width: 50%;
 
-            &-icon {
-               background-color: $text-color;
-               padding: 9px 15px;
-               border-radius: 100%;
-               margin-left: -15px;
+			.dj-button {
+				width: 240px;
+				padding: 14px;
+				font-size: 18px;
 
-               i {
-                  color: $white;
-                  font-size: $big-text;
-               }
-            }
-         }
+				&-icon {
+					background-color: $text-color;
+					padding: 9px 15px;
+					border-radius: 100%;
+					margin-left: -15px;
 
-         &:hover {
-            .dj-button,
-            .dj-button-icon {
-               background-color: $brand-hover;
-               border-color: $brand-hover;
-            }
-         }
-      }
+					i {
+						color: $white;
+						font-size: $big-text;
+					}
+				}
+			}
 
-      &__bottom {
-         img {
-            width: 220px;
-            border-radius: $radius-small;
+			&:hover {
 
-            @media (max-width: $lg) {
-               display: none;
-            }
-         }
-      }
-   }
+				.dj-button,
+				.dj-button-icon {
+					background-color: $brand-hover;
+					border-color: $brand-hover;
+				}
+			}
+		}
 
-   &-right {
-      img {
-         object-fit: cover;
-         width: 100%;
-         height: 93vh;
-         border-radius: $radius;
-      }
+		&__bottom {
+			img {
+				width: 220px;
+				border-radius: $radius-small;
 
-      @media (max-width: $lg) {
-         margin-top: 50px;
+				@media (max-width: $lg) {
+					display: none;
+				}
+			}
+		}
 
-         img {
-            height: 325px;
-         }
-      }
-   }
+		&__rrss {
+			.icon {
+				font-size: 34px;
+				color: $brand;
+			}
+
+			a {
+				&:hover {
+					color: $brand-hover;
+				}
+			}
+		}
+	}
+
+	&-right {
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 93vh;
+			border-radius: $radius;
+		}
+
+		@media (max-width: $lg) {
+			margin-top: 50px;
+
+			img {
+				height: 325px;
+			}
+		}
+	}
 }
 
 /* ------------------------------------------------------
 * Main About Me
 ------------------------------------------------------ */
 .dj-intro {
-   min-width: 50%; // * Ancho de la sección
-   padding: 40px 2.2%;
-   position: relative;
-   background-color: $bg-color;
-   transition: .8s all;
-   border-right: 1px solid $border-color;
+	min-width: 50%; // * Ancho de la sección
+	padding: 40px 2.2%;
+	position: relative;
+	background-color: $bg-color;
+	transition: .8s all;
+	border-right: 1px solid $border-color;
 
-   @media (min-width: $desktop) {
-      border-top-left-radius: $radius-big;
-      border-bottom-left-radius: $radius-big;
-   }
-   
-   .image {
-      text-align: right;
-      
-      img {
-         width: 240px;
-         height: 340px;
-         border-radius: $radius;
-         object-fit: cover;
-         object-position: top;
-      }
-   }
+	@media (min-width: $desktop) {
+		border-top-left-radius: $radius-big;
+		border-bottom-left-radius: $radius-big;
+	}
 
-   .text {
-      position: absolute;
-      bottom: 40px;
+	.image {
+		text-align: right;
 
-      h2 {
-         font-family: $title-font;
-         font-size: $h2;
-         font-weight: 600;
-         margin-bottom: 25px;
-      }
+		img {
+			width: 240px;
+			height: 340px;
+			border-radius: $radius;
+			object-fit: cover;
+			object-position: top;
+		}
+	}
 
-      p {
-         margin-bottom: 50px;
-      }
+	.text {
+		position: absolute;
+		bottom: 40px;
 
-      &-links {
-         a {
-            transition: .3s all !important;
-         }
-         @media (max-width: $sm) {
-            a {
-               display: block;
+		h2 {
+			font-family: $title-font;
+			font-size: $h2;
+			font-weight: 600;
+			margin-bottom: 25px;
+		}
 
-               &:first-child {
-                  margin-bottom: 15px;
-               }
-            }
-         }
-      }
-   }
+		p {
+			margin-bottom: 50px;
+		}
 
-   @media (max-width: $desktop) {
-      padding: 50px 0;
-      border-right: 0;
-      border-bottom: .5px solid $border-color;
-   }
+		&-links {
+			a {
+				transition: .3s all !important;
+			}
 
-   @media (max-width: $lg) {
-      .subtitle {
-         margin-bottom: 15px;
-      }
+			@media (max-width: $sm) {
+				a {
+					display: block;
 
-      .image {
-         text-align: left;
-         margin-bottom: 25px;
-         
-         img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            object-position: top;
-         }
-      }
+					&:first-child {
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+	}
 
-      .text {
-         margin-top: 50px;
-         position: relative;
+	@media (max-width: $desktop) {
+		padding: 50px 0;
+		border-right: 0;
+		border-bottom: .5px solid $border-color;
+	}
 
-         h2 {
-            font-size: $h2-resp;
-         }
-      }
-   }
+	@media (max-width: $lg) {
+		.subtitle {
+			margin-bottom: 15px;
+		}
 
-   @media (max-width: $sm) {
-      
-   }
+		.image {
+			text-align: left;
+			margin-bottom: 25px;
+
+			img {
+				width: 100%;
+				height: 400px;
+				object-fit: cover;
+				object-position: top;
+			}
+		}
+
+		.text {
+			margin-top: 50px;
+			position: relative;
+
+			h2 {
+				font-size: $h2-resp;
+			}
+		}
+	}
+
+	@media (max-width: $sm) {}
 }
 
 /* ------------------------------------------------------
 * Main Projects
 ------------------------------------------------------ */
 .dj-main-projects {
-   height: 100vh;
-   min-width: 120%;
-   padding: 40px 3%;
-   background-color: $bg-color;
+	height: 100vh;
+	min-width: 120%;
+	padding: 40px 3%;
+	background-color: $bg-color;
 
-   .list {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-   }
+	.list {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-   .project {
-      width: 32%;
-      
-      &-image {
-         width: 100%;
-         height: 83vh;
-         border-radius: $radius;
-         margin-bottom: 15px;
-         object-fit: cover;
-      }
+	.project {
+		width: 32%;
 
-      &-text {
-         h2 {
-            font-weight: 600;
-            font-size: $h3;
-         }
-      }
-   }
+		&-image {
+			width: 100%;
+			height: 83vh;
+			border-radius: $radius;
+			margin-bottom: 15px;
+			object-fit: cover;
+		}
 
-   @media (max-width: $desktop) {
-      min-width: 100%;
-      padding: 45px 6.5%;
-      height: auto;
+		&-text {
+			h2 {
+				font-weight: 600;
+				font-size: $h3;
+			}
+		}
+	}
 
-      .project {
-         width: 48%;
-         margin-bottom: 50px;
+	@media (max-width: $desktop) {
+		min-width: 100%;
+		padding: 45px 6.5%;
+		height: auto;
 
-         &-image {
-            height: auto;
-         }
+		.project {
+			width: 48%;
+			margin-bottom: 50px;
 
-         &-text {
-            h2 {
-               font-size: 21px;
-            }
-         }
-      }
-   }
+			&-image {
+				height: auto;
+			}
 
-   @media (max-width: $lg) {
-      padding: 90px 10.6%;
-      
-      .project {
-         margin-bottom: 50px;
+			&-text {
+				h2 {
+					font-size: 21px;
+				}
+			}
+		}
+	}
 
-         &:nth-last-child(1) {
-            margin-bottom: 0;
-         }
-      }
-   }
+	@media (max-width: $lg) {
+		padding: 90px 10.6%;
 
-   @media (max-width: $md) {
-      padding: 90px 5%;
+		.project {
+			margin-bottom: 50px;
 
-      .project {
-         width: 100%;
-      }
-   }
+			&:nth-last-child(1) {
+				margin-bottom: 0;
+			}
+		}
+	}
 
-   @media (max-width: $sm) {
-      padding: 75px 3%;
-   }
+	@media (max-width: $md) {
+		padding: 90px 5%;
+
+		.project {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: $sm) {
+		padding: 75px 3%;
+	}
 }
 
 /* ------------------------------------------------------
 * Main Footer
 ------------------------------------------------------ */
 .dj-work {
-   background: $bg-color;
-   min-width: 50%;
-   display: block;
-   height: 100vh;
-   text-align: center;
-   position: relative;
+	background: $bg-color;
+	min-width: 50%;
+	display: block;
+	height: 100vh;
+	text-align: center;
+	position: relative;
 
-   .content {
-      background-color: $brand;
-      height: 100vh;
-      width: 100%;
-      padding: 40px 3%;
-      color: $white;
-      display: flex;
-      flex-direction: column;
-      
-      @media (min-width: 1181px) {
-         border-top-left-radius: $radius-big;
-         border-bottom-left-radius: $radius-big;
-      }
-   }
+	.content {
+		background-color: $brand;
+		height: 100vh;
+		width: 100%;
+		padding: 40px 3%;
+		color: $white;
+		display: flex;
+		flex-direction: column;
 
-   .subtitle {
-      h3 {
-         color: $white;
-      }
-   }
+		@media (min-width: 1181px) {
+			border-top-left-radius: $radius-big;
+			border-bottom-left-radius: $radius-big;
+		}
+	}
 
-   .text {
-      width: 80%;
-      margin: auto;
+	.subtitle {
+		h3 {
+			color: $white;
+		}
+	}
 
-      p {
-         font-family: $title-font;
-         font-weight: 500;
-         font-size: 40px;
-         color: $white;
-      }
-   }
+	.text {
+		width: 80%;
+		margin: auto;
 
-   .link {
-      bottom: 20px;
-      position: absolute;
-      text-align: center;
-      left: 50%;
-      transform: translate(-50%,-50%);
+		p {
+			font-family: $title-font;
+			font-weight: 500;
+			font-size: 40px;
+			color: $white;
+		}
+	}
 
-      a {
-         color: $white;
+	.link {
+		bottom: 20px;
+		position: absolute;
+		text-align: center;
+		left: 50%;
+		transform: translate(-50%, -50%);
 
-         &:hover {
-            color: $black;
-         }
-      }
-   }
+		a {
+			color: $white;
 
-   @media (max-width: $md) {
-      .text {
-         p {
-            font-size: $h2;
-         }
-      }
-   }
+			&:hover {
+				color: $black;
+			}
+		}
+	}
 
-   @media (max-width: $sm) {
-      .text {
-         width: 90%;
+	@media (max-width: $md) {
+		.text {
+			p {
+				font-size: $h2;
+			}
+		}
+	}
 
-         p {
-            font-size: $h2-resp;
-         }
-      }
-   }
+	@media (max-width: $sm) {
+		.text {
+			width: 90%;
+
+			p {
+				font-size: $h2-resp;
+			}
+		}
+	}
 }
