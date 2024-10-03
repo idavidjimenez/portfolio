@@ -71,6 +71,10 @@
 
          @include underline_1;
       }
+
+      &.disabled {
+         color: rgba($text-color, .6);
+      }
    }
 
    &.center {

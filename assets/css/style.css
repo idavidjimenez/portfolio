@@ -367,6 +367,9 @@ figure {
 .dj-header-web a:hover::before {
   background: #222222;
 }
+.dj-header-web.disabled {
+  color: rgba(34, 34, 34, 0.6);
+}
 .dj-header.center h1 {
   font-size: clamp(42px, -6px + 9vw, 104px);
   text-transform: none;
