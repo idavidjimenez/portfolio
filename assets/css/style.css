@@ -90,6 +90,14 @@ figure {
   }
 }
 
+.ecommerce {
+  color: #3C79FF !important;
+}
+
+.bg-ecommerce {
+  background-color: #EEF1FB !important;
+}
+
 .venturest {
   color: #9D81DC !important;
 }
